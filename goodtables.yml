@@ -14,7 +14,7 @@
 # validate datapackages that reference csv files
 #
 datapackages:
- - functiemix-instellingen
+ - functiemix/datapackage.json
 #  - australian-open-data-portals/datapackage.json
 #  - one-csv-file/datapackage.json
 #  - one-csv-geopoint-array/datapackage.json
