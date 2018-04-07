@@ -9,7 +9,7 @@
  files:
   - 
     source: 'functiemix/data/functiemix-instellingen.csv'
-    schema: 'tableschema.json'
+    schema: 'functiemix/data/fm-schema-instellingen.json'
 #  - source: pathway/data/all_organisations_by_country.csv
 
 # validate datapackages that reference csv files
