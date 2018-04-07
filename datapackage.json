@@ -46,7 +46,7 @@
     {
       "description": "Het instellingenbestand is uniek per JAAR en BRIN_NUMMER. \nVan belang is dat het bevoegd gezag (cq. het schoolbestuur) uit \u00e9\u00e9n of meerdere instellingen (cq. brins) kan bestaan. \nEen instelling (cq. brin) kan een zogenaamd \u2018bovenschools brin\u2019 betreffen (d.w.z. een brin waar geen les wordt gegeven, maar dat direct onder het bevoegd gezag valt). \nOverigens kan een instelling (cq. brin) op haar beurt uit \u00e9\u00e9n of meerdere vestigingen bestaan. Echter, de personeelsgegevens worden door DUO niet op vestigingsniveau verzameld.", 
       "title": "FunctiemixInstellingen", 
-      "format": "CSV", 
+      "format": "csv", 
       "name": "functiemixinstellingen", 
       "path": "https://onderwijsdata.duo.nl/dataset/4a8b6889-9f7b-4d07-96a0-ec180c9dfe81/resource/4bd97e4f-c6a8-48b8-97a5-0064e504644d/download/functiemix-instellingen.csv", 
       "schema": {
@@ -560,7 +560,7 @@
     {
       "description": "Dit besturenbestand is uniek per ONDERWIJSSECTOR, JAAR en BEVOEGD_GEZAGNUMMER. \nEen bevoegd gezag (cq. bestuur) kan namelijk uit \u00e9\u00e9n of meerdere brins bestaan, waaraan een unieke onderwijssector (BO, S(B)O, VO en MBO) is verbonden. \nMet andere woorden een schoolbestuur kan in meerdere (sub)sectoren onderwijs verzorgen. In principe is dit besturenbestand redundant aan het instellingenbestand (d.w.z. het besturenbestand zou uit het instellingenbestand kunnen worden berekend).", 
       "title": "FunctiemixBesturen", 
-      "format": "CSV", 
+      "format": "csv", 
       "name": "functiemixbesturen", 
       "path": "https://onderwijsdata.duo.nl/dataset/4a8b6889-9f7b-4d07-96a0-ec180c9dfe81/resource/d9e1b44b-b64a-4e88-9300-b24c3e0506a2/download/functiemix-besturen.csv", 
       "schema": {
@@ -976,7 +976,7 @@
     {
       "description": "Dit bestand met gemiddelden is uniek per ONDERWIJSSECTOR, JAAR, SCHOOLTYPE, RPA_GEBIEDCODE, CATEGORIE_SCHOOLOMVANG en CATEGORIE_BESTUUROMVANG (bij SCHOOLTYPE, RPA_GEBIEDCODE, CATEGORIE_SCHOOLOMVANG en CATEGORIE_BESTUUROMVANG zijn totalen toegevoegd). \nHet bestand is bedoeld om de gegevens per instelling en bestuur te kunnen spiegelen aan verschillende aggregaten. Opnieuw geldt dat het bestand met gemiddelden in principe uit het instellingen-/besturenbestand zou kunnen worden berekend met uitzondering van de streefpercentages. Op sectorniveau geldt een andere berekeningswijze dan op instellings-/bestuurniveau.", 
       "title": "FunctiemixGemiddelden", 
-      "format": "CSV", 
+      "format": "csv", 
       "name": "functiemixgemiddelden", 
       "path": "https://onderwijsdata.duo.nl/dataset/4a8b6889-9f7b-4d07-96a0-ec180c9dfe81/resource/b65bd623-724e-4ca4-ae78-cd09797abc90/download/functiemix-gemiddelden.csv", 
       "schema": {
@@ -1270,7 +1270,7 @@
     {
       "description": "Dit bestand met maatwerkafspraken is uniek per JAAR en BRIN_NUMMER. \nOp instellingsniveau kunnen tussen schoolleiding en PMR/GMR/OR/vakbonden afwijkende afspraken over de te behalen functie-/salarismixresultaten zijn gemaakt.", 
       "title": "FunctiemixMaatwerkafspraken", 
-      "format": "CSV", 
+      "format": "csv", 
       "name": "functiemixmaatwerkafspraken", 
       "path": "https://onderwijsdata.duo.nl/dataset/4a8b6889-9f7b-4d07-96a0-ec180c9dfe81/resource/f07113ad-cfdb-48f0-a9b9-fbe6a7f4e56f/download/functiemix-maatwerkafspraken.csv", 
       "schema": {
