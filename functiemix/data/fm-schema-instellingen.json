@@ -1,0 +1,438 @@
+{
+			"fields" : [
+				{
+					"name" : "ONDERWIJSSECTOR",
+					"title" : "onderwijssector",
+					"description" : "Aanduiding van een groep van opleidingen met een gelijkwaardig niveau.",
+					"type" : "string",
+					"rdfType" : "http://lod.duo.nl/agwb/def/OnderwijssectorFunctiemix-v01"
+				},
+				{
+					"name" : "JAAR",
+					"title" : "jaar",
+					"description" : "De functie-/salarismix betreft de maand oktober in een kalenderjaar.",
+					"type" : "integer",
+					"constraints" : {
+						"pattern": "^\\d\\d\\d\\d$"
+					},
+					"rdfType" : "http://lod.duo.nl/agwb/def/Functiemixjaar-v01"
+				},
+				{
+					"name" : "BRIN_NUMMER",
+					"title" : "brin_nummer",
+					"description" : "Een unieke code voor een onderwijsinstelling in de Basis Registratie Instellingen of een instellingserkenning in de Registratie Instellingen en Opleidingen in het Onderwijs.",
+					"type" : "string",
+					"constraints" : {
+						"minLength": 4,
+						"maxLength": 4,
+						"pattern": "^([0-9]{2}[A-Z]{2})$"
+					},
+					"rdfType" : "http://lod.duo.nl/cdm/def/BRIN"
+				},
+				{
+					"name" : "INSTELLINGSNAAM",
+					"title" : "instellingsnaam",
+					"description" : "Naam van de school.",
+					"type" : "string",
+					"constraints" : {
+						"minLength": 1,
+						"maxLength": 80
+					},
+					"rdfType" : "http://lod.duo.nl/agwb/def/NaamOnderwijsinstelling-v01"
+				},
+				{
+					"name" : "POSTCODE_SCHOOL",
+					"title" : "postcode_school",
+					"description" : "Is het cijfergedeelte van een postcode\nVan de postcode worden uitsluitend de 4 cijfers getoond.",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 4,
+						"pattern": "^([1-9]{1}[0-9]{3})$"
+					},
+					"rdfType" : "http://lod.duo.nl/cdm/def/Postcodecijfers-v01"
+				},
+				{
+					"name" : "RPA_GEBIEDCODE",
+					"title" : "rpa_gebiedcode",
+					"description" : "Is de code behorende bij de RPA gebiednaam (Regionale Platform Arbeidsmarkt).",
+					"type" : "string",
+					"constraints" : {
+						"minLength": 1,
+						"maxLength": 4
+					},
+					"rdfType" : "http://lod.duo.nl/agwb/def/RPAGebiedcode-v01"
+				},
+				{
+					"name" : "RANDSTAD",
+					"title" : "randstad",
+					"description" : "Geeft aan of het de Randstad is of niet.",
+					"type" : "boolean",
+					"rdfType" : "http://lod.duo.nl/agwb/def/Randstad-v01"
+				},
+				{
+					"name" : "GEMEENTENAAM",
+					"title" : "gemeentenaam",
+					"description" : "De officiële door de gemeente vastgestelde naam van de gemeente",
+					"type" : "string",
+					"constraints" : {
+						"minLength": 1,
+						"maxLength": 40
+					},
+					"rdfType" : "http://lod.duo.nl/cdm/def/Gemeentenaam"
+				},
+				{
+					"name" : "SCHOOLTYPE",
+					"title" : "schooltype",
+					"description" : "Is het type school in het onderwijs.",
+					"type" : "string",
+					"rdfType" : "http://lod.duo.nl/agwb/def/Schooltype-v01"
+				},
+				{
+					"name" : "SCHOOLSOORT",
+					"title" : "schoolsoort",
+					"description" : "Is de soort school in het middelbaar beroepsonderwijs.",
+					"type" : "string",
+					"rdfType" : "http://lod.duo.nl/agwb/def/Schoolsoort-v01"
+				},
+				{
+					"name" : "VERTICALE_SCHOLENGEMEENSCHAP",
+					"title" : "verticale_scholengemeenschap",
+					"description" : "Geeft aan of het een verticale scholengemeenschap, een school met zowel voortgezet als middelbaar beroepsonderwijs, betreft of niet.",
+					"type" : "boolean",
+					"rdfType" : "http://lod.duo.nl/agwb/def/VerticaleScholengemeenschap-v01"
+				},
+				{
+					"name" : "BEVOEGD_GEZAGNUMMER",
+					"title" : "bevoegd_gezagnummer",
+					"description" : "Het nummer van het bevoegde gezag van de instelling afkomstig uit de Basisregistratie Instellingen",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 3000,
+						"pattern": "^\\d{5}$"
+					},
+					"rdfType" : "http://lod.duo.nl/cdm/def/BevoegdGezagnummer"
+				},
+				{
+					"name" : "BEVOEGD_GEZAGNAAM",
+					"title" : "bevoegd_gezagnaam",
+					"description" : "De naam van het schoolbestuur",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 3000
+					},
+					"rdfType" : "http://lod.duo.nl/agwb/def/BevoegdGezagnaam-v01"
+				},
+				{
+					"name" : "POSTCODE_BEVOEGD_GEZAG",
+					"title" : "postcode_bevoegd_gezag",
+					"description" : "Is het cijfergedeelte van een postcode\nVan de postcode worden uitsluitend de 4 cijfers getoond.",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 4,
+						"pattern": "^([1-9]{1}[0-9]{3})$"
+					},
+					"rdfType" : "http://lod.duo.nl/cdm/def/Postcodecijfers-v01"
+				},
+				{
+					"name" : "EENPITTER",
+					"title" : "eenpitter",
+					"description" : "Geeft aan of het een eenpitter (een bestuur met één instelling) betreft of niet.",
+					"type" : "boolean",
+					"rdfType" : "http://lod.duo.nl/agwb/def/Eenpitter-v01"
+				},
+				{
+					"name" : "AANTAL_LEERLINGEN",
+					"title" : "aantal_leerlingen",
+					"description" : "Is het aantal leerlingen",
+					"type" : "integer",
+					"rdfType" : "http://lod.duo.nl/agwb/def/AantalLeerlingen-v01"
+				},
+				{
+					"name" : "CATEGORIE_SCHOOLOMVANG",
+					"title" : "categorie_schoolomvang",
+					"description" : "Geeft aan in welke categorie de school valt ten aanzien van de omvang.",
+					"type" : "string",
+					"rdfType" : "http://lod.duo.nl/agwb/def/Schoolomvangcategorie-v01"
+				},
+				{
+					"name" : "AANTAL_GEWICHTLEERLINGEN",
+					"title" : "aantal_gewichtleerlingen",
+					"description" : "Is het aantal leerlingen met leerlinggewicht (PO).",
+					"type" : "number",
+					"rdfType" : "http://lod.duo.nl/agwb/def/AantalGewichtleerlingen-v01"
+				},
+				{
+					"name" : "GEMIDDELD_LEERLINGGEWICHT",
+					"title" : "gemiddeld_leerlinggewicht",
+					"description" : "Het gemiddelde gewicht van de leerlingen (PO).",
+					"type" : "number",
+					"rdfType" : "http://lod.duo.nl/agwb/def/GemiddeldLeerlingGewicht-v01"
+				},
+				{
+					"name" : "AANDEEL_APCG_LEERLINGEN",
+					"title" : "aandeel_apcg_leerlingen",
+					"description" : "Is het aandeel leerlingen uit armoedeprobleemcumulatiegebieden (VO).",
+					"type" : "number",
+					"rdfType" : "http://lod.duo.nl/agwb/def/AandeelLeerlingenAPCG-v01"
+				},
+				{
+					"name" : "AANDEEL_LWOO_LEERLINGEN",
+					"title" : "aandeel_lwoo_leerlingen",
+					"description" : "Is het aandeel LWOO-leerlingen (leerwegondersteunend onderwijs) (VO).",
+					"type" : "number",
+					"rdfType" : "http://lod.duo.nl/agwb/def/AandeelLeerlingenLWOO-v01"
+				},
+				{
+					"name" : "AANTAL_VOLTIJDLEERLINGEN",
+					"title" : "aantal_voltijdleerlingen",
+					"description" : "Is het aantal leerlingen dat voltijdonderwijs volgt (MBO).",
+					"type" : "integer",
+					"rdfType" : "http://lod.duo.nl/agwb/def/AantalLeerlingenVoltijd-v01"
+				},
+				{
+					"name" : "AANTAL_DEELTIJDLEERLINGEN",
+					"title" : "aantal_deeltijdleerlingen",
+					"description" : "Is het aantal leerlingen dat deeltijdonderwijs volgt (MBO).",
+					"type" : "integer",
+					"rdfType" : "http://lod.duo.nl/agwb/def/AantalLeerlingenDeeltijd-v01"
+				},
+				{
+					"name" : "AANTAL_LEERLINGEN_VBO_GROEN",
+					"title" : "aantal_leerlingen_vbo_groen",
+					"description" : "Is het aantal leerlingen in het voorbereidend agrarisch beroepsonderwijs (MBO).",
+					"type" : "integer",
+					"rdfType" : "http://lod.duo.nl/agwb/def/AantalLeerlingenVBOGroen-v01"
+				},
+				{
+					"name" : "AANTAL_BOL_LEERLINGEN",
+					"title" : "aantal_bol_leerlingen",
+					"description" : "Is het aantal BOL (beroepsopleidende leerweg) leerlingen (MBO).",
+					"type" : "integer",
+					"rdfType" : "http://lod.duo.nl/agwb/def/AantalLeerlingenBOL-v01"
+				},
+				{
+					"name" : "AANTAL_BOL_DEELTIJDLEERLINGEN",
+					"title" : "aantal_bol_deeltijdleerlingen",
+					"description" : "Is het aantal BOL (beroepsopleidende leerweg) leerlingen in deeltijdonderwijs (MBO).",
+					"type" : "integer",
+					"rdfType" : "http://lod.duo.nl/agwb/def/AantalLeerlingenBOLDeeltijd-v01"
+				},
+				{
+					"name" : "AANTAL_BBL_LEERLINGEN",
+					"title" : "aantal_bbl_leerlingen",
+					"description" : "Is het aantal BBL (beroepsbegeleidende leerweg) leerlingen (MBO).",
+					"type" : "integer",
+					"rdfType" : "http://lod.duo.nl/agwb/def/AantalLeerlingenBBL-v01"
+				},
+				{
+					"name" : "AANDEEL_LEERLINGEN_RANDSTAD",
+					"title" : "aandeel_leerlingen_randstad",
+					"description" : "Is het aandeel leerlingen in de Randstad (VO, MBO).",
+					"type" : "number",
+					"rdfType" : "http://lod.duo.nl/agwb/def/AandeelLeerlingenRandstad-v01"
+				},
+				{
+					"name" : "OMVANG_FORMATIE_TOTAAL",
+					"title" : "omvang_formatie_totaal",
+					"description" : "De totale formatie onderwijspersoneel in fte.",
+					"type" : "number",
+					"rdfType" : "http://lod.duo.nl/agwb/def/OmvangFormatieTotaal-v01"
+				},
+				{
+					"name" : "OMVANG_FORMATIE_MANAGER",
+					"title" : "omvang_formatie_manager",
+					"description" : "Het aantal fte managers.",
+					"type" : "number",
+					"rdfType" : "http://lod.duo.nl/agwb/def/OmvangFormatieManager-v01"
+				},
+				{
+					"name" : "OMVANG_FORMATIE_OP",
+					"title" : "omvang_formatie_op",
+					"description" : "Het aantal fte onderwijzend personeel in een salarisschaal.\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE.\nDe categorie OVERIG heeft een verschillende inhoud per sector: in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number",
+					"rdfType" : "http://lod.duo.nl/agwb/def/OmvangFormatieOnderwijzendPersoneel-v01"
+				},
+				{
+					"name" : "OMVANG_FORMATIE_LIO",
+					"title" : "omvang_formatie_lio",
+					"description" : "Het aantal fte leraren in opleiding.",
+					"type" : "number",
+					"rdfType" : "http://lod.duo.nl/agwb/def/OmvangFormatieLeraarInOpleiding-v01"
+				},
+				{
+					"name" : "OMVANG_FORMATIE_OOP_OBP",
+					"title" : "omvang_formatie_oop_obp",
+					"description" : "Het aantal fte ondersteunend personeel.",
+					"type" : "number",
+					"rdfType" : "http://lod.duo.nl/agwb/def/OmvangFormatieOndersteunendPersoneel-v01"
+				},
+				{
+					"name" : "OMVANG_FORMATIE_ONBEKEND",
+					"title" : "omvang_formatie_onbekend",
+					"description" : "Het aantal fte personeel waarvoor de functie onbekend is.",
+					"type" : "number",
+					"rdfType" : "http://lod.duo.nl/agwb/def/OmvangFormatieOnbekend-v01"
+				},
+				{
+					"name" : "LEERLING_LERAAR_RATIO",
+					"title" : "leerling_leraar_ratio",
+					"description" : "Het aantal leerlingen per fte leraren.",
+					"type" : "number",
+					"rdfType" : "http://lod.duo.nl/agwb/def/LeerlingLeraarratio-v01"
+				},
+				{
+					"name" : "GEWOGEN_DEELNEMER_LERAAR_RATIO",
+					"title" : "gewogen_deelnemer_leraar_ratio",
+					"description" : "Het gewogen deelnemer-leraarratio (MBO).",
+					"type" : "number",
+					"rdfType" : "http://lod.duo.nl/agwb/def/GewogenDeelnemerLeraarratio-v01"
+				},
+				{
+					"name" : "OMVANG_FORMATIE_OP_LA",
+					"title" : "omvang_formatie_op_la",
+					"description" : "Het aantal fte onderwijzend personeel in een salarisschaal.\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE.\nDe categorie OVERIG heeft een verschillende inhoud per sector: in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number",
+					"rdfType" : "http://lod.duo.nl/agwb/def/OmvangFormatieOnderwijzendPersoneel-v01"
+				},
+				{
+					"name" : "OMVANG_FORMATIE_OP_LB",
+					"title" : "omvang_formatie_op_lb",
+					"description" : "Het aantal fte onderwijzend personeel in een salarisschaal.\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE.\nDe categorie OVERIG heeft een verschillende inhoud per sector: in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number",
+					"rdfType" : "http://lod.duo.nl/agwb/def/OmvangFormatieOnderwijzendPersoneel-v01"
+				},
+				{
+					"name" : "OMVANG_FORMATIE_OP_LC",
+					"title" : "omvang_formatie_op_lc",
+					"description" : "Het aantal fte onderwijzend personeel in een salarisschaal.\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE.\nDe categorie OVERIG heeft een verschillende inhoud per sector: in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number",
+					"rdfType" : "http://lod.duo.nl/agwb/def/OmvangFormatieOnderwijzendPersoneel-v01"
+				},
+				{
+					"name" : "OMVANG_FORMATIE_OP_LD",
+					"title" : "omvang_formatie_op_ld",
+					"description" : "Het aantal fte onderwijzend personeel in een salarisschaal.\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE.\nDe categorie OVERIG heeft een verschillende inhoud per sector: in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number",
+					"rdfType" : "http://lod.duo.nl/agwb/def/OmvangFormatieOnderwijzendPersoneel-v01"
+				},
+				{
+					"name" : "OMVANG_FORMATIE_OP_LE",
+					"title" : "omvang_formatie_op_le",
+					"description" : "Het aantal fte onderwijzend personeel in een salarisschaal.\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE.\nDe categorie OVERIG heeft een verschillende inhoud per sector: in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number",
+					"rdfType" : "http://lod.duo.nl/agwb/def/OmvangFormatieOnderwijzendPersoneel-v01"
+				},
+				{
+					"name" : "OMVANG_FORMATIE_OP_OVERIG",
+					"title" : "omvang_formatie_op_overig",
+					"description" : "Het aantal fte onderwijzend personeel in een salarisschaal.\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE.\nDe categorie OVERIG heeft een verschillende inhoud per sector: in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number",
+					"rdfType" : "http://lod.duo.nl/agwb/def/OmvangFormatieOnderwijzendPersoneel-v01"
+				},
+				{
+					"name" : "AANDEEL_FORMATIE_OP_LA",
+					"title" : "aandeel_formatie_op_la",
+					"description" : "Het aandeel van een salarisschaal in totale formatie onderwijzend personeel (in fte).\n\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE. \nDe categorie OVERIG heeft een verschillende inhoud per sector:  in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number",
+					"rdfType" : "http://lod.duo.nl/agwb/def/AandeelFormatieOnderwijzendPersoneel-v01"
+				},
+				{
+					"name" : "AANDEEL_FORMATIE_OP_LB",
+					"title" : "aandeel_formatie_op_lb",
+					"description" : "Het aandeel van een salarisschaal in totale formatie onderwijzend personeel (in fte).\n\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE. \nDe categorie OVERIG heeft een verschillende inhoud per sector:  in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number",
+					"rdfType" : "http://lod.duo.nl/agwb/def/AandeelFormatieOnderwijzendPersoneel-v01"
+				},
+				{
+					"name" : "AANDEEL_FORMATIE_OP_LC",
+					"title" : "aandeel_formatie_op_lc",
+					"description" : "Het aandeel van een salarisschaal in totale formatie onderwijzend personeel (in fte).\n\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE. \nDe categorie OVERIG heeft een verschillende inhoud per sector:  in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number",
+					"rdfType" : "http://lod.duo.nl/agwb/def/AandeelFormatieOnderwijzendPersoneel-v01"
+				},
+				{
+					"name" : "AANDEEL_FORMATIE_OP_LD",
+					"title" : "aandeel_formatie_op_ld",
+					"description" : "Het aandeel van een salarisschaal in totale formatie onderwijzend personeel (in fte).\n\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE. \nDe categorie OVERIG heeft een verschillende inhoud per sector:  in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number",
+					"rdfType" : "http://lod.duo.nl/agwb/def/AandeelFormatieOnderwijzendPersoneel-v01"
+				},
+				{
+					"name" : "AANDEEL_FORMATIE_OP_LE",
+					"title" : "aandeel_formatie_op_le",
+					"description" : "Het aandeel van een salarisschaal in totale formatie onderwijzend personeel (in fte).\n\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE. \nDe categorie OVERIG heeft een verschillende inhoud per sector:  in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number",
+					"rdfType" : "http://lod.duo.nl/agwb/def/AandeelFormatieOnderwijzendPersoneel-v01"
+				},
+				{
+					"name" : "AANDEEL_FORMATIE_OP_OVERIG",
+					"title" : "aandeel_formatie_op_overig",
+					"description" : "Het aandeel van een salarisschaal in totale formatie onderwijzend personeel (in fte).\n\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE. \nDe categorie OVERIG heeft een verschillende inhoud per sector:  in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number",
+					"rdfType" : "http://lod.duo.nl/agwb/def/AandeelFormatieOnderwijzendPersoneel-v01"
+				},
+				{
+					"name" : "STREEFPERCENTAGE_FORMATIE_OP_LA",
+					"title" : "streefpercentage_formatie_op_la",
+					"description" : "Het streefpercentage ten aanzien van de functie-/salarismix van een instelling, bestuur of (sub)sector (het betreft het aandeel van een salarisschaal in totale formatie onderwijzend personeel (in fte)).\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE. De categorie OVERIG heeft een verschillende inhoud per sector: in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number",
+					"rdfType" : "http://lod.duo.nl/agwb/def/StreefPercentageOnderwijzendPersoneel"
+				},
+				{
+					"name" : "STREEFPERCENTAGE_FORMATIE_OP_LB",
+					"title" : "streefpercentage_formatie_op_lb",
+					"description" : "Het streefpercentage ten aanzien van de functie-/salarismix van een instelling, bestuur of (sub)sector (het betreft het aandeel van een salarisschaal in totale formatie onderwijzend personeel (in fte)).\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE. De categorie OVERIG heeft een verschillende inhoud per sector: in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number",
+					"rdfType" : "http://lod.duo.nl/agwb/def/StreefPercentageOnderwijzendPersoneel"
+				},
+				{
+					"name" : "STREEFPERCENTAGE_FORMATIE_OP_LC",
+					"title" : "streefpercentage_formatie_op_lc",
+					"description" : "Het streefpercentage ten aanzien van de functie-/salarismix van een instelling, bestuur of (sub)sector (het betreft het aandeel van een salarisschaal in totale formatie onderwijzend personeel (in fte)).\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE. De categorie OVERIG heeft een verschillende inhoud per sector: in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number",
+					"rdfType" : "http://lod.duo.nl/agwb/def/StreefPercentageOnderwijzendPersoneel"
+				},
+				{
+					"name" : "STREEFPERCENTAGE_FORMATIE_OP_LD",
+					"title" : "streefpercentage_formatie_op_ld",
+					"description" : "Het streefpercentage ten aanzien van de functie-/salarismix van een instelling, bestuur of (sub)sector (het betreft het aandeel van een salarisschaal in totale formatie onderwijzend personeel (in fte)).\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE. De categorie OVERIG heeft een verschillende inhoud per sector: in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number",
+					"rdfType" : "http://lod.duo.nl/agwb/def/StreefPercentageOnderwijzendPersoneel"
+				},
+				{
+					"name" : "STREEFPERCENTAGE_FORMATIE_OP_LE",
+					"title" : "streefpercentage_formatie_op_le",
+					"description" : "Het streefpercentage ten aanzien van de functie-/salarismix van een instelling, bestuur of (sub)sector (het betreft het aandeel van een salarisschaal in totale formatie onderwijzend personeel (in fte)).\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE. De categorie OVERIG heeft een verschillende inhoud per sector: in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number",
+					"rdfType" : "http://lod.duo.nl/agwb/def/StreefPercentageOnderwijzendPersoneel"
+				},
+				{
+					"name" : "STREEFPERCENTAGE_FORMATIE_OP_OVERIG",
+					"title" : "streefpercentage_formatie_op_overig",
+					"description" : "Het streefpercentage ten aanzien van de functie-/salarismix van een instelling, bestuur of (sub)sector (het betreft het aandeel van een salarisschaal in totale formatie onderwijzend personeel (in fte)).\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE. De categorie OVERIG heeft een verschillende inhoud per sector: in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number",
+					"rdfType" : "http://lod.duo.nl/agwb/def/StreefPercentageOnderwijzendPersoneel"
+				},
+				{
+					"name" : "OMVANG_FORMATIE_OP_BRUTSAL",
+					"title" : "omvang_formatie_op_brutsal",
+					"description" : "Het aantal fte onderwijzend personeel waarvoor het brutosalaris bij volledige aanstelling gevuld is.",
+					"type" : "number",
+					"rdfType" : "http://lod.duo.nl/agwb/def/OmvangFormatieOnderwijzendPersoneelBrutosalaris-v01"
+				},
+				{
+					"name" : "LOONSOM_OP_BRUTSAL",
+					"title" : "loonsom_op_brutsal",
+					"description" : "De som van de producten van het aantal fte onderwijzend personeel waarvoor het brutosalaris bij volledige aanstelling gevuld is en het brutosalaris bij volledige aanstelling.",
+					"type" : "number",
+					"rdfType" : "http://lod.duo.nl/agwb/def/LoonsomOnderwijzendPersoneelBrutosalaris-v01"
+				},
+				{
+					"name" : "GEMIDDELDE_LOONSOM_OP_BRUTSAL",
+					"title" : "gemiddelde_loonsom_op_brutsal",
+					"description" : "Het gemiddelde brutosalaris bij volledige aanstelling van onderwijzend personeel.",
+					"type" : "number",
+					"rdfType" : "http://lod.duo.nl/agwb/def/GemiddeldeLoonsomOnderwijzendPersoneelBrutosalaris-v01"
+				}
+			]
+		}
