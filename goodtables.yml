@@ -2,7 +2,7 @@
 
 # validate all csv files without reference to the datapackages
 #
-files: '*.csv'
+files: 'functiemix/data/*.csv'
 
 # validate a mixture of csv files optionally with a tableschema
 #
