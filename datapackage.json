@@ -46,7 +46,7 @@
     {
       "description": "Het instellingenbestand is uniek per JAAR en BRIN_NUMMER. \nVan belang is dat het bevoegd gezag (cq. het schoolbestuur) uit \u00e9\u00e9n of meerdere instellingen (cq. brins) kan bestaan. \nEen instelling (cq. brin) kan een zogenaamd \u2018bovenschools brin\u2019 betreffen (d.w.z. een brin waar geen les wordt gegeven, maar dat direct onder het bevoegd gezag valt). \nOverigens kan een instelling (cq. brin) op haar beurt uit \u00e9\u00e9n of meerdere vestigingen bestaan. Echter, de personeelsgegevens worden door DUO niet op vestigingsniveau verzameld.", 
       "title": "FunctiemixInstellingen", 
-      "format": "csv", 
+      "format": "csf", 
       "name": "functiemixinstellingen", 
       "path": "https://onderwijsdata.duo.nl/dataset/4a8b6889-9f7b-4d07-96a0-ec180c9dfe81/resource/4bd97e4f-c6a8-48b8-97a5-0064e504644d/download/functiemix-instellingen.csv", 
       "schema": {
