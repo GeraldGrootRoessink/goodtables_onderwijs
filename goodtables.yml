@@ -6,16 +6,16 @@
 
 # validate a mixture of csv files optionally with a tableschema
 #
- files:
-  - 
-    source: 'functiemix/data/functiemix-instellingen.csv'
-    schema: 'functiemix/data/fm-schema-instellingen.json'
+#files:
+# - 
+#   source: 'functiemix/data/functiemix-instellingen.csv'
+#  schema: 'functiemix/data/fm-schema-instellingen.json'
 #  - source: pathway/data/all_organisations_by_country.csv
 
 # validate datapackages that reference csv files
 #
-# datapackages:
-# - functiemix/datapackage.json
+ datapackages:
+ - test/datapackage.json
 #  - australian-open-data-portals/datapackage.json
 #  - one-csv-file/datapackage.json
 #  - one-csv-geopoint-array/datapackage.json
