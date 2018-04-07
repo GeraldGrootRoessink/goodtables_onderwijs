@@ -2,13 +2,13 @@
 
 # validate all csv files without reference to the datapackages
 #
-files: '*.csv'
+# files: '*.csv'
 
 # validate a mixture of csv files optionally with a tableschema
 #
  files:
   - 
-    path: 'functiemix/data/functiemix-instellingen.csv'
+    source: 'functiemix/data/functiemix-instellingen.csv'
     schema: 'tableschema.json'
 #  - source: pathway/data/all_organisations_by_country.csv
 
