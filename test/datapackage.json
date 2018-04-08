@@ -44,7 +44,6 @@
 			},
 			"name" : "inventory",
 			"title" : "Inventory",
-			"primaryKeys" : ["id"],
 			"description" : "store inventory",
 			"path" : "data/product_inventory.csv"
 		}
