@@ -1,7 +1,6 @@
 {
 	"resources" : [{
 			"profile" : "tabular-data-resource",
-			"encoding" : "utf-8",
 			"schema" : {
 				"fields" : [{
 						"name" : "id",
