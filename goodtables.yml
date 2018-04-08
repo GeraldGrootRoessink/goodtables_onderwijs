@@ -15,6 +15,7 @@
 # validate datapackages that reference csv files
 #
  datapackages:
+ - test/datapackage.json
  - functiemix/datapackage.json
 #  - australian-open-data-portals/datapackage.json
 #  - one-csv-file/datapackage.json
