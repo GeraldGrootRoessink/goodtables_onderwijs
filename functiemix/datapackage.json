@@ -15,6 +15,7 @@
 		"description" : "Het instellingenbestand is uniek per JAAR en BRIN_NUMMER. \nVan belang is dat het bevoegd gezag (cq. het schoolbestuur) uit één of meerdere instellingen (cq. brins) kan bestaan. \nEen instelling (cq. brin) kan een zogenaamd ‘bovenschools brin’ betreffen (d.w.z. een brin waar geen les wordt gegeven, maar dat direct onder het bevoegd gezag valt). \nOverigens kan een instelling (cq. brin) op haar beurt uit één of meerdere vestigingen bestaan. Echter, de personeelsgegevens worden door DUO niet op vestigingsniveau verzameld.",
 		"path" : "data/functiemix-instellingen.csv",
 		"profile" : "tabular-data-resource",
+		"encoding" : "utf-8",
 		"schema" : {
 			"fields" : [
 				{
