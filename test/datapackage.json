@@ -23,7 +23,8 @@
 							"minimum" : "0"
 						},
 						"title" : "quantity",
-						"description" : "number of products in store"
+						"description" : "number of products in store",
+					"rdfType" : "http://lod.duo.nl/agwb/def/OnderwijssectorFunctiemix-v01"
 					}, {
 						"name" : "cost",
 						"type" : "any",
