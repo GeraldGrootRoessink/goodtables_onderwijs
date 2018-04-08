@@ -42,18 +42,7 @@
 			},
 			"format" : "csv",
 			"mediatype" : "text/csv",
-			"licenses" : [{
-					"name" : "CC-BY-4.0",
-					"title" : "Creative Commons Attribution 4.0",
-					"path" : "https://creativecommons.org/licenses/by/4.0/"
-				}
-			],
-			"sources" : [{
-					"title" : "",
-					"path" : "",
-					"email" : ""
-				}
-			],
+
 			"name" : "inventory",
 			"title" : "Inventory",
 			"primaryKeys" : ["id"],
@@ -61,18 +50,8 @@
 			"path" : "data/product_inventory.csv"
 		}
 	],
-	"licenses" : [{
-			"name" : "CC-BY-4.0",
-			"title" : "Creative Commons Attribution 4.0",
-			"path" : "https://creativecommons.org/licenses/by/4.0/"
-		}
-	],
-	"sources" : [{
-			"title" : "",
-			"path" : "",
-			"email" : ""
-		}
-	],
+
+
 	"name" : "inventory",
 	"title" : "store inventory",
 	"version" : "0.0.1"
