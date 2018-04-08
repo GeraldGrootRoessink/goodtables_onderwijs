@@ -1,5 +1,4 @@
 {
-	"profile" : "tabular-data-package",
 	"resources" : [{
 			"profile" : "tabular-data-resource",
 			"encoding" : "utf-8",
