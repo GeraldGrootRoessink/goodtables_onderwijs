@@ -40,9 +40,6 @@
 				],
 				"missingValues" : [""]
 			},
-			"format" : "csv",
-			"mediatype" : "text/csv",
-
 			"name" : "inventory",
 			"title" : "Inventory",
 			"primaryKeys" : ["id"],
