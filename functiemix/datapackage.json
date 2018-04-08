@@ -454,7 +454,9 @@
 				}
 			], 
 			"missingValues" : [""]
-		}
+		},
+		"format" : "csv",
+		"mediatype" : "text/csv"
 	}
     ]
 }
