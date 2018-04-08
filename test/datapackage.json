@@ -1,4 +1,6 @@
-{
+{	"name" : "inventory",
+	"title" : "store inventory",
+	"version" : "0.0.1" ,
 	"resources" : [{
 			"profile" : "tabular-data-resource",
 			"schema" : {
@@ -46,10 +48,5 @@
 			"description" : "store inventory",
 			"path" : "data/product_inventory.csv"
 		}
-	],
-
-
-	"name" : "inventory",
-	"title" : "store inventory",
-	"version" : "0.0.1"
+	]
 }
