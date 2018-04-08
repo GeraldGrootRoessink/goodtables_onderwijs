@@ -452,7 +452,8 @@
 					"type" : "number",
 					"rdfType" : "http://lod.duo.nl/agwb/def/GemiddeldeLoonsomOnderwijzendPersoneelBrutosalaris-v01"
 				}
-			]
+			], 
+			"missingValues" : [""]
 		}
 	}
     ]
