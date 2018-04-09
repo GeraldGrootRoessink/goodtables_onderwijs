@@ -79,7 +79,7 @@
 					"name" : "RANDSTAD",
 					"title" : "randstad",
 					"description" : "Geeft aan of het de Randstad is of niet.",
-					"type" : "boolean"
+					"type" : "integer"
 				},
 				{
 					"name" : "GEMEENTENAAM",
@@ -107,7 +107,7 @@
 					"name" : "VERTICALE_SCHOLENGEMEENSCHAP",
 					"title" : "verticale_scholengemeenschap",
 					"description" : "Geeft aan of het een verticale scholengemeenschap, een school met zowel voortgezet als middelbaar beroepsonderwijs, betreft of niet.",
-					"type" : "boolean"
+					"type" : "integer"
 				},
 				{
 					"name" : "BEVOEGD_GEZAGNUMMER",
@@ -142,7 +142,7 @@
 					"name" : "EENPITTER",
 					"title" : "eenpitter",
 					"description" : "Geeft aan of het een eenpitter (een bestuur met één instelling) betreft of niet.",
-					"type" : "boolean",
+					"type" : "integer",
 					"rdfType" : "http://lod.duo.nl/agwb/def/Eenpitter-v01"
 				}
 			], 
