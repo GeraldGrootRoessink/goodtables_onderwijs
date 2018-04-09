@@ -80,13 +80,7 @@
 						"format" : "default",
 						"constraints" : {},
 						"title" : "A7"
-					}, {
-						"name" : "a7",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "A7"
-					}, {
+					},  {
 						"name" : "a8",
 						"type" : "string",
 						"format" : "default",
