@@ -29,10 +29,7 @@
 					"name" : "JAAR",
 					"title" : "jaar",
 					"description" : "De functie-/salarismix betreft de maand oktober in een kalenderjaar.",
-					"type" : "integer",
-					"constraints" : {
-						"pattern": "^\\d\\d\\d\\d$"
-					}
+					"type" : "integer"
 				},
 				{
 					"name" : "BRIN_NUMMER",
