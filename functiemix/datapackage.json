@@ -218,7 +218,7 @@
 					"type" : "integer"
 				}
 			], 
-			"missingValues" : [""]
+			"missingValues" : ["" , " "]
 		},
 		"format" : "csv",
 		"mediatype" : "text/csv"
