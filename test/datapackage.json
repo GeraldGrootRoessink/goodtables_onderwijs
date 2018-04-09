@@ -23,6 +23,13 @@
 					"type" : "string",
 					"rdfType" : "http://lod.duo.nl/agwb/def/OnderwijssectorFunctiemix-v01"
 				},
+				{
+					"name" : "EENPITTER",
+					"title" : "eenpitter",
+					"description" : "Geeft aan of het een eenpitter (een bestuur met één instelling) betreft of niet.",
+					"type" : "boolean",
+					"rdfType" : "http://lod.duo.nl/agwb/def/Eenpitter-v01"
+				},
 				 {
 						"name" : "id",
 						"type" : "integer",
