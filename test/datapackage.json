@@ -157,6 +157,66 @@
 						"format" : "default",
 						"constraints" : {},
 						"title" : "B10"
+					}, {
+						"name" : "c1",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "C1"
+					}, {
+						"name" : "c2",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "C2"
+					}, {
+						"name" : "c3",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "C3"
+					}, {
+						"name" : "c4",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "C4"
+					}, {
+						"name" : "c5",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "C5"
+					}, {
+						"name" : "c6",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "C6"
+					}, {
+						"name" : "c7",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "C7"
+					},  {
+						"name" : "c8",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "C8"
+					}, {
+						"name" : "c9",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "C9"
+					}, {
+						"name" : "c10",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "C10"
 					}
 				],
 				"missingValues" : [""]
