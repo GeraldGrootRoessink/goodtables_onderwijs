@@ -96,18 +96,6 @@
 					"title" : "schooltype",
 					"description" : "Is het type school in het onderwijs.",
 					"type" : "string"
-				},
-				{
-					"name" : "SCHOOLSOORT",
-					"title" : "schoolsoort",
-					"description" : "Is de soort school in het middelbaar beroepsonderwijs.",
-					"type" : "string"
-				},
-				{
-					"name" : "VERTICALE_SCHOLENGEMEENSCHAP",
-					"title" : "verticale_scholengemeenschap",
-					"description" : "Geeft aan of het een verticale scholengemeenschap, een school met zowel voortgezet als middelbaar beroepsonderwijs, betreft of niet.",
-					"type" : "integer"
 				}
 			], 
 			"missingValues" : ["" , " "]
