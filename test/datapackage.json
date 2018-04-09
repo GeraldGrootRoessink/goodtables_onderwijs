@@ -48,7 +48,6 @@
 						"name" : "a2",
 						"type" : "string",
 						"format" : "default",
-						"constraints" : {},
 						"title" : "A2"
 					}, {
 						"name" : "a3",
