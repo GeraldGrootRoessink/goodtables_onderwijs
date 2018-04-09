@@ -4,14 +4,9 @@
 	"resources" : [{
 			"profile" : "tabular-data-resource",
 			"schema" : {
-				"fields" : [{
-					"name" : "ONDERWIJSSECTOR",
-					"title" : "onderwijssector",
-					"description" : "Aanduiding van een groep van opleidingen met een gelijkwaardig niveau.",
-					"type" : "string",
-					"rdfType" : "http://lod.duo.nl/agwb/def/OnderwijssectorFunctiemix-v01"
-				},
-				{
+				"fields" : [
+					
+					{
 					"name" : "POSTCODE_SCHOOL",
 					"title" : "postcode_school",
 					"description" : "Is het cijfergedeelte van een postcode\nVan de postcode worden uitsluitend de 4 cijfers getoond.",
@@ -20,7 +15,15 @@
 						"maxLength": 4,
 						"pattern": "^([1-9]{1}[0-9]{3})$"
 					}
-				}, {
+				},
+					{
+					"name" : "ONDERWIJSSECTOR",
+					"title" : "onderwijssector",
+					"description" : "Aanduiding van een groep van opleidingen met een gelijkwaardig niveau.",
+					"type" : "string",
+					"rdfType" : "http://lod.duo.nl/agwb/def/OnderwijssectorFunctiemix-v01"
+				},
+				 {
 						"name" : "id",
 						"type" : "integer",
 						"constraints" : {
