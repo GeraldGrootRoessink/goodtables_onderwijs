@@ -127,23 +127,6 @@
 					"constraints" : {
 						"maxLength": 3000
 					}
-				},
-				{
-					"name" : "POSTCODE_BEVOEGD_GEZAG",
-					"title" : "postcode_bevoegd_gezag",
-					"description" : "Is het cijfergedeelte van een postcode\nVan de postcode worden uitsluitend de 4 cijfers getoond.",
-					"type" : "string",
-					"constraints" : {
-						"maxLength": 4,
-						"pattern": "^([1-9]{1}[0-9]{3})$"
-					}
-				},
-				{
-					"name" : "EENPITTER",
-					"title" : "eenpitter",
-					"description" : "Geeft aan of het een eenpitter (een bestuur met één instelling) betreft of niet.",
-					"type" : "integer",
-					"rdfType" : "http://lod.duo.nl/agwb/def/Eenpitter-v01"
 				}
 			], 
 			"missingValues" : ["" , " "]
