@@ -38,6 +38,72 @@
 						"format" : "default",
 						"constraints" : {},
 						"title" : "product description"
+					}, {
+						"name" : "a1",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "A1"
+					}, {
+						"name" : "a2",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "A2"
+					}, {
+						"name" : "a3",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "A3"
+					}, {
+						"name" : "a4",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "A4"
+					}, {
+						"name" : "a5",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "A5"
+					}, {
+						"name" : "a6",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "A6"
+					}, {
+						"name" : "a7",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "A7"
+					}, {
+						"name" : "a7",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "A7"
+					}, {
+						"name" : "a8",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "A8"
+					}, {
+						"name" : "a9",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "A9"
+					}, {
+						"name" : "a10",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "A10"
 					}
 				],
 				"missingValues" : [""]
