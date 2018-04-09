@@ -74,28 +74,6 @@
 						"minLength": 1,
 						"maxLength": 4
 					}
-				},
-				{
-					"name" : "RANDSTAD",
-					"title" : "randstad",
-					"description" : "Geeft aan of het de Randstad is of niet.",
-					"type" : "integer"
-				},
-				{
-					"name" : "GEMEENTENAAM",
-					"title" : "gemeentenaam",
-					"description" : "De officiële door de gemeente vastgestelde naam van de gemeente",
-					"type" : "string",
-					"constraints" : {
-						"minLength": 1,
-						"maxLength": 40
-					}
-				},
-				{
-					"name" : "SCHOOLTYPE",
-					"title" : "schooltype",
-					"description" : "Is het type school in het onderwijs.",
-					"type" : "string"
 				}
 			], 
 			"missingValues" : ["" , " "]
