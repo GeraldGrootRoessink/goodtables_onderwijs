@@ -390,7 +390,7 @@
 			"name" : "inventory",
 			"title" : "Inventory",
 			"description" : "store inventory",
-			"path" : "data/product_inventory.csv"
+			"path" : "data/product-inventory.csv"
 		}
 	]
 }
