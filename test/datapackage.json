@@ -98,6 +98,66 @@
 						"format" : "default",
 						"constraints" : {},
 						"title" : "A10"
+					} {
+						"name" : "b1",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "B1"
+					}, {
+						"name" : "b2",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "B2"
+					}, {
+						"name" : "b3",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "B3"
+					}, {
+						"name" : "b4",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "B4"
+					}, {
+						"name" : "b5",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "B5"
+					}, {
+						"name" : "b6",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "B6"
+					}, {
+						"name" : "b7",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "B7"
+					},  {
+						"name" : "b8",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "B8"
+					}, {
+						"name" : "b9",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "B9"
+					}, {
+						"name" : "b10",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "B10"
 					}
 				],
 				"missingValues" : [""]
