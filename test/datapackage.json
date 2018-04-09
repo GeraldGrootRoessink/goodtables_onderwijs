@@ -98,7 +98,7 @@
 						"format" : "default",
 						"constraints" : {},
 						"title" : "A10"
-					} {
+					}, {
 						"name" : "b1",
 						"type" : "string",
 						"format" : "default",
