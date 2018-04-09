@@ -180,42 +180,6 @@
 					"title" : "aandeel_lwoo_leerlingen",
 					"description" : "Is het aandeel LWOO-leerlingen (leerwegondersteunend onderwijs) (VO).",
 					"type" : "number"
-				},
-				{
-					"name" : "AANTAL_VOLTIJDLEERLINGEN",
-					"title" : "aantal_voltijdleerlingen",
-					"description" : "Is het aantal leerlingen dat voltijdonderwijs volgt (MBO).",
-					"type" : "integer"
-				},
-				{
-					"name" : "AANTAL_DEELTIJDLEERLINGEN",
-					"title" : "aantal_deeltijdleerlingen",
-					"description" : "Is het aantal leerlingen dat deeltijdonderwijs volgt (MBO).",
-					"type" : "integer"
-				},
-				{
-					"name" : "AANTAL_LEERLINGEN_VBO_GROEN",
-					"title" : "aantal_leerlingen_vbo_groen",
-					"description" : "Is het aantal leerlingen in het voorbereidend agrarisch beroepsonderwijs (MBO).",
-					"type" : "integer"
-				},
-				{
-					"name" : "AANTAL_BOL_LEERLINGEN",
-					"title" : "aantal_bol_leerlingen",
-					"description" : "Is het aantal BOL (beroepsopleidende leerweg) leerlingen (MBO).",
-					"type" : "integer"
-				},
-				{
-					"name" : "AANTAL_BOL_DEELTIJDLEERLINGEN",
-					"title" : "aantal_bol_deeltijdleerlingen",
-					"description" : "Is het aantal BOL (beroepsopleidende leerweg) leerlingen in deeltijdonderwijs (MBO).",
-					"type" : "integer"
-				},
-				{
-					"name" : "AANTAL_BBL_LEERLINGEN",
-					"title" : "aantal_bbl_leerlingen",
-					"description" : "Is het aantal BBL (beroepsbegeleidende leerweg) leerlingen (MBO).",
-					"type" : "integer"
 				}
 			], 
 			"missingValues" : ["" , " "]
