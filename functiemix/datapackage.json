@@ -486,7 +486,7 @@
 					"rdfType" : "http://lod.duo.nl/agwb/def/GemiddeldeLoonsomOnderwijzendPersoneelBrutosalaris-v01"
 				}
 			],
-			"missingValues" : [""]
+			"missingValues" : [""," "]
 		}
 	},
 	{
@@ -850,7 +850,7 @@
 					"rdfType" : "http://lod.duo.nl/agwb/def/GemiddeldeLoonsomOnderwijzendPersoneelBrutosalaris-v01"
 				}
 			],
-			"missingValues" : [""]
+			"missingValues" : [""," "]
 		}
 	},
 	{
@@ -1102,7 +1102,7 @@
 					"rdfType" : "http://lod.duo.nl/agwb/def/StreefPercentageOnderwijzendPersoneel"
 				}
 			],
-			"missingValues" : [""]
+			"missingValues" : [""," "]
 		}
 	},
 	{
@@ -1215,7 +1215,7 @@
 					"rdfType" : "http://lod.duo.nl/agwb/def/MaatwerkafspraakToelichting-v01"
 				}
 			],
-			"missingValues" : [""]
+			"missingValues" : [""," "]
 		}
 	}
     ]
