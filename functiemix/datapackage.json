@@ -144,42 +144,6 @@
 					"description" : "Geeft aan of het een eenpitter (een bestuur met één instelling) betreft of niet.",
 					"type" : "boolean",
 					"rdfType" : "http://lod.duo.nl/agwb/def/Eenpitter-v01"
-				},
-				{
-					"name" : "AANTAL_LEERLINGEN",
-					"title" : "aantal_leerlingen",
-					"description" : "Is het aantal leerlingen",
-					"type" : "integer"
-				},
-				{
-					"name" : "CATEGORIE_SCHOOLOMVANG",
-					"title" : "categorie_schoolomvang",
-					"description" : "Geeft aan in welke categorie de school valt ten aanzien van de omvang.",
-					"type" : "string"
-				},
-				{
-					"name" : "AANTAL_GEWICHTLEERLINGEN",
-					"title" : "aantal_gewichtleerlingen",
-					"description" : "Is het aantal leerlingen met leerlinggewicht (PO).",
-					"type" : "number"
-				},
-				{
-					"name" : "GEMIDDELD_LEERLINGGEWICHT",
-					"title" : "gemiddeld_leerlinggewicht",
-					"description" : "Het gemiddelde gewicht van de leerlingen (PO).",
-					"type" : "number"
-				},
-				{
-					"name" : "AANDEEL_APCG_LEERLINGEN",
-					"title" : "aandeel_apcg_leerlingen",
-					"description" : "Is het aandeel leerlingen uit armoedeprobleemcumulatiegebieden (VO).",
-					"type" : "number"
-				},
-				{
-					"name" : "AANDEEL_LWOO_LEERLINGEN",
-					"title" : "aandeel_lwoo_leerlingen",
-					"description" : "Is het aandeel LWOO-leerlingen (leerwegondersteunend onderwijs) (VO).",
-					"type" : "number"
 				}
 			], 
 			"missingValues" : ["" , " "]
