@@ -108,25 +108,6 @@
 					"title" : "verticale_scholengemeenschap",
 					"description" : "Geeft aan of het een verticale scholengemeenschap, een school met zowel voortgezet als middelbaar beroepsonderwijs, betreft of niet.",
 					"type" : "integer"
-				},
-				{
-					"name" : "BEVOEGD_GEZAGNUMMER",
-					"title" : "bevoegd_gezagnummer",
-					"description" : "Het nummer van het bevoegde gezag van de instelling afkomstig uit de Basisregistratie Instellingen",
-					"type" : "string",
-					"constraints" : {
-						"maxLength": 3000,
-						"pattern": "^\\d{5}$"
-					}
-				},
-				{
-					"name" : "BEVOEGD_GEZAGNAAM",
-					"title" : "bevoegd_gezagnaam",
-					"description" : "De naam van het schoolbestuur",
-					"type" : "string",
-					"constraints" : {
-						"maxLength": 3000
-					}
 				}
 			], 
 			"missingValues" : ["" , " "]
