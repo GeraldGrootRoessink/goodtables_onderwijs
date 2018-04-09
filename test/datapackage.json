@@ -2,11 +2,47 @@
 	"title" : "store inventory",
 	"version" : "0.0.1" ,
 	"resources" : [{
-			"profile" : "tabular-data-resource",
-			"schema" : {
-				"fields" : [
-					
-					{
+		"profile" : "tabular-data-resource",
+		"schema" : {
+			"fields" : [
+				{
+					"name" : "ONDERWIJSSECTOR",
+					"title" : "onderwijssector",
+					"description" : "Aanduiding van een groep van opleidingen met een gelijkwaardig niveau.",
+					"type" : "string",
+					"rdfType" : "http://lod.duo.nl/agwb/def/OnderwijssectorFunctiemix-v01"
+				},
+				{
+					"name" : "JAAR",
+					"title" : "jaar",
+					"description" : "De functie-/salarismix betreft de maand oktober in een kalenderjaar.",
+					"type" : "integer",
+					"constraints" : {
+						"pattern": "^\\d\\d\\d\\d$"
+					}
+				},
+				{
+					"name" : "BRIN_NUMMER",
+					"title" : "brin_nummer",
+					"description" : "Een unieke code voor een onderwijsinstelling in de Basis Registratie Instellingen of een instellingserkenning in de Registratie Instellingen en Opleidingen in het Onderwijs.",
+					"type" : "string",
+					"constraints" : {
+						"minLength": 4,
+						"maxLength": 4,
+						"pattern": "^([0-9]{2}[A-Z]{2})$"
+					}
+				},
+				{
+					"name" : "INSTELLINGSNAAM",
+					"title" : "instellingsnaam",
+					"description" : "Naam van de school.",
+					"type" : "string",
+					"constraints" : {
+						"minLength": 1,
+						"maxLength": 80
+					}
+				},
+				{
 					"name" : "POSTCODE_SCHOOL",
 					"title" : "postcode_school",
 					"description" : "Is het cijfergedeelte van een postcode\nVan de postcode worden uitsluitend de 4 cijfers getoond.",
@@ -16,350 +52,341 @@
 						"pattern": "^([1-9]{1}[0-9]{3})$"
 					}
 				},
-					{
-					"name" : "ONDERWIJSSECTOR",
-					"title" : "onderwijssector",
-					"description" : "Aanduiding van een groep van opleidingen met een gelijkwaardig niveau.",
+				{
+					"name" : "RPA_GEBIEDCODE",
+					"title" : "rpa_gebiedcode",
+					"description" : "Is de code behorende bij de RPA gebiednaam (Regionale Platform Arbeidsmarkt).",
 					"type" : "string",
-					"rdfType" : "http://lod.duo.nl/agwb/def/OnderwijssectorFunctiemix-v01"
-				},
-				 {
-						"name" : "id",
-						"type" : "integer",
-						"constraints" : {
-							"required" : true,
-							"unique" : true,
-							"minimum" : "1"
-						},
-						"title" : "identifier",
-						"description" : "product identifier"
-					}, {
-						"name" : "qty",
-						"type" : "integer",
-						"format" : "default",
-						"constraints" : {
-							"required" : true,
-							"minimum" : "0"
-						},
-						"title" : "quantity",
-						"description" : "number of products in store",
-					"rdfType" : "http://lod.duo.nl/agwb/def/OnderwijssectorFunctiemix-v01"
-					}, {
-						"name" : "cost",
-						"type" : "any",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "unit cost",
-						"description" : "cost of an individual product"
-					}, {
-						"name" : "desc",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "product description"
-					}, {
-						"name" : "a1",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "A1"
-					}, {
-						"name" : "a2",
-						"type" : "string",
-						"format" : "default",
-						"title" : "A2"
-					}, {
-						"name" : "a3",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "A3"
-					}, {
-						"name" : "a4",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "A4"
-					}, {
-						"name" : "a5",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "A5"
-					}, {
-						"name" : "a6",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "A6"
-					}, {
-						"name" : "a7",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "A7"
-					},  {
-						"name" : "a8",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "A8"
-					}, {
-						"name" : "a9",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "A9"
-					}, {
-						"name" : "a10",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "A10"
-					}, {
-						"name" : "b1",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "B1"
-					}, {
-						"name" : "b2",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "B2"
-					}, {
-						"name" : "b3",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "B3"
-					}, {
-						"name" : "b4",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "B4"
-					}, {
-						"name" : "b5",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "B5"
-					}, {
-						"name" : "b6",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "B6"
-					}, {
-						"name" : "b7",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "B7"
-					},  {
-						"name" : "b8",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "B8"
-					}, {
-						"name" : "b9",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "B9"
-					}, {
-						"name" : "b10",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "B10"
-					}, {
-						"name" : "c1",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "C1"
-					}, {
-						"name" : "c2",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "C2"
-					}, {
-						"name" : "c3",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "C3"
-					}, {
-						"name" : "c4",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "C4"
-					}, {
-						"name" : "c5",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "C5"
-					}, {
-						"name" : "c6",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "C6"
-					}, {
-						"name" : "c7",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "C7"
-					},  {
-						"name" : "c8",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "C8"
-					}, {
-						"name" : "c9",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "C9"
-					}, {
-						"name" : "c10",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "C10"
-					}, {
-						"name" : "d1",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "D1"
-					}, {
-						"name" : "d2",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "D2"
-					}, {
-						"name" : "d3",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "D3"
-					}, {
-						"name" : "d4",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "D4"
-					}, {
-						"name" : "d5",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "D5"
-					}, {
-						"name" : "d6",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "D6"
-					}, {
-						"name" : "d7",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "D7"
-					},  {
-						"name" : "d8",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "D8"
-					}, {
-						"name" : "d9",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "D9"
-					}, {
-						"name" : "d10",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "D10"
-					}, {
-						"name" : "e1",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "E1"
-					}, {
-						"name" : "e2",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "E2"
-					}, {
-						"name" : "e3",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "E3"
-					}, {
-						"name" : "e4",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "E4"
-					}, {
-						"name" : "e5",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "E5"
-					}, {
-						"name" : "e6",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "E6"
-					}, {
-						"name" : "e7",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "E7"
-					},  {
-						"name" : "e8",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "E8"
-					}, {
-						"name" : "e9",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "E9"
-					}, {
-						"name" : "e10",
-						"type" : "string",
-						"format" : "default",
-						"constraints" : {},
-						"title" : "E10"
+					"constraints" : {
+						"minLength": 1,
+						"maxLength": 4
 					}
-				],
-				"missingValues" : [""]
-			},
+				},
+				{
+					"name" : "RANDSTAD",
+					"title" : "randstad",
+					"description" : "Geeft aan of het de Randstad is of niet.",
+					"type" : "boolean"
+				},
+				{
+					"name" : "GEMEENTENAAM",
+					"title" : "gemeentenaam",
+					"description" : "De officiële door de gemeente vastgestelde naam van de gemeente",
+					"type" : "string",
+					"constraints" : {
+						"minLength": 1,
+						"maxLength": 40
+					}
+				},
+				{
+					"name" : "SCHOOLTYPE",
+					"title" : "schooltype",
+					"description" : "Is het type school in het onderwijs.",
+					"type" : "string"
+				},
+				{
+					"name" : "SCHOOLSOORT",
+					"title" : "schoolsoort",
+					"description" : "Is de soort school in het middelbaar beroepsonderwijs.",
+					"type" : "string"
+				},
+				{
+					"name" : "VERTICALE_SCHOLENGEMEENSCHAP",
+					"title" : "verticale_scholengemeenschap",
+					"description" : "Geeft aan of het een verticale scholengemeenschap, een school met zowel voortgezet als middelbaar beroepsonderwijs, betreft of niet.",
+					"type" : "boolean"
+				},
+				{
+					"name" : "BEVOEGD_GEZAGNUMMER",
+					"title" : "bevoegd_gezagnummer",
+					"description" : "Het nummer van het bevoegde gezag van de instelling afkomstig uit de Basisregistratie Instellingen",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 3000,
+						"pattern": "^\\d{5}$"
+					}
+				},
+				{
+					"name" : "BEVOEGD_GEZAGNAAM",
+					"title" : "bevoegd_gezagnaam",
+					"description" : "De naam van het schoolbestuur",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 3000
+					}
+				},
+				{
+					"name" : "POSTCODE_BEVOEGD_GEZAG",
+					"title" : "postcode_bevoegd_gezag",
+					"description" : "Is het cijfergedeelte van een postcode\nVan de postcode worden uitsluitend de 4 cijfers getoond.",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 4,
+						"pattern": "^([1-9]{1}[0-9]{3})$"
+					}
+				},
+				{
+					"name" : "EENPITTER",
+					"title" : "eenpitter",
+					"description" : "Geeft aan of het een eenpitter (een bestuur met één instelling) betreft of niet.",
+					"type" : "boolean",
+					"rdfType" : "http://lod.duo.nl/agwb/def/Eenpitter-v01"
+				},
+				{
+					"name" : "AANTAL_LEERLINGEN",
+					"title" : "aantal_leerlingen",
+					"description" : "Is het aantal leerlingen",
+					"type" : "integer"
+				},
+				{
+					"name" : "CATEGORIE_SCHOOLOMVANG",
+					"title" : "categorie_schoolomvang",
+					"description" : "Geeft aan in welke categorie de school valt ten aanzien van de omvang.",
+					"type" : "string"
+				},
+				{
+					"name" : "AANTAL_GEWICHTLEERLINGEN",
+					"title" : "aantal_gewichtleerlingen",
+					"description" : "Is het aantal leerlingen met leerlinggewicht (PO).",
+					"type" : "number"
+				},
+				{
+					"name" : "GEMIDDELD_LEERLINGGEWICHT",
+					"title" : "gemiddeld_leerlinggewicht",
+					"description" : "Het gemiddelde gewicht van de leerlingen (PO).",
+					"type" : "number"
+				},
+				{
+					"name" : "AANDEEL_APCG_LEERLINGEN",
+					"title" : "aandeel_apcg_leerlingen",
+					"description" : "Is het aandeel leerlingen uit armoedeprobleemcumulatiegebieden (VO).",
+					"type" : "number"
+				},
+				{
+					"name" : "AANDEEL_LWOO_LEERLINGEN",
+					"title" : "aandeel_lwoo_leerlingen",
+					"description" : "Is het aandeel LWOO-leerlingen (leerwegondersteunend onderwijs) (VO).",
+					"type" : "number"
+				},
+				{
+					"name" : "AANTAL_VOLTIJDLEERLINGEN",
+					"title" : "aantal_voltijdleerlingen",
+					"description" : "Is het aantal leerlingen dat voltijdonderwijs volgt (MBO).",
+					"type" : "integer"
+				},
+				{
+					"name" : "AANTAL_DEELTIJDLEERLINGEN",
+					"title" : "aantal_deeltijdleerlingen",
+					"description" : "Is het aantal leerlingen dat deeltijdonderwijs volgt (MBO).",
+					"type" : "integer"
+				},
+				{
+					"name" : "AANTAL_LEERLINGEN_VBO_GROEN",
+					"title" : "aantal_leerlingen_vbo_groen",
+					"description" : "Is het aantal leerlingen in het voorbereidend agrarisch beroepsonderwijs (MBO).",
+					"type" : "integer"
+				},
+				{
+					"name" : "AANTAL_BOL_LEERLINGEN",
+					"title" : "aantal_bol_leerlingen",
+					"description" : "Is het aantal BOL (beroepsopleidende leerweg) leerlingen (MBO).",
+					"type" : "integer"
+				},
+				{
+					"name" : "AANTAL_BOL_DEELTIJDLEERLINGEN",
+					"title" : "aantal_bol_deeltijdleerlingen",
+					"description" : "Is het aantal BOL (beroepsopleidende leerweg) leerlingen in deeltijdonderwijs (MBO).",
+					"type" : "integer"
+				},
+				{
+					"name" : "AANTAL_BBL_LEERLINGEN",
+					"title" : "aantal_bbl_leerlingen",
+					"description" : "Is het aantal BBL (beroepsbegeleidende leerweg) leerlingen (MBO).",
+					"type" : "integer"
+				},
+				{
+					"name" : "AANDEEL_LEERLINGEN_RANDSTAD",
+					"title" : "aandeel_leerlingen_randstad",
+					"description" : "Is het aandeel leerlingen in de Randstad (VO, MBO).",
+					"type" : "number"
+				},
+				{
+					"name" : "OMVANG_FORMATIE_TOTAAL",
+					"title" : "omvang_formatie_totaal",
+					"description" : "De totale formatie onderwijspersoneel in fte.",
+					"type" : "number"
+				},
+				{
+					"name" : "OMVANG_FORMATIE_MANAGER",
+					"title" : "omvang_formatie_manager",
+					"description" : "Het aantal fte managers.",
+					"type" : "number"
+				},
+				{
+					"name" : "OMVANG_FORMATIE_OP",
+					"title" : "omvang_formatie_op",
+					"description" : "Het aantal fte onderwijzend personeel in een salarisschaal.\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE.\nDe categorie OVERIG heeft een verschillende inhoud per sector: in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number"
+				},
+				{
+					"name" : "OMVANG_FORMATIE_LIO",
+					"title" : "omvang_formatie_lio",
+					"description" : "Het aantal fte leraren in opleiding.",
+					"type" : "number"
+				},
+				{
+					"name" : "OMVANG_FORMATIE_OOP_OBP",
+					"title" : "omvang_formatie_oop_obp",
+					"description" : "Het aantal fte ondersteunend personeel.",
+					"type" : "number"
+				},
+				{
+					"name" : "OMVANG_FORMATIE_ONBEKEND",
+					"title" : "omvang_formatie_onbekend",
+					"description" : "Het aantal fte personeel waarvoor de functie onbekend is.",
+					"type" : "number"
+				},
+				{
+					"name" : "LEERLING_LERAAR_RATIO",
+					"title" : "leerling_leraar_ratio",
+					"description" : "Het aantal leerlingen per fte leraren.",
+					"type" : "number"
+				},
+				{
+					"name" : "GEWOGEN_DEELNEMER_LERAAR_RATIO",
+					"title" : "gewogen_deelnemer_leraar_ratio",
+					"description" : "Het gewogen deelnemer-leraarratio (MBO).",
+					"type" : "number"
+				},
+				{
+					"name" : "OMVANG_FORMATIE_OP_LA",
+					"title" : "omvang_formatie_op_la",
+					"description" : "Het aantal fte onderwijzend personeel in een salarisschaal.\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE.\nDe categorie OVERIG heeft een verschillende inhoud per sector: in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number"
+				},
+				{
+					"name" : "OMVANG_FORMATIE_OP_LB",
+					"title" : "omvang_formatie_op_lb",
+					"description" : "Het aantal fte onderwijzend personeel in een salarisschaal.\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE.\nDe categorie OVERIG heeft een verschillende inhoud per sector: in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number"
+				},
+				{
+					"name" : "OMVANG_FORMATIE_OP_LC",
+					"title" : "omvang_formatie_op_lc",
+					"description" : "Het aantal fte onderwijzend personeel in een salarisschaal.\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE.\nDe categorie OVERIG heeft een verschillende inhoud per sector: in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number"
+				},
+				{
+					"name" : "OMVANG_FORMATIE_OP_LD",
+					"title" : "omvang_formatie_op_ld",
+					"description" : "Het aantal fte onderwijzend personeel in een salarisschaal.\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE.\nDe categorie OVERIG heeft een verschillende inhoud per sector: in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number"
+				},
+				{
+					"name" : "OMVANG_FORMATIE_OP_LE",
+					"title" : "omvang_formatie_op_le",
+					"description" : "Het aantal fte onderwijzend personeel in een salarisschaal.\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE.\nDe categorie OVERIG heeft een verschillende inhoud per sector: in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number"
+				},
+				{
+					"name" : "OMVANG_FORMATIE_OP_OVERIG",
+					"title" : "omvang_formatie_op_overig",
+					"description" : "Het aantal fte onderwijzend personeel in een salarisschaal.\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE.\nDe categorie OVERIG heeft een verschillende inhoud per sector: in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number"
+				},
+				{
+					"name" : "AANDEEL_FORMATIE_OP_LA",
+					"title" : "aandeel_formatie_op_la",
+					"description" : "Het aandeel van een salarisschaal in totale formatie onderwijzend personeel (in fte).\n\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE. \nDe categorie OVERIG heeft een verschillende inhoud per sector:  in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number"
+				},
+				{
+					"name" : "AANDEEL_FORMATIE_OP_LB",
+					"title" : "aandeel_formatie_op_lb",
+					"description" : "Het aandeel van een salarisschaal in totale formatie onderwijzend personeel (in fte).\n\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE. \nDe categorie OVERIG heeft een verschillende inhoud per sector:  in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number"
+				},
+				{
+					"name" : "AANDEEL_FORMATIE_OP_LC",
+					"title" : "aandeel_formatie_op_lc",
+					"description" : "Het aandeel van een salarisschaal in totale formatie onderwijzend personeel (in fte).\n\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE. \nDe categorie OVERIG heeft een verschillende inhoud per sector:  in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number"
+				},
+				{
+					"name" : "AANDEEL_FORMATIE_OP_LD",
+					"title" : "aandeel_formatie_op_ld",
+					"description" : "Het aandeel van een salarisschaal in totale formatie onderwijzend personeel (in fte).\n\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE. \nDe categorie OVERIG heeft een verschillende inhoud per sector:  in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number"
+				},
+				{
+					"name" : "AANDEEL_FORMATIE_OP_LE",
+					"title" : "aandeel_formatie_op_le",
+					"description" : "Het aandeel van een salarisschaal in totale formatie onderwijzend personeel (in fte).\n\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE. \nDe categorie OVERIG heeft een verschillende inhoud per sector:  in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number"
+				},
+				{
+					"name" : "AANDEEL_FORMATIE_OP_OVERIG",
+					"title" : "aandeel_formatie_op_overig",
+					"description" : "Het aandeel van een salarisschaal in totale formatie onderwijzend personeel (in fte).\n\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE. \nDe categorie OVERIG heeft een verschillende inhoud per sector:  in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number"
+				},
+				{
+					"name" : "STREEFPERCENTAGE_FORMATIE_OP_LA",
+					"title" : "streefpercentage_formatie_op_la",
+					"description" : "Het streefpercentage ten aanzien van de functie-/salarismix van een instelling, bestuur of (sub)sector (het betreft het aandeel van een salarisschaal in totale formatie onderwijzend personeel (in fte)).\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE. De categorie OVERIG heeft een verschillende inhoud per sector: in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number"
+				},
+				{
+					"name" : "STREEFPERCENTAGE_FORMATIE_OP_LB",
+					"title" : "streefpercentage_formatie_op_lb",
+					"description" : "Het streefpercentage ten aanzien van de functie-/salarismix van een instelling, bestuur of (sub)sector (het betreft het aandeel van een salarisschaal in totale formatie onderwijzend personeel (in fte)).\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE. De categorie OVERIG heeft een verschillende inhoud per sector: in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number"
+				},
+				{
+					"name" : "STREEFPERCENTAGE_FORMATIE_OP_LC",
+					"title" : "streefpercentage_formatie_op_lc",
+					"description" : "Het streefpercentage ten aanzien van de functie-/salarismix van een instelling, bestuur of (sub)sector (het betreft het aandeel van een salarisschaal in totale formatie onderwijzend personeel (in fte)).\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE. De categorie OVERIG heeft een verschillende inhoud per sector: in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number"
+				},
+				{
+					"name" : "STREEFPERCENTAGE_FORMATIE_OP_LD",
+					"title" : "streefpercentage_formatie_op_ld",
+					"description" : "Het streefpercentage ten aanzien van de functie-/salarismix van een instelling, bestuur of (sub)sector (het betreft het aandeel van een salarisschaal in totale formatie onderwijzend personeel (in fte)).\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE. De categorie OVERIG heeft een verschillende inhoud per sector: in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number"
+				},
+				{
+					"name" : "STREEFPERCENTAGE_FORMATIE_OP_LE",
+					"title" : "streefpercentage_formatie_op_le",
+					"description" : "Het streefpercentage ten aanzien van de functie-/salarismix van een instelling, bestuur of (sub)sector (het betreft het aandeel van een salarisschaal in totale formatie onderwijzend personeel (in fte)).\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE. De categorie OVERIG heeft een verschillende inhoud per sector: in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number"
+				},
+				{
+					"name" : "STREEFPERCENTAGE_FORMATIE_OP_OVERIG",
+					"title" : "streefpercentage_formatie_op_overig",
+					"description" : "Het streefpercentage ten aanzien van de functie-/salarismix van een instelling, bestuur of (sub)sector (het betreft het aandeel van een salarisschaal in totale formatie onderwijzend personeel (in fte)).\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE. De categorie OVERIG heeft een verschillende inhoud per sector: in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
+					"type" : "number"
+				},
+				{
+					"name" : "OMVANG_FORMATIE_OP_BRUTSAL",
+					"title" : "omvang_formatie_op_brutsal",
+					"description" : "Het aantal fte onderwijzend personeel waarvoor het brutosalaris bij volledige aanstelling gevuld is.",
+					"type" : "number"
+				},
+				{
+					"name" : "LOONSOM_OP_BRUTSAL",
+					"title" : "loonsom_op_brutsal",
+					"description" : "De som van de producten van het aantal fte onderwijzend personeel waarvoor het brutosalaris bij volledige aanstelling gevuld is en het brutosalaris bij volledige aanstelling.",
+					"type" : "number"
+				},
+				{
+					"name" : "GEMIDDELDE_LOONSOM_OP_BRUTSAL",
+					"title" : "gemiddelde_loonsom_op_brutsal",
+					"description" : "Het gemiddelde brutosalaris bij volledige aanstelling van onderwijzend personeel.",
+					"type" : "number"
+				}
+			], 
+			"missingValues" : [""]
+		},
 			"name" : "inventory",
 			"title" : "Inventory",
 			"description" : "store inventory",
