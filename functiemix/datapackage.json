@@ -1202,7 +1202,7 @@
 					"title" : "datum_maatwerkafspraak",
 					"description" : "De datum van inwerkingtreding van maatwerkafspraken",
 					"type" : "date",
-					"format" : "%d/%m/%y",
+					"format" : "%d-%m-%y",
 					"rdfType" : "http://lod.duo.nl/agwb/def/MaatwerkafspraakDatum-v01"
 				},
 				{
