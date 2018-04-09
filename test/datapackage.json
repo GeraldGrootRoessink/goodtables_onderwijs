@@ -5,6 +5,12 @@
 			"profile" : "tabular-data-resource",
 			"schema" : {
 				"fields" : [{
+					"name" : "ONDERWIJSSECTOR",
+					"title" : "onderwijssector",
+					"description" : "Aanduiding van een groep van opleidingen met een gelijkwaardig niveau.",
+					"type" : "string",
+					"rdfType" : "http://lod.duo.nl/agwb/def/OnderwijssectorFunctiemix-v01"
+				},{
 						"name" : "id",
 						"type" : "integer",
 						"constraints" : {
