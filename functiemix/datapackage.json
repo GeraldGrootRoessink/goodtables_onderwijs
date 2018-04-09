@@ -342,60 +342,6 @@
 					"title" : "aandeel_formatie_op_overig",
 					"description" : "Het aandeel van een salarisschaal in totale formatie onderwijzend personeel (in fte).\n\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE. \nDe categorie OVERIG heeft een verschillende inhoud per sector:  in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
 					"type" : "number"
-				},
-				{
-					"name" : "STREEFPERCENTAGE_FORMATIE_OP_LA",
-					"title" : "streefpercentage_formatie_op_la",
-					"description" : "Het streefpercentage ten aanzien van de functie-/salarismix van een instelling, bestuur of (sub)sector (het betreft het aandeel van een salarisschaal in totale formatie onderwijzend personeel (in fte)).\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE. De categorie OVERIG heeft een verschillende inhoud per sector: in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
-					"type" : "number"
-				},
-				{
-					"name" : "STREEFPERCENTAGE_FORMATIE_OP_LB",
-					"title" : "streefpercentage_formatie_op_lb",
-					"description" : "Het streefpercentage ten aanzien van de functie-/salarismix van een instelling, bestuur of (sub)sector (het betreft het aandeel van een salarisschaal in totale formatie onderwijzend personeel (in fte)).\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE. De categorie OVERIG heeft een verschillende inhoud per sector: in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
-					"type" : "number"
-				},
-				{
-					"name" : "STREEFPERCENTAGE_FORMATIE_OP_LC",
-					"title" : "streefpercentage_formatie_op_lc",
-					"description" : "Het streefpercentage ten aanzien van de functie-/salarismix van een instelling, bestuur of (sub)sector (het betreft het aandeel van een salarisschaal in totale formatie onderwijzend personeel (in fte)).\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE. De categorie OVERIG heeft een verschillende inhoud per sector: in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
-					"type" : "number"
-				},
-				{
-					"name" : "STREEFPERCENTAGE_FORMATIE_OP_LD",
-					"title" : "streefpercentage_formatie_op_ld",
-					"description" : "Het streefpercentage ten aanzien van de functie-/salarismix van een instelling, bestuur of (sub)sector (het betreft het aandeel van een salarisschaal in totale formatie onderwijzend personeel (in fte)).\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE. De categorie OVERIG heeft een verschillende inhoud per sector: in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
-					"type" : "number"
-				},
-				{
-					"name" : "STREEFPERCENTAGE_FORMATIE_OP_LE",
-					"title" : "streefpercentage_formatie_op_le",
-					"description" : "Het streefpercentage ten aanzien van de functie-/salarismix van een instelling, bestuur of (sub)sector (het betreft het aandeel van een salarisschaal in totale formatie onderwijzend personeel (in fte)).\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE. De categorie OVERIG heeft een verschillende inhoud per sector: in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
-					"type" : "number"
-				},
-				{
-					"name" : "STREEFPERCENTAGE_FORMATIE_OP_OVERIG",
-					"title" : "streefpercentage_formatie_op_overig",
-					"description" : "Het streefpercentage ten aanzien van de functie-/salarismix van een instelling, bestuur of (sub)sector (het betreft het aandeel van een salarisschaal in totale formatie onderwijzend personeel (in fte)).\nDe laatste karakters van de kolomnaam geeft de salarisschaal aan: LA, LB, LC, LD en LE. De categorie OVERIG heeft een verschillende inhoud per sector: in het PO (BO en S(B)O) betreft de categorie OVERIG de schalen LD + LE + LX (schaal onbekend), in het VO en MBO de schalen LA + LX.",
-					"type" : "number"
-				},
-				{
-					"name" : "OMVANG_FORMATIE_OP_BRUTSAL",
-					"title" : "omvang_formatie_op_brutsal",
-					"description" : "Het aantal fte onderwijzend personeel waarvoor het brutosalaris bij volledige aanstelling gevuld is.",
-					"type" : "number"
-				},
-				{
-					"name" : "LOONSOM_OP_BRUTSAL",
-					"title" : "loonsom_op_brutsal",
-					"description" : "De som van de producten van het aantal fte onderwijzend personeel waarvoor het brutosalaris bij volledige aanstelling gevuld is en het brutosalaris bij volledige aanstelling.",
-					"type" : "number"
-				},
-				{
-					"name" : "GEMIDDELDE_LOONSOM_OP_BRUTSAL",
-					"title" : "gemiddelde_loonsom_op_brutsal",
-					"description" : "Het gemiddelde brutosalaris bij volledige aanstelling van onderwijzend personeel.",
-					"type" : "number"
 				}
 			], 
 			"missingValues" : [""]
