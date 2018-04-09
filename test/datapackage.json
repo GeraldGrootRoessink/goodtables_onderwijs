@@ -217,6 +217,66 @@
 						"format" : "default",
 						"constraints" : {},
 						"title" : "C10"
+					}, {
+						"name" : "d1",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "D1"
+					}, {
+						"name" : "d2",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "D2"
+					}, {
+						"name" : "d3",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "D3"
+					}, {
+						"name" : "d4",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "D4"
+					}, {
+						"name" : "d5",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "D5"
+					}, {
+						"name" : "d6",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "D6"
+					}, {
+						"name" : "d7",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "D7"
+					},  {
+						"name" : "d8",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "D8"
+					}, {
+						"name" : "d9",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "D9"
+					}, {
+						"name" : "d10",
+						"type" : "string",
+						"format" : "default",
+						"constraints" : {},
+						"title" : "D10"
 					}
 				],
 				"missingValues" : [""]
