@@ -98,7 +98,7 @@
 					"description" : "Is het cijfergedeelte van een postcode\nVan de postcode worden uitsluitend de 4 cijfers getoond.",
 					"type" : "string",
 					"constraints" : {
-						"maxLength": 3,
+						"maxLength": 4,
 						"pattern": "^([1-9]{1}[0-9]{3})$"
 					},
 					"rdfType" : "http://lod.duo.nl/cdm/def/Postcodecijfers-v01"
