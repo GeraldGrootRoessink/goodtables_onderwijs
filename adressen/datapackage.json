@@ -58,7 +58,7 @@
 					"required": "true",
 					"type" : "string",
 					"constraints" : {
-						"maxLength": 4
+						"maxLength": 5
 						},
 					"rdfType" : "http://lod.duo.nl/cdm/def/huisnummer-v02"
 				},	
