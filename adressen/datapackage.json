@@ -1,0 +1,300 @@
+{
+	"name" : "adressen-gebieden-v01",
+    "title": "Vestigingsadressen in het onderwijs en bijbehorende bovengemeentelijke gebieden.",
+    "description" : "# Adressen in het onderwijs\r\nHieronder staan formele vestigings adressen van onderwijsinstellingen. De adresgegevens komen direct uit **BRIN** (Basisregister Instellingen) en worden door scholen zelf opgegeven bij DUO.  De stand is van maart 2018.\r\n\r\n## Register Instellingen en Opleidingen (RIO)\r\nDeze adressen zijn verzameld als experiment in het kader van het register Register Instellingen en Opleidingen, het wie, wat, waar in het onderwijs. [RIO](https:\/\/www.rio-onderwijs.nl\/wat-is-rio) is de  opvolger is van het register BRIN. Het experiment betreft de vorm waarin de data wordt gepubliceerd.  De kwaliteit en actualiteit van de adresgegevens is niet gegarandeerd.\r\n",
+	"license" : {
+			"type" : "CC-BY-4.0"
+	},
+	"keywords" : [
+		"Adressen",
+		"Onderwijs",
+		"RIO",
+		"BRIN"
+	],
+	"publisher_name" : "Dienst Uitvoering Onderwijs",
+	"publisher_uri" : "http://standaarden.overheid.nl/owms/terms/Dienst_Uitvoering_Onderwijs",
+	"frequency" : "maandelijks",
+	"language" : "nl",
+	"modified" : "2018-05-13T12:00:00.001",
+	"spatial_uri": "http://standaarden.overheid.nl/owms/terms/Nederland",
+	"theme": "http://standaarden.overheid.nl/owms/terms/Onderwijs_(thema)",
+	"homepage": "http://lod.duo.nl/rio/query/adressen",
+	"resources" : [
+	{
+		"name" : "rio_adressen_datastore",
+		"title": "RIO adressen geladen in onderwijsdata-portaal",
+		"description" : "De RIO adressen geladen in CKAN-datastore. Deze data is beschikbaar als CSV dump en met de standaard datasearch-api’s van CKAN.",
+        "format": "CSV", 
+		"path": "data/rio_adressen.csv", 
+		"issued" : "2018-05-13T12:00:00.001",
+		"modified" : "2018-05-13T12:00:00.001",
+		"status": "experiment",
+		"schema" : {
+			"fields" : [
+				{
+					"name" : "adres",
+					"title" : "Binnenlands Adres",
+					"description" : "zie GWB",
+					"required": "true",
+					"type" : "string",
+					"format" : "uri",
+					"rdfType" : "http://lod.duo.nl/cdm/def/BinnenlandsAdres"
+				},
+				{
+					"name" : "str",
+					"title" : "straatnaam",
+					"description" : "zie GWB",
+					"required": "true",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 40
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/straatnaam-v02"
+				},
+				{
+					"name" : "hn",
+					"title" : "huisnummer",
+					"description" : "zie GWB",
+					"required": "true",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 4
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/huisnummer-v02"
+				},	
+				{
+					"name" : "hl",
+					"title" : "letter",
+					"description" : "zie GWB",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 1 ,
+						"pattern": "^([a-zA-Z])$"
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/huisletter-v02"
+				},	
+				{
+					"name" : "ht",
+					"title" : "huisnummer toevoeging",
+					"description" : "zie GWB",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 4
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/huisnummerToevoeging-v03"
+				},	
+				{
+					"name" : "pc",
+					"title" : "postcode",
+					"description" : "zie GWB",
+					"required": "true",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 5
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/postcode-v02"
+				},	
+				{
+					"name" : "plts",
+					"title" : "plaatsnaam",
+					"description" : "zie GWB",
+					"required": "true",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 40
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/plaatsnaam-v02"
+				},	
+				{
+					"name" : "gem",
+					"title" : "Gemeente",
+					"description" : "zie GWB",
+					"required": "true",
+					"type" : "string",
+					"format" : "uri",
+					"rdfType" : "http://lod.duo.nl/cdm/def/Gemeente"
+				},
+				{
+					"name" : "gem_naam",
+					"title" : "gemeentenaam",
+					"description" : "zie GWB",
+					"required": "true",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 40
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/gemeentenaam"
+				},	
+				{
+					"name" : "prov",
+					"title" : "Provincie",
+					"description" : "zie GWB",
+					"type" : "string",
+					"format" : "uri",
+					"rdfType" : "http://lod.duo.nl/cdm/def/Provincie"
+				},
+				{
+					"name" : "prov_naam",
+					"title" : "provincienaam",
+					"description" : "zie GWB",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 40
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/provincienaam"
+				},	
+				{
+					"name" : "nod",
+					"title" : "Nodaal Gebied",
+					"description" : "zie GWB",
+					"type" : "string",
+					"format" : "uri",
+					"rdfType" : "http://lod.duo.nl/cdm/def/NodaalGebied"
+				},
+				{
+					"name" : "nod_naam",
+					"title" : "naam nodaal gebied",
+					"description" : "zie GWB",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 40
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/nodaalGebiednaam"
+				},	
+				{
+					"name" : "rpa",
+					"title" : "RPA Gebied",
+					"description" : "zie GWB",
+					"type" : "string",
+					"format" : "uri",
+					"rdfType" : "http://lod.duo.nl/cdm/def/RPA-gebied"
+				},
+				{
+					"name" : "rpa_naam",
+					"title" : "naam RPA gebied",
+					"description" : "zie GWB",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 40
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/rPAnaam"
+				},	
+				{
+					"name" : "wgr",
+					"title" : "WGR Gebied",
+					"description" : "zie GWB",
+					"type" : "string",
+					"format" : "uri",
+					"rdfType" : "http://lod.duo.nl/cdm/def/WGR-gebied"
+				},
+				{
+					"name" : "wgr_naam",
+					"title" : "naam WGR gebied",
+					"description" : "zie GWB",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 40
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/wGRnaam"
+				},	
+				{
+					"name" : "corop",
+					"title" : "Corop Gebied",
+					"description" : "zie GWB",
+					"type" : "string",
+					"format" : "uri",
+					"rdfType" : "http://lod.duo.nl/cdm/def/Coropgebied"
+				},
+				{
+					"name" : "corop_naam",
+					"title" : "naam Corop gebied",
+					"description" : "zie GWB",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 40
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/corop/naam"
+				},	
+				{
+					"name" : "ond",
+					"title" : "Onderwijsgebied",
+					"description" : "zie GWB",
+					"type" : "string",
+					"format" : "uri",
+					"rdfType" : "http://lod.duo.nl/cdm/def/Onderwijsgebied"
+				},
+				{
+					"name" : "ond_naam",
+					"title" : "naam onderwijsgebied",
+					"description" : "zie GWB",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 40
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/onderwijsgebiednaam"
+				},	
+				{
+					"name" : "rmc",
+					"title" : "RMC Gebied",
+					"description" : "zie GWB",
+					"type" : "string",
+					"format" : "uri",
+					"rdfType" : "http://lod.duo.nl/cdm/def/RMC"
+				},
+				{
+					"name" : "rmc_naam",
+					"title" : "naam RMC gebied",
+					"description" : "zie GWB",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 40
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/rMCnaam"
+				}			
+			]
+		}
+	},
+	{
+		"name" : "rio_adressen_bulk",
+		"title": "RIO adressen ontsloten als bulk-API in contenttype CSV",
+		"description" : "De RIO adressen zijn toegankelijk  gemaakt als Linked Open Data. Op basis hiervan is een rest-style -api gespecificeerd die alle adressen oplepelt. Dit is van zichzelf “tabeldata” ( CSV). Indien Excel wordt gebruikt: verander dan de URI zodat format=xlsx",
+        "format": "CSV", 
+		"path": "http://lod.duo.nl/rio/api/v1/distributie/adressen?format=csv", 
+		"issued" : "2018-05-13T12:00:00.001",
+		"modified" : "2018-05-13T12:00:00.001",
+		"status": "experiment"
+	},
+	{
+		"name" : "rio_adressen_LDT",
+		"title": "RIO adressen ontsloten voor browser with LDT.",
+		"description" : "Dit betreft een lijst van alle als linked data bekende adressen. Standaard in LDT gevisualiseerd met html. Is eventueel ook als csv of als json te ontsluiten met de toevoeging “?format=..”.",
+        "format": "HTML", 
+		"path": "http://lod.duo.nl/rio/query/adressen", 
+		"issued" : "2018-05-13T12:00:00.001",
+		"modified" : "2018-05-13T12:00:00.001",
+		"status": "experiment"
+	},
+	{
+		"name" : "rio_adressen_per_plaats",
+		"title": "RIO adressen ontsloten in browser geselecteerd per plaats.",
+		"description" : "Dit betreft een lijst van alle als linked data bekende adressen bij een bepaalde plaats. Standaard in LDT gevisualiseerd met html. Is eventueel ook als csv te ontsluiten met de toevoeging “?format=..”. Json werkt onverklaarbaar niet.",
+        "format": "HTML", 
+		"path": "http://lod.duo.nl/rio/api/v1/selectie/adressen?plaats=RUTTEN", 
+		"issued" : "2018-05-13T12:00:00.001",
+		"modified" : "2018-05-13T12:00:00.001",
+		"status": "experiment"
+	},
+	{
+		"name" : "ld_resource_adres",
+		"title": "Een enkele instantie uit de verzameling RIO-adressen ontsloten als Linked Data API contenttype JSONLD. ",
+		"description" : "Het RIO adres  is toegankelijk  als Linked Open Data. De API werkt op basis van de URI die als identiteit aan het adres is gegeven. Zonder toevoeging wordt html het formaat.",
+        "format": "JSON_LD", 
+		"path": " http://lod.duo.nl/rio/id/binnenlandsadres/8313RK50?format=jsonld", 
+		"issued" : "2018-05-13T12:00:00.001",
+		"modified" : "2018-05-13T12:00:00.001",
+		"status": "experiment"
+	}
+
+	
+    ]
+}
