@@ -25,7 +25,7 @@
 		"title": "RIO adressen geladen in onderwijsdata-portaal",
 		"description" : "De RIO adressen geladen in CKAN-datastore. Deze data is beschikbaar als CSV dump en met de standaard datasearch-api’s van CKAN.",
                 "format": "csv", 
-		"path": "data/rio_adressen.csv", 
+		"path": "data/RIO_adressen.csv", 
 		"issued" : "2018-05-13T12:00:00.001",
 		"modified" : "2018-05-13T12:00:00.001",
 		"status": "experiment",
