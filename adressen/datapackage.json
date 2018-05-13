@@ -265,7 +265,7 @@
 		"status": "experiment"
 	},
 	{
-		"name" : "rio_adressen_LDT",
+		"name" : "rio_adressen_ldt",
 		"title": "RIO adressen ontsloten voor browser with LDT.",
 		"description" : "Dit betreft een lijst van alle als linked data bekende adressen. Standaard in LDT gevisualiseerd met html. Is eventueel ook als csv of als json te ontsluiten met de toevoeging “?format=..”.",
         "format": "HTML", 
