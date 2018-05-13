@@ -90,7 +90,7 @@
 					"required": "true",
 					"type" : "string",
 					"constraints" : {
-						"maxLength": 5
+						"maxLength": 6
 						},
 					"rdfType" : "http://lod.duo.nl/cdm/def/postcode-v02"
 				},	
