@@ -16,7 +16,7 @@
 #
  datapackages:
 # - test/datapackage.json
- - functiemix/datapackage.json
+ - functiemix-v01/datapackage.json
 # - adressen/datapackage.json
 #  - australian-open-data-portals/datapackage.json
 #  - one-csv-file/datapackage.json
