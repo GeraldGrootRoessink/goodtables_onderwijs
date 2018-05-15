@@ -266,8 +266,8 @@
 	},
 	{
 		"name" : "rio_adressen_per_plaats",
-		"title": "RIO adressen geselecteerd per plaats.",
-		"description" : "Dit betreft een lijst van alle bekende adressen bij een instelbare plaatsnaam. Standaard gevisualiseerd met html. Is eventueel ook als csv te ontsluiten met de uri-toevoeging format=csv.  Geldt niet voor json-formaat (known error).",
+		"title": "RIO adressen geselecteerd per voorbeeld-plaats.",
+		"description" : "Dit betreft een lijst van alle bekende adressen bij een plaatsnaam (ptt-stijl). Standaard gevisualiseerd met html. Is eventueel ook als csv te ontsluiten met de uri-toevoeging format=csv.  Geldt niet voor json-formaat (known error).",
         	"format": "HTML", 
 		"path": "http://lod.duo.nl/rio/api/v1/selectie/adressen?plaats=RUTTEN", 
 		"issued" : "2018-05-13T12:00:00.001",
@@ -276,7 +276,7 @@
 	},
 	{
 		"name" : "resource_adres",
-		"title": "Een enkele instantie uit de verzameling RIO-adressen.",
+		"title": "Een voorbeeld-instantie uit de verzameling RIO-adressen.",
 		"description" : "De URI van een RIO adres  is resolvable, dat wil zeggen dat de URI, de identiteit aan het adres,  als api kan worden bevraagd. Standaard is dit html. Is eventueel ook als json te ontsluiten met de uri-toevoeging format=jsonld.",
         	"format": "JSON_LD", 
 		"path": "http://lod.duo.nl/rio/id/binnenlandsadres/8313RK50?format=jsonld", 
