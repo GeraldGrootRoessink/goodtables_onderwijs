@@ -486,7 +486,8 @@
 					"type" : "number",
 					"rdfType" : "http://lod.duo.nl/agwb/def/GemiddeldeLoonsomOnderwijzendPersoneelBrutosalaris-v01"
 				}
-			]
+			],  
+			"primaryKey": ["JAAR", "BRIN_NUMMER"]
 		}
 	},
 	{
