@@ -251,7 +251,8 @@
 						},
 					"rdfType" : "http://lod.duo.nl/cdm/def/rMCnaam"
 				}			
-			]
+			],
+			"primaryKey": "adres"
 		}
 	},
 	{
