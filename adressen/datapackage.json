@@ -1,7 +1,7 @@
 {
-    "name" : "adressen-gebieden-v01",
-    "title": "Vestigingsadressen in het onderwijs en bijbehorende bovengemeentelijke gebieden.",
-    "description" : "# Adressen in het onderwijs\r\nDit overzicht bevat de formele vestigings adressenbestanden van onderwijsinstellingen. De adresgegevens komen direct uit **BRIN** (Basisregister Instellingen) en worden door scholen zelf opgegeven bij DUO.  De stand is van maart 2018.\r\n## Experiment Register Instellingen en Opleidingen (RIO)\r\nDeze adressen zijn verzameld als experiment in het kader van het register Register Instellingen en Opleidingen, het wie, wat, waar in het onderwijs. [RIO](https:\/\/www.rio-onderwijs.nl\/wat-is-rio) is de  beoogde opvolger is van het register BRIN. De mogelijkheden en onmogelijkheden van RIO in linked data vorm worden in dit experiment onderzocht.\r\n## Actueel vs momentopname\r\nDe linked data publicatie is in aanleg actueel, dat wil zeggen, als DUO of een onderwijsinstelling een wijziging doorvoert in RIO dat die wijziging  snel en gevalsgewijs als linked data voor het publiek beschikbaar komt. Dit portaal biedt toegang tot de actuele versie. Tegelijkertijd wordt met regelmaat een momentopname gemaakt en toegankelijk gemaakt in dit portaal.",
+    "name" : "adressen-onderwijs-v01",
+    "title": "Adressen in het onderwijs.",
+    "description" : "# Adressen in het onderwijs\r\nDit overzicht bevat de formele vestigings adressen van onderwijsinstellingen. De adresgegevens komen direct uit **BRIN** (Basisregister Instellingen) en worden door scholen zelf opgegeven bij DUO.  De stand is van maart 2018.\r\n## Experiment RIO\r\nDeze adressen zijn verzameld als experiment in het kader van het register Register Instellingen en Opleidingen, het wie, wat, waar in het onderwijs. [RIO](https:\/\/www.rio-onderwijs.nl\/wat-is-rio) is de  beoogde opvolger is van het register BRIN.\r\n## Momentopname en actuele publicatie\r\nVia deze site hebt u toegang tot een moment opname en tot de actuele publicatie  van BRIN\/RIO waaruit periodiek een nieuwe  momentopname wordt  gemaakt. De momentopname is toegankelijk als CSV-download en als CKAN-API. De  actuele publicatie is toegankelijk als Linked Data API. Een Linked Data API kan worden geleverd als  HTML in een standaard browser of als JSON, CSV  e.d. voor gebruik in applicaties\/apps.",
 	"license" : {
 			"type" : "CC-BY-4.0"
 	},
@@ -22,8 +22,8 @@
 	"resources" : [
 		{
 		"name" : "rio_adressen_momentopname",
-		"title": "RIO adressen periodiek verzameld uit de linked data publicatie van RIO",
-		"description" : "De RIO adressen zijn op een apart platform [Linked Data Theater](http:\/\/lod.duo.nl\/rio) gepubliceerd. Dit platform biedt een bulk-api die wordt gebruikt om dit portaal te voeden.",
+		"title": "RIO adressen momentopname",
+		"description" : "De RIO adressen zijn op een apart platform [Linked Data Theater](http:\/\/lod.duo.nl\/rio) gepubliceerd. Periodiek wordt dat in CKAN ingelezen.",
         	"format": "csv", 
 		"path": "http://lod.duo.nl/rio/api/v1/distributie/adressen?format=csv", 
 		"issued" : "2018-05-13T12:00:00.001",
@@ -257,7 +257,7 @@
 	},
 	{
 		"name" : "rio_adressen_actueel",
-		"title": "Een directe link naar de actuele RIO adressen ",
+		"title": "RIO adressen actueel.",
 		"description" : "Dit betreft een lijst van alle bekende adressen. Standaard gevisualiseerd met html. Is eventueel ook als csv of als json te ontsluiten met de uri-toevoeging format=csv of format=json.",
         	"format": "HTML", 
 		"path": "http://lod.duo.nl/rio/query/adressen", 
@@ -267,7 +267,7 @@
 	},
 	{
 		"name" : "rio_adressen_per_plaats",
-		"title": "RIO adressen geselecteerd per voorbeeld-plaats.",
+		"title": "RIO adressen geselecteerd.",
 		"description" : "Dit betreft een lijst van alle bekende adressen bij een plaatsnaam (ptt-stijl). Standaard gevisualiseerd met html. Is eventueel ook als csv te ontsluiten met de uri-toevoeging format=csv.  Geldt niet voor json-formaat (known error).",
         	"format": "HTML", 
 		"path": "http://lod.duo.nl/rio/api/v1/selectie/adressen?plaats=RUTTEN", 
@@ -277,7 +277,7 @@
 	},
 	{
 		"name" : "resource_adres",
-		"title": "Een voorbeeld-instantie uit de verzameling RIO-adressen.",
+		"title": "RIO adres resource.",
 		"description" : "De URI van een RIO adres  is resolvable, dat wil zeggen dat de URI, de identiteit aan het adres,  als api kan worden bevraagd. Standaard is dit html. Is eventueel ook als json te ontsluiten met de uri-toevoeging format=jsonld.",
         	"format": "JSON_LD", 
 		"path": "http://lod.duo.nl/rio/id/binnenlandsadres/8313RK50?format=jsonld", 
