@@ -19,7 +19,6 @@
 	"issued" : "2018-05-13T12:00:00.001",
 	"spatial_uri": "http://standaarden.overheid.nl/owms/terms/Nederland",
 	"theme": "http://standaarden.overheid.nl/owms/terms/Onderwijs_(thema)",
-	"homepage": "http://lod.duo.nl/rio",
 	"sources": [
 		  {
 		    "name": "Rio Linked Open Data",
