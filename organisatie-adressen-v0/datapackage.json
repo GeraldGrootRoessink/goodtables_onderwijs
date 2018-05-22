@@ -23,7 +23,7 @@
 	"sources": [
 		  {
 		    "name": "Rio Linked Open Data",
-		    "web": "http://lod.duo.nl/rio",
+		    "web": "http://lod.duo.nl/rio"
 		  }
 		  ],
 	"resources" : [
