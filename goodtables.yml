@@ -18,7 +18,7 @@
 # - test/datapackage.json
 # - functiemix-v01/datapackage.json
 # - adressen/datapackage.json
- - adressen/datapackage.json
+ - organisatie-adressen-v0/datapackage.json
 #  - australian-open-data-portals/datapackage.json
 #  - one-csv-file/datapackage.json
 #  - one-csv-geopoint-array/datapackage.json
