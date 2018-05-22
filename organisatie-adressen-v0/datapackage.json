@@ -377,7 +377,7 @@
 				}		
         
 			],
-			"primaryKey": "oi"
+			"primaryKey": ["oi" ,"denom"]
 		}
 	},
 	{
