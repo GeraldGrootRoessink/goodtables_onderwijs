@@ -20,12 +20,7 @@
 	"issued" : "2018-05-13T12:00:00.001",
 	"spatial_uri": "http://standaarden.overheid.nl/owms/terms/Nederland",
 	"theme": "http://standaarden.overheid.nl/owms/terms/Onderwijs_(thema)",
-	"sources": [
-		  {
-		    "name": "Rio Linked Open Data",
-		    "web": "http://lod.duo.nl/rio"
-		  }
-		  ],
+
 	"resources" : [
 		{
 		"name" : "bevoegdgezagen_momentopname",
