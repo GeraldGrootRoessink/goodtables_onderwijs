@@ -179,7 +179,6 @@
 					"title" : "telefoon",
 					"description" : "zie GWB",
 					"type" : "string",
-					"format" : "email",
 					"rdfType" : "http://lod.duo.nl/cdm/def/Telefoonnummer-v02"
 				}  				
         
@@ -359,7 +358,6 @@
 					"title" : "telefoon",
 					"description" : "zie GWB",
 					"type" : "string",
-					"format" : "email",
 					"rdfType" : "http://lod.duo.nl/cdm/def/Telefoonnummer-v02"
 				},
 				{
