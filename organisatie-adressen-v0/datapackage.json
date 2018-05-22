@@ -376,8 +376,7 @@
 					"rdfType" : "http://lod.duo.nl/cdm/def/CommercieleNaam-v02"
 				}		
         
-			],
-			"primaryKey": "oi" 
+			]
 		}
 	},
 	{
