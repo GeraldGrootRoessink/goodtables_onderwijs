@@ -93,7 +93,7 @@
 					"constraints" : {
 						"maxLength": 40
 						},
-					"rdfType" : "http://lod.duo.nl/cdm/def/plaatsnaam-v02"
+					"rdfType" : "http://lod.duo.nl/cdm/def/Plaatsnaam-v02"
 				},
 				{
 					"name" : "gem",
@@ -262,7 +262,7 @@
 					"constraints" : {
 						"maxLength": 40
 						},
-					"rdfType" : "http://lod.duo.nl/cdm/def/plaatsnaam-v02"
+					"rdfType" : "http://lod.duo.nl/cdm/def/Plaatsnaam-v02"
 				},
 				{
 					"name" : "gem",
@@ -303,12 +303,12 @@
 					"rdfType" : "rdfs:label"
 				},	
 				{
-					"name" : "denom",
-					"title" : "Denominatie",
+					"name" : "wet",
+					"title" : "Wet",
 					"description" : "zie GWB",
 					"type" : "string",
 					"format" : "uri",
-					"rdfType" : "http://lod.duo.nl/cdm/def/Denominatie-V03"
+					"rdfType" : "http://lod.duo.nl/cdm/def/Wet-v02"
 				},
 				{
 					"name" : "denom_naam",
@@ -374,9 +374,9 @@
 						"maxLength": 80
 						},
 					"rdfType" : "http://lod.duo.nl/cdm/def/CommercieleNaam-v02"
-				}		
-        
-			]
+				}		        
+			],
+			"primaryKey": "oi"
 		}
 	},
 	{
@@ -392,9 +392,9 @@
 	{
 		"name" : "instellingen_per_soort",
 		"title": "instellingen per soort",
-		"description" : "Dit betreft onderwijsinstellingen van een bepaald soort. Zie [waardenlijst](https:\/\/lod.duo.nl\/cdm\/def\/Instellingssoort-v04.1). Standaard gevisualiseerd met html. Is eventueel ook als csv te ontsluiten met de uri-toevoeging .csv.  Geldt niet voor json (known error).",
+		"description" : "Voorbeeld onderwijsinstellingen van een bepaald soort. Zie [waardenlijst](https:\/\/lod.duo.nl\/cdm\/def\/Wet-v02.1). Standaard gevisualiseerd met html. Is eventueel ook als csv te ontsluiten met de uri-toevoeging .csv.  Geldt niet voor json (known error).",
         	"format": "HTML", 
-		"path": "http://lod.duo.nl/rio/api/v0/selectie/instellingen?soort=ROC", 
+		"path": "http://lod.duo.nl/rio/api/v0/selectie/instellingen?wet=WEB", 
 		"issued" : "2018-05-22T12:00:00.001",
 		"modified" : "2018-05-22T12:00:00.001",
 		"status": "experiment"
@@ -637,7 +637,7 @@
 	{
 		"name" : "rio_adressen_actueel",
 		"title": "RIO adressen actueel",
-		"description" : "Dit betreft een lijst van alle bekende adressen. Standaard gevisualiseerd met html. Is eventueel ook als csv of als json te ontsluiten met de uri-toevoeging format=csv of format=json.",
+		"description" : "Dit betreft in RIO bekende adressen. Standaard gevisualiseerd met html. Is eventueel ook als csv of als json te ontsluiten met de uri-toevoeging format=csv of format=json.",
         	"format": "HTML", 
 		"path": "http://lod.duo.nl/rio/query/adressen", 
 		"issued" : "2018-05-13T12:00:00.001",
@@ -647,7 +647,7 @@
 	{
 		"name" : "rio_adressen_per_plaats",
 		"title": "RIO adressen per plaats",
-		"description" : "Dit betreft  bekende adressen bij een plaatsnaam (ptt-stijl). Standaard gevisualiseerd met html. Is eventueel ook als csv te ontsluiten met de uri-toevoeging format=csv.  Geldt niet voor json-formaat (known error).",
+		"description" : "Voorbeeld adressen bij een plaatsnaam (ptt-stijl). Standaard gevisualiseerd met html. Is eventueel ook als csv te ontsluiten met de uri-toevoeging format=csv.  Geldt niet voor json-formaat (known error).",
         	"format": "HTML", 
 		"path": "http://lod.duo.nl/rio/api/v0/selectie/adressen?plaats=RUTTEN", 
 		"issued" : "2018-05-13T12:00:00.001",
