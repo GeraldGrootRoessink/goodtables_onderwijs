@@ -15,9 +15,9 @@
 	],
 	"sources": [
   		{
+		"title": "LOOKING FOR LINKED DATA?",
     		"name": "Dienst Uitvoering Onderwijs",
-    		"web": "http://lod.duo.nl/rio",
-   	        "email": "info@duo.nl"
+    		"web": "http://lod.duo.nl/rio"
 		  }
 	],
 	"publisher_name" : "Dienst Uitvoering Onderwijs",
