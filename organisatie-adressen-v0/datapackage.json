@@ -16,7 +16,8 @@
 	"sources": [
   		{
     		"name": "Dienst Uitvoering Onderwijs",
-    		"web": "http://lod.duo.nl/rio"
+    		"web": "http://lod.duo.nl/rio",
+   	        "email": "info@duo.nl"
 		  }
 	],
 	"publisher_name" : "Dienst Uitvoering Onderwijs",
