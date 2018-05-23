@@ -397,9 +397,9 @@
 		"status": "experiment"
 	},
 	{
-		"name" : "instellingen_per_soort",
-		"title": "instellingen per soort",
-		"description" : "Voorbeeld onderwijsinstellingen van een bepaald soort. Zie [waardenlijst](https:\/\/lod.duo.nl\/cdm\/def\/Wet-v02.1). Standaard gevisualiseerd met html. Is eventueel ook als csv te ontsluiten met de uri-toevoeging .csv.  Geldt niet voor json (known error).",
+		"name" : "instellingen_per_wet",
+		"title": "instellingen per wet",
+		"description" : "Voorbeeld onderwijsinstellingen bij een bepaalde wet. Zie [waardenlijst](https:\/\/lod.duo.nl\/cdm\/def\/Wet-v02.1). Standaard gevisualiseerd met html. Is eventueel ook als csv te ontsluiten met de uri-toevoeging .csv.  Geldt niet voor json (known error).",
         	"format": "HTML", 
 		"path": "http://lod.duo.nl/rio/api/v0/selectie/instellingen?wet=WEB", 
 		"issued" : "2018-05-22T12:00:00.001",
