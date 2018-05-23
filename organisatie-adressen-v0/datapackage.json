@@ -13,6 +13,20 @@
 		"RIO",
 		"BRIN"
 	],
+	  "sources": [
+  	  	{
+      		"title": "LOOKING FOR OPEN DATA?",
+    		"path": "https://theodi.org.au/data/"
+   		 }
+  	],
+  	"contributors": [
+    		{
+     		 "title": "The ODI Australian Network and contributors",
+      		 "email": "connect@theodi.org.au",
+      		 "path": "https://theodi.org.au/",
+      		 "role": "author"
+    		}
+  	],
 	"publisher_name" : "Dienst Uitvoering Onderwijs",
 	"publisher_uri" : "http://standaarden.overheid.nl/owms/terms/Dienst_Uitvoering_Onderwijs",
 	"frequency" : "maandelijks",
