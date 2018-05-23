@@ -311,8 +311,8 @@
 					"rdfType" : "http://lod.duo.nl/cdm/def/Wet-v02"
 				},
 				{
-					"name" : "denom_naam",
-					"title" : "Denominatie naam",
+					"name" : "wet_naam",
+					"title" : "Wet naam",
 					"description" : "zie GWB",
 					"type" : "string",
 					"rdfType" : "rdfs:label"
