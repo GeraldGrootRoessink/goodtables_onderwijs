@@ -75,8 +75,8 @@
 					"description" : "Een unieke code voor een onderwijsinstelling in de Basis Registratie Instellingen of een instellingserkenning in de Registratie Instellingen en Opleidingen in het Onderwijs.",
 					"type" : "string",
 					"constraints" : {
-						"minLength": 3,
-						"maxLength": 3,
+						"minLength": 4,
+						"maxLength": 4,
 						"pattern": "^([0-9]{2}[A-Z]{2})$"
 					},
 					"rdfType" : "http://lod.duo.nl/cdm/def/BRIN"
