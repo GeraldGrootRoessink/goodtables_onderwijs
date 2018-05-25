@@ -15,11 +15,16 @@
 	],
 	"sources": [
   		{
-		"title": "LOOKING FOR LINKED DATA?",
+		"title": "VERPLICHTE TITEL, BEN BENIEUWD WAAR HIJ OPPOPT",
     		"name": "Dienst Uitvoering Onderwijs",
     		"web": "http://lod.duo.nl/rio"
-		  }
+  		 "email": "schakelpuntocw@duo.nl"
+		}
 	],
+	"author": {
+ 		 "name": "Maintainer name",
+  		 "email": "schakelpuntocw@duo.nl"
+	},
 	"publisher_name" : "Dienst Uitvoering Onderwijs",
 	"publisher_uri" : "http://standaarden.overheid.nl/owms/terms/Dienst_Uitvoering_Onderwijs",
 	"frequency" : "maandelijks",
