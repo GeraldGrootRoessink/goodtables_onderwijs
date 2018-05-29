@@ -1,0 +1,670 @@
+{
+ 	"name" : "rio-objecten-v0",
+ 	"title": "RIO objecten",
+ 	"version" : "0.4.0",
+ 	"conforms_to": "DCAT-AP1.1",
+	"description" : "# Organisaties en adressen in het onderwijs\r\nDeze dataset bevat gegevens over de formele organisatorische objecten in het Nederlands onderwijs. De gegevens komen direct uit **BRIN** (Basisregister Instellingen) en worden door scholen zelf opgegeven bij DUO.  De stand is van maart 2018.\r\n## Generieke ontsluiting RIO\r\nDeze gegevens zijn gepubliceerd als experiment in het kader van het register Register Instellingen en Opleidingen, het wie, wat, waar in het onderwijs. [RIO](https:\/\/www.rio-onderwijs.nl\/wat-is-rio) is de  beoogde opvolger van het register BRIN.  Dit experiment is bedoeld om een idee te krijgen hoe RIO-gegevens optimaal ontsloten kunnen worden.",
+	"license" : {
+			"type" : "CC-BY-4.0"
+	},
+	"keywords" : [
+		"Adressen",
+		"Onderwijs",
+		"RIO",
+		"BRIN"
+	],
+	"sources": [
+  		{
+		"title": "VERPLICHTE TITEL, BEN BENIEUWD WAAR HIJ OPPOPT",
+    		"name": "Dienst Uitvoering Onderwijs",
+    		"web": "http://lod.duo.nl/rio",
+  		"email": "schakelpuntocw@duo.nl"
+		}
+	],
+	"author": {
+ 		 "name": "Dienst Uitvoering Onderwijs/Gegevensmanagement",
+  		 "email": "schakelpuntocw@duo.nl"
+	},
+	"publisher_name" : "Dienst Uitvoering Onderwijs",
+	"publisher_uri" : "http://standaarden.overheid.nl/owms/terms/Dienst_Uitvoering_Onderwijs",
+	"frequency" : "maandelijks",
+	"language" : "nl",
+	"issued" : "2018-05-13T12:00:00.001",
+	"spatial_uri": "http://standaarden.overheid.nl/owms/terms/Nederland",
+	"theme": "http://standaarden.overheid.nl/owms/terms/Onderwijs_(thema)",
+
+	"resources" : [
+		{
+		"name" : "bevoegdgezagen_momentopname",
+		"title": "bevoegd gezagen momentopname",
+		"description" : "Bevoegd gezagen zijn op een generiek platform [Linked Data Theater](http:\/\/lod.duo.nl\/rio) gepubliceerd. Periodiek wordt dat in CKAN ingelezen.",
+    		"format": "csv", 
+		"path": "http://lod.duo.nl/rio/api/v0/distributie/bevoegdgezagen.csv", 
+		"issued" : "2018-05-22T12:00:00.001",
+		"modified" : "2018-05-22T12:00:00.001",
+		"status": "experiment",
+		"schema" : {
+			"fields" : [
+				{
+					"name" : "bg",
+					"title" : "Bevoegd Gezag",
+					"description" : "zie GWB",
+					"required": "true",
+					"type" : "string",
+					"format" : "uri",
+					"rdfType" : "http://lod.duo.nl/cdm/def/BevoegdGezag"
+				},
+				{
+					"name" : "bg_naam",
+					"title" : "Bevoegd Gezagnaam",
+					"description" : "zie GWB",
+					"required": "true",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 40
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/CommercieleNaam-v02"
+				},
+				{
+					"name" : "nr",
+					"title" : "Bevoegd Gezagnummer",
+					"description" : "zie GWB",
+					"required": "true",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 5
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/BevoegdGezagnummer"
+				},	
+				{
+					"name" : "ba",
+					"title" : "Bezoekadres",
+					"description" : "zie GWB",
+					"required": "true",
+					"type" : "string",
+					"format" : "uri",
+					"rdfType" : "http://lod.duo.nl/cdm/def/heeftBezoekAdres"
+				},
+				{
+					"name" : "ba_naam",
+					"title" : "Bezoekadres label",
+					"description" : "zie GWB",
+					"required": "true",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 40
+						},
+					"rdfType" : "rdfs:label"
+				},	
+				{
+					"name" : "plts",
+					"title" : "plaatsnaam",
+					"description" : "zie GWB",
+					"required": "true",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 40
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/Plaatsnaam-v02"
+				},
+				{
+					"name" : "gem",
+					"title" : "Gemeente",
+					"description" : "zie GWB",
+					"required": "true",
+					"type" : "string",
+					"format" : "uri",
+					"rdfType" : "http://lod.duo.nl/cdm/def/Gemeente"
+				},
+				{
+					"name" : "gem_naam",
+					"title" : "gemeentenaam",
+					"description" : "zie GWB",
+					"required": "true",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 40
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/Gemeentenaam"
+				},
+				{
+					"name" : "pa",
+					"title" : "Postadres",
+					"description" : "zie GWB",
+					"type" : "string",
+					"format" : "uri",
+					"rdfType" : "http://lod.duo.nl/cdm/def/heeftPostAdres"
+				},
+				{
+					"name" : "pa_naam",
+					"title" : "Postadres label",
+					"description" : "zie GWB",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 40
+						},
+					"rdfType" : "rdfs:label"
+				},	
+				{
+					"name" : "rsin",
+					"title" : "RSIN NHR",
+					"description" : "zie GWB",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 10
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/RSIN"
+				},	        
+				{
+					"name" : "kvk",
+					"title" : "kvk-nummer",
+					"description" : "zie GWB",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 10
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/KVK-nummer"
+				},        
+       				{
+					"name" : "site",
+					"title" : "kvk-nummer",
+					"description" : "zie GWB",
+					"type" : "string",
+					"format" : "uri",
+					"rdfType" : "http://lod.duo.nl/cdm/def/URL"
+				},   
+       				{
+					"name" : "email",
+					"title" : "email",
+					"description" : "zie GWB",
+					"type" : "string",
+					"format" : "email",
+					"rdfType" : "http://lod.duo.nl/cdm/def/Emailadres-v05"
+				},   
+       				{
+					"name" : "tel",
+					"title" : "telefoon",
+					"description" : "zie GWB",
+					"type" : "string",
+					"rdfType" : "http://lod.duo.nl/cdm/def/Telefoonnummer-v02"
+				}  				
+        
+			],
+			"primaryKey": "bg"
+		}
+	},
+	{
+		"name" : "bevoegdgezagen_actueel",
+		"title": "Bevoegd Gezagen actueel",
+		"description" : "Dit betreft bevoegd gezagen in het onderwijs. Standaard gevisualiseerd met html. Is eventueel ook als csv of als json te ontsluiten met de uri-toevoeging .csv  of .json.",
+        	"format": "HTML", 
+		"path": "http://lod.duo.nl/rio/query/bevoegdgezagen", 
+		"issued" : "2018-05-22T12:00:00.001",
+		"modified" : "2018-05-22T12:00:00.001",
+		"status": "experiment"
+	},
+	{
+		"name" : "instellingen_momentopname",
+		"title": "instellingen momentopname",
+		"description" : "Instellingen zijn op een generiek platform [Linked Data Theater](http:\/\/lod.duo.nl\/rio) gepubliceerd. Periodiek wordt dat in CKAN ingelezen.",
+    		"format": "csv", 
+		"path": "http://lod.duo.nl/rio/api/v0/distributie/instellingen.csv", 
+		"issued" : "2018-05-22T12:00:00.001",
+		"modified" : "2018-05-22T12:00:00.001",
+		"status": "experiment",
+		"schema" : {
+			"fields" : [
+				{
+					"name" : "oi",
+					"title" : "Instellingen",
+					"description" : "zie GWB",
+					"required": "true",
+					"type" : "string",
+					"format" : "uri",
+					"rdfType" : "http://lod.duo.nl/cdm/def/Instellingserkenning"
+				},
+				{
+					"name" : "oi_naam",
+					"title" : "Instellingsnaam",
+					"description" : "zie GWB",
+					"required": "true",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 40
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/CommercieleNaam-v02"
+				},
+				{
+					"name" : "brin",
+					"title" : "brinnummer",
+					"description" : "zie GWB",
+					"required": "true",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 4
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/BRIN"
+				},	
+				{
+					"name" : "ba",
+					"title" : "Instellingsadres",
+					"description" : "zie GWB",
+					"required": "true",
+					"type" : "string",
+					"format" : "uri",
+					"rdfType" : "http://lod.duo.nl/cdm/def/heeftBezoekAdres"
+				},
+				{
+					"name" : "ba_naam",
+					"title" : "Instellingsadres label",
+					"description" : "zie GWB",
+					"required": "true",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 40
+						},
+					"rdfType" : "rdfs:label"
+				},	
+				{
+					"name" : "plts",
+					"title" : "plaatsnaam",
+					"description" : "zie GWB",
+					"required": "true",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 40
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/Plaatsnaam-v02"
+				},
+				{
+					"name" : "gem",
+					"title" : "Gemeente",
+					"description" : "zie GWB",
+					"required": "true",
+					"type" : "string",
+					"format" : "uri",
+					"rdfType" : "http://lod.duo.nl/cdm/def/Gemeente"
+				},
+				{
+					"name" : "gem_naam",
+					"title" : "gemeentenaam",
+					"description" : "zie GWB",
+					"required": "true",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 40
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/Gemeentenaam"
+				},
+				{
+					"name" : "pa",
+					"title" : "Postadres",
+					"description" : "zie GWB",
+					"type" : "string",
+					"format" : "uri",
+					"rdfType" : "http://lod.duo.nl/cdm/def/heeftPostAdres"
+				},
+				{
+					"name" : "pa_naam",
+					"title" : "Postadres label",
+					"description" : "zie GWB",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 40
+						},
+					"rdfType" : "rdfs:label"
+				},	
+				{
+					"name" : "wet",
+					"title" : "Wet",
+					"description" : "zie GWB",
+					"type" : "string",
+					"format" : "uri",
+					"rdfType" : "http://lod.duo.nl/cdm/def/Wet-v02"
+				},
+				{
+					"name" : "wet_naam",
+					"title" : "Wet naam",
+					"description" : "zie GWB",
+					"type" : "string",
+					"rdfType" : "rdfs:label"
+				},
+				{
+					"name" : "type",
+					"title" : "Instellingsoort",
+					"description" : "zie GWB",
+					"type" : "string",
+					"format" : "uri",
+					"rdfType" : "http://lod.duo.nl/cdm/def/Instellingssoort-V03"
+				},
+				{
+					"name" : "type_naam",
+					"title" : "Soortnaam",
+					"description" : "zie GWB",
+					"type" : "string",
+					"rdfType" : "rdfs:label"
+				},      
+       				{
+					"name" : "site",
+					"title" : "kvk-nummer",
+					"description" : "zie GWB",
+					"type" : "string",
+					"format" : "uri",
+					"rdfType" : "http://lod.duo.nl/cdm/def/URL"
+				},   
+       				{
+					"name" : "email",
+					"title" : "email",
+					"description" : "zie GWB",
+					"type" : "string",
+					"format" : "email",
+					"rdfType" : "http://lod.duo.nl/cdm/def/Emailadres-v05"
+				},   
+       				{
+					"name" : "tel",
+					"title" : "telefoon",
+					"description" : "zie GWB",
+					"type" : "string",
+					"rdfType" : "http://lod.duo.nl/cdm/def/Telefoonnummer-v02"
+				},
+				{
+					"name" : "bg",
+					"title" : "Bevoegd Gezag",
+					"description" : "zie GWB",
+					"required": "true",
+					"type" : "string",
+					"format" : "uri",
+					"rdfType" : "http://lod.duo.nl/cdm/def/BevoegdGezag"
+				},
+				{
+					"name" : "bg_naam",
+					"title" : "Bevoegd Gezagnaam",
+					"description" : "zie GWB",
+					"required": "true",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 80
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/CommercieleNaam-v02"
+				}		        
+			],
+			"primaryKey": "oi"
+		}
+	},
+	{
+		"name" : "instellingen_actueel",
+		"title": "Instellingen actueel",
+		"description" : "Dit betreft instellingen in het onderwijs. Standaard gevisualiseerd met html. Is eventueel ook als csv of als json te ontsluiten met de uri-toevoeging .csv  of .json.",
+        	"format": "HTML", 
+		"path": "http://lod.duo.nl/rio/query/instellingen", 
+		"issued" : "2018-05-22T12:00:00.001",
+		"modified" : "2018-05-22T12:00:00.001",
+		"status": "experiment"
+	},
+	{
+		"name" : "instellingen_per_wet",
+		"title": "instellingen per wet",
+		"description" : "Voorbeeld onderwijsinstellingen bij een bepaalde wet. Zie [waardenlijst](https:\/\/lod.duo.nl\/cdm\/def\/Wet-v02.1). Standaard gevisualiseerd met html. Is eventueel ook als csv te ontsluiten met de uri-toevoeging .csv.  Geldt niet voor json (known error).",
+        	"format": "HTML", 
+		"path": "http://lod.duo.nl/rio/api/v0/selectie/instellingen?wet=WEB", 
+		"issued" : "2018-05-22T12:00:00.001",
+		"modified" : "2018-05-22T12:00:00.001",
+		"status": "experiment"
+	},			
+	{
+		"name" : "rio_adressen_momentopname",
+		"title": "RIO adressen momentopname",
+		"description" : "De RIO adressen zijn op een apart platform [Linked Data Theater](http:\/\/lod.duo.nl\/rio) gepubliceerd. Periodiek wordt dat in CKAN ingelezen.",
+        	"format": "csv", 
+		"path": "http://lod.duo.nl/rio/api/v0/distributie/adressen.csv", 
+		"issued" : "2018-05-13T12:00:00.001",
+		"modified" : "2018-05-13T12:00:00.001",
+		"status": "experiment",
+		"schema" : {
+			"fields" : [
+				{
+					"name" : "adres",
+					"title" : "Binnenlands Adres",
+					"description" : "zie GWB",
+					"required": "true",
+					"type" : "string",
+					"format" : "uri",
+					"rdfType" : "http://lod.duo.nl/cdm/def/BinnenlandsAdres"
+				},
+				{
+					"name" : "str",
+					"title" : "straatnaam",
+					"description" : "zie GWB",
+					"required": "true",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 40
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/straatnaam-v02"
+				},
+				{
+					"name" : "hn",
+					"title" : "huisnummer",
+					"description" : "zie GWB",
+					"required": "true",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 5
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/huisnummer-v02"
+				},	
+				{
+					"name" : "hl",
+					"title" : "letter",
+					"description" : "zie GWB",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 1 ,
+						"pattern": "^([a-zA-Z])$"
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/huisletter-v02"
+				},	
+				{
+					"name" : "ht",
+					"title" : "huisnummer toevoeging",
+					"description" : "zie GWB",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 4
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/huisnummerToevoeging-v03"
+				},	
+				{
+					"name" : "pc",
+					"title" : "postcode",
+					"description" : "zie GWB",
+					"required": "true",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 6
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/postcode-v02"
+				},	
+				{
+					"name" : "plts",
+					"title" : "plaatsnaam",
+					"description" : "zie GWB",
+					"required": "true",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 40
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/plaatsnaam-v02"
+				},	
+				{
+					"name" : "gem",
+					"title" : "Gemeente",
+					"description" : "zie GWB",
+					"required": "true",
+					"type" : "string",
+					"format" : "uri",
+					"rdfType" : "http://lod.duo.nl/cdm/def/Gemeente"
+				},
+				{
+					"name" : "gem_naam",
+					"title" : "gemeentenaam",
+					"description" : "zie GWB",
+					"required": "true",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 40
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/gemeentenaam"
+				},	
+				{
+					"name" : "prov",
+					"title" : "Provincie",
+					"description" : "zie GWB",
+					"type" : "string",
+					"format" : "uri",
+					"rdfType" : "http://lod.duo.nl/cdm/def/Provincie"
+				},
+				{
+					"name" : "prov_naam",
+					"title" : "provincienaam",
+					"description" : "zie GWB",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 40
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/provincienaam"
+				},	
+				{
+					"name" : "nod",
+					"title" : "Nodaal Gebied",
+					"description" : "zie GWB",
+					"type" : "string",
+					"format" : "uri",
+					"rdfType" : "http://lod.duo.nl/cdm/def/NodaalGebied"
+				},
+				{
+					"name" : "nod_naam",
+					"title" : "naam nodaal gebied",
+					"description" : "zie GWB",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 40
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/nodaalGebiednaam"
+				},	
+				{
+					"name" : "rpa",
+					"title" : "RPA Gebied",
+					"description" : "zie GWB",
+					"type" : "string",
+					"format" : "uri",
+					"rdfType" : "http://lod.duo.nl/cdm/def/RPA-gebied"
+				},
+				{
+					"name" : "rpa_naam",
+					"title" : "naam RPA gebied",
+					"description" : "zie GWB",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 40
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/rPAnaam"
+				},	
+				{
+					"name" : "wgr",
+					"title" : "WGR Gebied",
+					"description" : "zie GWB",
+					"type" : "string",
+					"format" : "uri",
+					"rdfType" : "http://lod.duo.nl/cdm/def/WGR-gebied"
+				},
+				{
+					"name" : "wgr_naam",
+					"title" : "naam WGR gebied",
+					"description" : "zie GWB",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 40
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/wGRnaam"
+				},	
+				{
+					"name" : "corop",
+					"title" : "Corop Gebied",
+					"description" : "zie GWB",
+					"type" : "string",
+					"format" : "uri",
+					"rdfType" : "http://lod.duo.nl/cdm/def/Coropgebied"
+				},
+				{
+					"name" : "corop_naam",
+					"title" : "naam Corop gebied",
+					"description" : "zie GWB",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 40
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/corop/naam"
+				},	
+				{
+					"name" : "ond",
+					"title" : "Onderwijsgebied",
+					"description" : "zie GWB",
+					"type" : "string",
+					"format" : "uri",
+					"rdfType" : "http://lod.duo.nl/cdm/def/Onderwijsgebied"
+				},
+				{
+					"name" : "ond_naam",
+					"title" : "naam onderwijsgebied",
+					"description" : "zie GWB",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 40
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/onderwijsgebiednaam"
+				},	
+				{
+					"name" : "rmc",
+					"title" : "RMC Gebied",
+					"description" : "zie GWB",
+					"type" : "string",
+					"format" : "uri",
+					"rdfType" : "http://lod.duo.nl/cdm/def/RMC"
+				},
+				{
+					"name" : "rmc_naam",
+					"title" : "naam RMC gebied",
+					"description" : "zie GWB",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 40
+						},
+					"rdfType" : "http://lod.duo.nl/cdm/def/rMCnaam"
+				}			
+			],
+			"primaryKey": "adres"
+		}
+	},
+	{
+		"name" : "rio_adressen_actueel",
+		"title": "RIO adressen actueel",
+		"description" : "Dit betreft in RIO bekende adressen. Standaard gevisualiseerd met html. Is eventueel ook als csv of als json te ontsluiten met de uri-toevoeging format=csv of format=json.",
+        	"format": "HTML", 
+		"path": "http://lod.duo.nl/rio/query/adressen", 
+		"issued" : "2018-05-13T12:00:00.001",
+		"modified" : "2018-05-13T12:00:00.001",
+		"status": "experiment"
+	},
+	{
+		"name" : "rio_adressen_per_plaats",
+		"title": "RIO adressen per plaats",
+		"description" : "Voorbeeld adressen bij een plaatsnaam (ptt-stijl). Standaard gevisualiseerd met html. Is eventueel ook als csv te ontsluiten met de uri-toevoeging format=csv.  Geldt niet voor json-formaat (known error).",
+        	"format": "HTML", 
+		"path": "http://lod.duo.nl/rio/api/v0/selectie/adressen?plaats=RUTTEN", 
+		"issued" : "2018-05-13T12:00:00.001",
+		"modified" : "2018-05-13T12:00:00.001",
+		"status": "experiment"
+	}
+    ]
+}
