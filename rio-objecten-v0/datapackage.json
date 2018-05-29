@@ -157,7 +157,6 @@
 					"title" : "email",
 					"description" : "zie GWB",
 					"type" : "string",
-					"format" : "email",
 					"rdfType" : "http://lod.duo.nl/cdm/def/emailadres-v05"
 				},   
        				{
