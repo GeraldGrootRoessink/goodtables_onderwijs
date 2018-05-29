@@ -46,7 +46,7 @@
 		"schema" : {
 			"fields" : [
 				{
-					"name" : "bezag",
+					"name" : "bgezag",
 					"title" : "Bevoegd Gezag",
 					"description" : "zie GWB",
 					"required": "true",
@@ -450,7 +450,7 @@
 					"rdfType" : "http://lod.duo.nl/cdm/def/Gemeente"
 				},
 				{
-					"name" : "gem_naam",
+					"name" : "gem_nm",
 					"title" : "gemeentenaam",
 					"description" : "zie GWB",
 					"required": "true",
