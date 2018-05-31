@@ -43,14 +43,14 @@
 					"title" : "owis",
 					"description" : "zie GWB",
 					"type" : "string",
-					"format" : "uri",
+					"format" : "uri"
 				},
 				{
 					"name" : "site",
 					"title" : "site",
 					"description" : "zie GWB",
 					"type" : "string",
-					"format" : "uri",
+					"format" : "uri"
 				}
 
 			]
