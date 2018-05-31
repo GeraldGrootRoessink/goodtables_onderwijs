@@ -30,6 +30,34 @@
 	"theme": "http://standaarden.overheid.nl/owms/terms/Onderwijs_(thema)",
 
 	"resources" : [
+		
+		{
+		"name" : "testurl",
+		"title" : "testurl",
+		"description" : "sfdga",
+		"path" : "data/testurl.csv",
+		"schema" : {
+			"fields" : [
+				{
+					"name" : "owis",
+					"title" : "owis",
+					"description" : "zie GWB",
+					"type" : "string",
+					"format" : "uri",
+				},
+				{
+					"name" : "site",
+					"title" : "site",
+					"description" : "zie GWB",
+					"type" : "string",
+					"format" : "uri",
+				}
+
+			]
+		}
+		},
+		
+		
 		{
 		"name" : "bevoegdgezagen_momentopname",
 		"title": "bevoegd gezagen momentopname",
