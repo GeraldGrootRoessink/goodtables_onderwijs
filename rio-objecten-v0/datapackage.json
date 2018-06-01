@@ -272,7 +272,6 @@
 					"title" : "Wet",
 					"description" : "zie GWB",
 					"type" : "string",
-					"format" : "uri",
 					"rdfType" : "http://lod.duo.nl/cdm/def/wet-v02"
 				},
 				{
@@ -280,7 +279,6 @@
 					"title" : "Instellingsoort",
 					"description" : "zie GWB",
 					"type" : "string",
-					"format" : "uri",
 					"rdfType" : "http://lod.duo.nl/cdm/def/instellingssoort-V03"
 				},    
        				{
