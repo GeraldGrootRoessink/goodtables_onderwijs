@@ -50,7 +50,7 @@
 					"title" : "site",
 					"description" : "zie GWB",
 					"type" : "string",
-					"format" : "uri,
+					"format" : "uri",
 					"constraints" : {
 						"pattern": "\"@^(http\\:\\\/\\\/|https\\:\\\/\\\/)?([a-z0-9][a-z0-9\\-]*\\.)+[a-z0-9][a-z0-9\\-]*$@i"
 						},
