@@ -16,9 +16,9 @@
 #
  datapackages:
 # - test/datapackage.json
-# - functiemix-v01/datapackage.json
+ - functiemix/datapackage.json
 # - adressen/datapackage.json
- - rio-objecten-v0/datapackage.json
+# - rio-objecten-v0/datapackage.json
 #  - australian-open-data-portals/datapackage.json
 #  - one-csv-file/datapackage.json
 #  - one-csv-geopoint-array/datapackage.json
