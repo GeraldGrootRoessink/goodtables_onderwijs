@@ -14,6 +14,13 @@
 			"url" : "https://creativecommons.org/licenses/by/4.0/",
 			"title" : "Creative Commons Attribution 4.0"
 	},
+	"sources": [
+  		{
+		"title": "VERPLICHTE TITEL, MAAR KOMT NIET IN CKAN",
+    		"name": "Dienst Uitvoering Onderwijs",
+  		"email": "gegevensmagazijn@duo.nl"
+		}
+	],
 	"keywords" : [
 		"Functiemix",
 		"Open Data",
