@@ -1,7 +1,7 @@
 {
      "name" : "functiemix-v01",
     "title": "functiemix-v01 JSON-Schema",
-	"version" : "0.8.1",
+	"version" : "1.8.1",
 	"licenses" : [{
 			"name" : "CC-BY-4.0",
 			"path" : "https://creativecommons.org/licenses/by/4.0/",
@@ -48,7 +48,7 @@
 	{
 		"name" : "functiemix-besturen",
 		"title" : "functiemix-besturen",
-		"path" : "data/functiemix-besturen.csv",
+		"path" : "data/FunctiemixBesturen.csv",
 		"profile" : "tabular-data-resource",
 		"issued" : "2018-06-15T12:38:30.970",
 		"modified" : "2018-06-15T12:38:30.970",
@@ -407,7 +407,7 @@
 	{
 		"name" : "functiemix-gemiddelden",
 		"title" : "functiemix-gemiddelden",
-		"path" : "data/functiemix-gemiddelden.csv",
+		"path" : "data/FunctiemixGemiddelden.csv",
 		"profile" : "tabular-data-resource",
 		"issued" : "2018-06-15T12:38:31.079",
 		"modified" : "2018-06-15T12:38:31.079",
@@ -658,7 +658,7 @@
 	{
 		"name" : "functiemix-instellingen",
 		"title" : "functiemix-instellingen",
-		"path" : "data/functiemix-instellingen.csv",
+		"path" : "data/FunctiemixInstellingen.csv",
 		"profile" : "tabular-data-resource",
 		"issued" : "2018-06-15T12:38:31.142",
 		"modified" : "2018-06-15T12:38:31.142",
@@ -1101,7 +1101,7 @@
 	{
 		"name" : "functiemix-maatwerkafspraken",
 		"title" : "functiemix-maatwerkafspraken",
-		"path" : "data/functiemix-maatwerkafspraken.csv",
+		"path" : "data/FunctiemixMaatwerkafspraken.csv",
 		"profile" : "tabular-data-resource",
 		"issued" : "2018-06-15T12:38:31.251",
 		"modified" : "2018-06-15T12:38:31.267",
