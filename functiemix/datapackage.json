@@ -1195,9 +1195,6 @@
 					"title" : "datum_maatwerkafspraak",
 					"description" : "De datum van inwerkingtreding van maatwerkafspraken.",
 					"type" : "date",
-					"constraints" : {
-						"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
-					},
 					"rdfType" : "http://lod.duo.nl/agtb/def/maatwerkafspraakDatum-v01"
 				},
 				{
