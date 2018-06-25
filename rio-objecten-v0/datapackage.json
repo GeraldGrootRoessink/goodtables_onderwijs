@@ -1,9 +1,7 @@
 {
  	"name" : "rio-objecten-v0",
  	"title": "RIO objecten",
- 	"version" : "0.6.0",
- 	"conforms_to": "DCAT-AP1.1",
-	"description" : "# Organisaties en adressen in het onderwijs\r\nDeze dataset bevat gegevens over de formele organisatorische objecten in het Nederlands onderwijs. De gegevens komen direct uit **BRIN** (Basisregister Instellingen) en worden door scholen zelf opgegeven bij DUO.  De stand is van maart 2018.\r\n## Generieke ontsluiting RIO\r\nDeze gegevens zijn gepubliceerd als experiment in het kader van het register Register Instellingen en Opleidingen, het wie, wat, waar in het onderwijs. [RIO](https:\\\/\\\/www.rio-onderwijs.nl\\\/wat-is-rio) is de  beoogde opvolger van het register BRIN.  Dit experiment is bedoeld om een idee te krijgen hoe RIO-gegevens optimaal ontsloten kunnen worden.",
+	"description" : "# Organisaties en adressen in het onderwijs\r\nDeze dataset bevat gegevens over de formele organisatorische objecten in het Nederlands onderwijs. De gegevens komen direct uit **BRIN** (Basisregister Instellingen) en worden door scholen zelf opgegeven bij DUO.\r\n## Generieke ontsluiting RIO\r\nDeze gegevens zijn gepubliceerd als experiment in het kader van het register Register Instellingen en Opleidingen, het wie, wat, waar in het onderwijs. [RIO](https:\/\/www.rio-onderwijs.nl\/wat-is-rio) is de  beoogde opvolger van het register BRIN.",
 	"license" : {
 			"type" : "CC-BY-4.0"
 	},
@@ -13,19 +11,11 @@
 		"RIO",
 		"BRIN"
 	],
-	"sources": [
-  		{
-		"title": "VERPLICHTE TITEL, BEN BENIEUWD WAAR HIJ OPPOPT",
-    		"name": "Dienst Uitvoering Onderwijs",
-    		"web": "http://lod.duo.nl/rio",
-  		"email": "gegevensmagazijn@duo.nl"
-		}
-	],
 	"publisher_name" : "Dienst Uitvoering Onderwijs",
 	"publisher_uri" : "http://standaarden.overheid.nl/owms/terms/Dienst_Uitvoering_Onderwijs",
 	"frequency" : "maandelijks",
 	"language" : "nl",
-	"issued" : "2018-05-29T12:00:00.001",
+	"modified" : "2018-05-29T12:00:00.001",
 	"spatial_uri": "http://standaarden.overheid.nl/owms/terms/Nederland",
 	"theme": "http://standaarden.overheid.nl/owms/terms/Onderwijs_(thema)",
 
@@ -34,17 +24,14 @@
 		"name" : "bevoegdgezagen_momentopname",
 		"title": "bevoegd gezagen momentopname",
 		"description" : "Periodiek in CKAN geladen bevoegd gezagen.",
-    		"format": "csv", 
 		"path": "http://lod.duo.nl/rio/api/v0/distributie/bevoegdgezagen.csv", 
-		"issued" : "2018-05-29T12:00:00.001",
 		"modified" : "2018-05-29T12:00:00.001",
-		"status": "experiment",
 		"schema" : {
 			"fields" : [
 				{
 					"name" : "bgezag",
 					"title" : "Bevoegd Gezag",
-					"description" : "zie GWB",
+					"description" : "Een bevoegd gezag is altijd een NHR-Rechtspersoon (als het gaat om een Nederlands bevoegd gezag)",
 					"required": "true",
 					"type" : "string",
 					"format" : "uri",
@@ -53,7 +40,7 @@
 				{
 					"name" : "bg_nm",
 					"title" : "Bevoegd Gezagnaam",
-					"description" : "zie GWB",
+					"description" : "De aanduiding in het maatschappelijk verkeer.\nVerkorte versie van de officiële naam.",
 					"required": "true",
 					"type" : "string",
 					"constraints" : {
@@ -64,18 +51,17 @@
 				{
 					"name" : "bg_nr",
 					"title" : "Bevoegd Gezagnummer",
-					"description" : "zie GWB",
-					"required": "true",
+					"description" : "Het nummer van het bevoegde gezag van de instelling afkomstig uit de Basisregistratie Instellingen",
 					"type" : "string",
 					"constraints" : {
-						"maxLength": 5
-						},
+						"pattern": "^\\d{5}$"
+					},
 					"rdfType" : "http://lod.duo.nl/cdm/def/bevoegdGezagnummer"
 				},	
 				{
 					"name" : "bezoek",
 					"title" : "Bezoekadres",
-					"description" : "zie GWB",
+					"description" : "Een binnenlands adres  of een buitenlands adres",
 					"required": "true",
 					"type" : "string",
 					"format" : "uri",
@@ -84,7 +70,7 @@
 				{
 					"name" : "plts",
 					"title" : "plaatsnaam",
-					"description" : "zie GWB",
+					"description" : "De naam van de plaats\nSchrijfwijze: in hoofdletters",
 					"required": "true",
 					"type" : "string",
 					"constraints" : {
@@ -95,7 +81,7 @@
 				{
 					"name" : "gem",
 					"title" : "Gemeente",
-					"description" : "zie GWB",
+					"description" : "De aanduiding van het registratief gebied.",
 					"required": "true",
 					"type" : "string",
 					"format" : "uri",
@@ -104,7 +90,7 @@
 				{
 					"name" : "gem_nm",
 					"title" : "gemeentenaam",
-					"description" : "zie GWB",
+					"description" : "De officiële door de gemeente vastgestelde naam van de gemeente",
 					"required": "true",
 					"type" : "string",
 					"constraints" : {
@@ -115,7 +101,7 @@
 				{
 					"name" : "post",
 					"title" : "Postadres",
-					"description" : "zie GWB",
+					"description" : "Een binnenlands adres  of een buitenlands adres",
 					"type" : "string",
 					"format" : "uri",
 					"rdfType" : "http://lod.duo.nl/cdm/def/Adres"
@@ -123,44 +109,75 @@
 				{
 					"name" : "rsin",
 					"title" : "RSIN NHR",
-					"description" : "zie GWB",
+					"description" : "Het door een kamer van koophandel toegekend uniek nummer voor de niet natuurlijke persoon\nAlle rechtspersonen en samenwerkingsverbanden, zoals bv’s, verenigingen, stichtingen, vof’s en maatschappen (eenmanszaken niet) krijgen bij inschrijving bij de KvK naast een KvK-nummer ook een Rechtspersonen en Samenwerkingsverbanden Informatienummer (RSIN). Dit nummer wordt gebruikt om gegevens uit te wisselen met andere (overheids)organisaties, zoals de Belastingdienst.\n\nDit geldt sinds 06-12-2011, en geldt mogelijk niet voor oudere niet-natuurlijke personen.",
 					"type" : "string",
 					"constraints" : {
-						"maxLength": 10
+						"maxLength": 10,
+						"minLength": 1,
+						"pattern": "^(\\d{9})?$"
 						},
 					"rdfType" : "http://lod.duo.nl/cdm/def/rSIN"
 				},	        
 				{
 					"name" : "kvk",
 					"title" : "kvk-nummer",
-					"description" : "zie GWB",
+					"description" : "Een uniek nummer voor een inschrijving van een onderneming of maatschappelijke activiteit bij de Kamer van Koophandel",
 					"type" : "string",
 					"constraints" : {
-						"maxLength": 10
+						"minLength": 8,
+						"maxLength": 8,
+						"pattern": "^(\\d{8})?$"
 						},
 					"rdfType" : "http://lod.duo.nl/cdm/def/kvK-nummer"
 				},        
        				{
 					"name" : "site",
 					"title" : "kvk-nummer",
-					"description" : "zie GWB",
+					"description" : "De locatie op het World Wide Web waar documenten en andere objecten kunnen worden gevonden",
 					"type" : "string",
 					"format" : "uri",
+					"constraints" : {
+						"minLength": 0,
+						"maxLength": 320
+					},
 					"rdfType" : "http://lod.duo.nl/cdm/def/uRL"
 				},   
        				{
 					"name" : "email",
 					"title" : "email",
-					"description" : "zie GWB",
+					"description" : "Is een adres voor het ontvangen en verzenden van elektronische post.",
 					"type" : "string",
+					"constraints" : {
+						"minLength": 4,
+						"maxLength": 256
+					},
 					"rdfType" : "http://lod.duo.nl/cdm/def/emailadres-v05"
 				},   
        				{
 					"name" : "tel",
 					"title" : "telefoon",
-					"description" : "zie GWB",
+					"description" : "Het geheel aan cijfers en tekens waarmee wordt aangeduid hoe een persoon via telefonie kan worden bereikt\nDe eerste regex valideert vaste nationale nummers, de tweede valideert mobiele nationale nummers, de derde valideert alle internationale nummers",
 					"type" : "string",
+					"constraints" : {
+						"maxLength": 22,
+						"pattern": "^(((0)[1-9]{2}[0-9][-]?[1-9][0-9]{5})|((\\+31|0|0031)[1-9][0-9][-]?[1-9][0-9]{6}))|((06)[-]?[1-9]{1}[0-9]{7})|(((\\+31|0|0031)6){1}[-]?[1-9]{1}[0-9]{7})|\\+(1\\d{4,14}|2[078]\\d{3,13}|3[0-469]\\d{3,13}|4[013-9]\\d{3,13}|5[1-8]\\d{3,13}|6[0-6]\\d{3,13}|7\\d{4,14}|8[1-469]\\d{3,13}|9[0-58]\\d{3,13}|[2-9]\\d{4,14})$"
+					},
 					"rdfType" : "http://lod.duo.nl/cdm/def/telefoonnummer-v02"
+				},
+				{
+					"name" : "long",
+					"title" : "Longitude",
+					"description" : "Is de lengtegraad, deze vormt samen met de breedtegraad een geografische positieaanduiding in bolcoördinaten.",
+					"type" : "numeric",
+						"rdfType" : "http://lod.duo.nl/cdm/def/longitude"
+				},
+				{
+					"name" : "lat",
+					"title" : "Latitude",
+					"description" : "Is de breedtegraad, deze vormt samen met de lengtegraad een geografische positieaanduiding in bolcoördinaten.",
+					"required": "true",
+					"type" : "numeric",
+					"rdfType" : "http://lod.duo.nl/cdm/def/latitude"
 				}  				
         
 			],
@@ -171,27 +188,28 @@
 		"name" : "bevoegdgezagen_actueel",
 		"title": "Bevoegd Gezagen actueel",
 		"description" : "Directe link voor bevoegd gezagen naar het generiek publicatieplatform [Linked Data Theater](http:\/\/lod.duo.nl\/rio).",
-        	"format": "HTML", 
 		"path": "http://lod.duo.nl/rio/query/bevoegdgezagen", 
-		"issued" : "2018-05-29T12:00:00.001",
 		"modified" : "2018-05-29T12:00:00.001",
-		"status": "experiment"
 	},
+	{
+		"name" : "bevoegdgezagen_per_wet",
+		"title": "bevoegdgezagen per wet",
+		"description" : "bevoegd gezagen bij een bepaalde wet. Zie [waardenlijst](https:\/\/lod.duo.nl\/cdm\/def\/Wet-v02.2). Is eventueel ook als csv te ontsluiten met de uri-toevoeging .csv",
+		"path": "http://lod.duo.nl/rio/api/v0/selectie/bevoegdgezagen?wet=WEB", 
+		"modified" : "2018-05-29T12:00:00.001",
+	},			
 	{
 		"name" : "instellingen_momentopname",
 		"title": "instellingen momentopname",
-		"description" : "Periodiek in CKAN geladen instellingen (syn. hoofdvestigingen).",
-    		"format": "csv", 
+		"description" : "Periodiek in CKAN geladen instellingen.",
 		"path": "http://lod.duo.nl/rio/api/v0/distributie/instellingen.csv", 
-		"issued" : "2018-05-29T12:00:00.001",
 		"modified" : "2018-05-29T12:00:00.001",
-		"status": "experiment",
 		"schema" : {
 			"fields" : [
 				{
 					"name" : "owis",
 					"title" : "Instellingen",
-					"description" : "zie GWB",
+					"description" : "Een instelling die op basis van wetgeving is erkend voor het verzorgen van onderwijs.",
 					"required": "true",
 					"type" : "string",
 					"format" : "uri",
@@ -200,7 +218,7 @@
 				{
 					"name" : "oi_nm",
 					"title" : "Instellingsnaam",
-					"description" : "zie GWB",
+					"description" : "De aanduiding in het maatschappelijk verkeer.\nVerkorte versie van de officiële naam.",
 					"required": "true",
 					"type" : "string",
 					"constraints" : {
@@ -211,7 +229,7 @@
 				{
 					"name" : "brin",
 					"title" : "brinnummer",
-					"description" : "zie GWB",
+					"description" : "Een unieke code voor een onderwijsinstelling in de Basis Registratie Instellingen of een instellingserkenning in de Registratie Instellingen en Opleidingen in het Onderwijs.",
 					"required": "true",
 					"type" : "string",
 					"constraints" : {
@@ -222,7 +240,7 @@
 				{
 					"name" : "bezoek",
 					"title" : "Instellingsadres",
-					"description" : "zie GWB",
+					"description" : "Een binnenlands adres  of een buitenlands adres",
 					"required": "true",
 					"type" : "string",
 					"format" : "uri",
@@ -231,7 +249,7 @@
 				{
 					"name" : "plts",
 					"title" : "plaatsnaam",
-					"description" : "zie GWB",
+					"description" : "De naam van de plaats\nSchrijfwijze: in hoofdletters",
 					"required": "true",
 					"type" : "string",
 					"constraints" : {
@@ -242,7 +260,7 @@
 				{
 					"name" : "gem",
 					"title" : "Gemeente",
-					"description" : "zie GWB",
+					"description" : "De aanduiding van het registratief gebied.",
 					"required": "true",
 					"type" : "string",
 					"format" : "uri",
@@ -251,7 +269,7 @@
 				{
 					"name" : "gem_nm",
 					"title" : "gemeentenaam",
-					"description" : "zie GWB",
+					"description" : "De officiële door de gemeente vastgestelde naam van de gemeente",
 					"required": "true",
 					"type" : "string",
 					"constraints" : {
@@ -262,52 +280,63 @@
 				{
 					"name" : "post",
 					"title" : "Postadres",
-					"description" : "zie GWB",
+					"description" : "Een binnenlands adres  of een buitenlands adres",
 					"type" : "string",
 					"format" : "uri",
 					"rdfType" : "http://lod.duo.nl/cdm/def/Adres"
-				},	
+				},
 				{
 					"name" : "wet",
 					"title" : "Wet",
-					"description" : "zie GWB",
+					"description" : "Wet waarin of waaronder de juridische grondslag bepaald is.",
 					"type" : "string",
 					"rdfType" : "http://lod.duo.nl/cdm/def/wet-v02"
 				},
 				{
 					"name" : "srt",
 					"title" : "Instellingsoort",
-					"description" : "zie GWB",
+					"description" : "Functionele codering voor de erkenningen die volgens wetgeving van OCW zijn toegestaan voor onderwijsinstellingen.",
 					"type" : "string",
-					"rdfType" : "http://lod.duo.nl/cdm/def/instellingssoort-V03"
+					"rdfType" : "http://lod.duo.nl/cdm/def/instellingssoort-v04"
 				},    
        				{
 					"name" : "site",
 					"title" : "kvk-nummer",
-					"description" : "zie GWB",
+					"description" : "De locatie op het World Wide Web waar documenten en andere objecten kunnen worden gevonden",
 					"type" : "string",
 					"format" : "uri",
+					"constraints" : {
+						"minLength": 0,
+						"maxLength": 320
+					},
 					"rdfType" : "http://lod.duo.nl/cdm/def/uRL"
 				},   
        				{
 					"name" : "email",
 					"title" : "email",
-					"description" : "zie GWB",
+					"description" : "Is een adres voor het ontvangen en verzenden van elektronische post.",
 					"type" : "string",
-					"format" : "email",
+					"constraints" : {
+						"minLength": 4,
+						"maxLength": 256
+					},
 					"rdfType" : "http://lod.duo.nl/cdm/def/emailadres-v05"
 				},   
        				{
 					"name" : "tel",
 					"title" : "telefoon",
-					"description" : "zie GWB",
+					"description" : "Het geheel aan cijfers en tekens waarmee wordt aangeduid hoe een persoon via telefonie kan worden bereikt\nDe eerste regex valideert vaste nationale nummers, de tweede valideert mobiele nationale nummers, de derde valideert alle internationale nummers",
 					"type" : "string",
+					"constraints" : {
+						"maxLength": 22,
+						"pattern": "^(((0)[1-9]{2}[0-9][-]?[1-9][0-9]{5})|((\\+31|0|0031)[1-9][0-9][-]?[1-9][0-9]{6}))|((06)[-]?[1-9]{1}[0-9]{7})|(((\\+31|0|0031)6){1}[-]?[1-9]{1}[0-9]{7})|\\+(1\\d{4,14}|2[078]\\d{3,13}|3[0-469]\\d{3,13}|4[013-9]\\d{3,13}|5[1-8]\\d{3,13}|6[0-6]\\d{3,13}|7\\d{4,14}|8[1-469]\\d{3,13}|9[0-58]\\d{3,13}|[2-9]\\d{4,14})$"
+					},
 					"rdfType" : "http://lod.duo.nl/cdm/def/telefoonnummer-v02"
 				},
 				{
 					"name" : "bgezag",
 					"title" : "Bevoegd Gezag",
-					"description" : "zie GWB",
+					"description" : "Een bevoegd gezag is altijd een NHR-Rechtspersoon (als het gaat om een Nederlands bevoegd gezag)",
 					"required": "true",
 					"type" : "string",
 					"format" : "uri",
@@ -316,13 +345,28 @@
 				{
 					"name" : "bg_nm",
 					"title" : "Bevoegd Gezagnaam",
-					"description" : "zie GWB",
+					"description" : "De aanduiding in het maatschappelijk verkeer.\nVerkorte versie van de officiële naam.",
 					"required": "true",
 					"type" : "string",
 					"constraints" : {
-						"maxLength": 80
+						"maxLength": 40
 						},
 					"rdfType" : "http://lod.duo.nl/cdm/def/commercieleNaam-v02"
+				},
+				{
+					"name" : "long",
+					"title" : "Longitude",
+					"description" : "Is de lengtegraad, deze vormt samen met de breedtegraad een geografische positieaanduiding in bolcoördinaten.",
+					"type" : "numeric",
+						"rdfType" : "http://lod.duo.nl/cdm/def/longitude"
+				},
+				{
+					"name" : "lat",
+					"title" : "Latitude",
+					"description" : "Is de breedtegraad, deze vormt samen met de lengtegraad een geografische positieaanduiding in bolcoördinaten.",
+					"required": "true",
+					"type" : "numeric",
+					"rdfType" : "http://lod.duo.nl/cdm/def/latitude"
 				}		        
 			],
 			"primaryKey": "owis"
@@ -332,37 +376,28 @@
 		"name" : "instellingen_actueel",
 		"title": "Instellingen actueel",
 		"description" : "Directe link voor instellingen naar het generiek publicatieplatform [Linked Data Theater](http:\/\/lod.duo.nl\/rio).",
-        	"format": "HTML", 
 		"path": "http://lod.duo.nl/rio/query/instellingen", 
-		"issued" : "2018-05-29T12:00:00.001",
 		"modified" : "2018-05-29T12:00:00.001",
-		"status": "experiment"
 	},
 	{
 		"name" : "instellingen_per_wet",
 		"title": "instellingen per wet",
-		"description" : "Voorbeeld onderwijsinstellingen bij een bepaalde wet. Zie [waardenlijst](https:\/\/lod.duo.nl\/cdm\/def\/Wet-v02.1). Standaard gevisualiseerd met html. Is eventueel ook als csv te ontsluiten met de uri-toevoeging .csv.  Geldt niet voor json (known error).",
-        	"format": "HTML", 
+		"description" : "Voorbeeld onderwijsinstellingen bij een bepaalde wet. Zie [waardenlijst](https:\/\/lod.duo.nl\/cdm\/def\/Wet-v02.2). Is eventueel ook als csv te ontsluiten met de uri-toevoeging .csv",
 		"path": "http://lod.duo.nl/rio/api/v0/selectie/instellingen?wet=WEB", 
-		"issued" : "2018-05-29T12:00:00.001",
 		"modified" : "2018-05-29T12:00:00.001",
-		"status": "experiment"
 	},			
 	{
 		"name" : "rio_adressen_momentopname",
 		"title": "RIO adressen momentopname",
 		"description" : "Periodiek in CKAN geladen RIO-adressen.",
-        	"format": "csv", 
 		"path": "http://lod.duo.nl/rio/api/v0/distributie/adressen.csv", 
-		"issued" : "2018-05-29T12:00:00.001",
 		"modified" : "2018-05-29T12:00:00.001",
-		"status": "experiment",
 		"schema" : {
 			"fields" : [
 				{
 					"name" : "adres",
 					"title" : "Binnenlands Adres",
-					"description" : "zie GWB",
+					"description" : "Is de aanduiding van een bepaalde locatie, doorgaans van een huis, woning, gebouw of faciliteit, op de aarde.",
 					"required": "true",
 					"type" : "string",
 					"format" : "uri",
@@ -371,7 +406,7 @@
 				{
 					"name" : "str",
 					"title" : "straatnaam",
-					"description" : "zie GWB",
+					"description" : "De straatnaam zoals die officieel is vastgesteld door de gemeente",
 					"required": "true",
 					"type" : "string",
 					"constraints" : {
@@ -382,7 +417,7 @@
 				{
 					"name" : "hnr",
 					"title" : "huisnummer",
-					"description" : "zie GWB",
+					"description" : "De numerieke aanduiding zoals deze door het gemeentebestuur aan het object is toegekend",
 					"required": "true",
 					"type" : "string",
 					"constraints" : {
@@ -393,7 +428,7 @@
 				{
 					"name" : "hl",
 					"title" : "letter",
-					"description" : "zie GWB",
+					"description" : "De alfabetische aanduiding zoals deze door het gemeentebestuur aan de locatie is toegekend ter aanvulling op het huisnummer",
 					"type" : "string",
 					"constraints" : {
 						"maxLength": 1 ,
@@ -404,7 +439,7 @@
 				{
 					"name" : "hnt",
 					"title" : "huisnummer toevoeging",
-					"description" : "zie GWB",
+					"description" : "Die letters of tekens die noodzakelijk zijn om, naast het juiste huisnummer en huisletter, de brievenbus te vinden",
 					"type" : "string",
 					"constraints" : {
 						"maxLength": 4
@@ -414,29 +449,29 @@
 				{
 					"name" : "pc",
 					"title" : "postcode",
-					"description" : "zie GWB",
+					"description" : "De door de Post NL vastgestelde code behorend bij de straatnaam en het huisnummer dan wel de door Post NL vastgestelde code behorende bij een bepaalde combinatie van een naam openbare ruimte en een huisnummer.",
 					"required": "true",
 					"type" : "string",
 					"constraints" : {
-						"maxLength": 6
+						"pattern": "([1-9]{1}[0-9]{3}[A-Z]{2})"
 						},
 					"rdfType" : "http://lod.duo.nl/cdm/def/postcode-v02"
 				},	
 				{
 					"name" : "plts",
 					"title" : "plaatsnaam",
-					"description" : "zie GWB",
+					"description" : "De naam van de plaats\nSchrijfwijze: in hoofdletters",
 					"required": "true",
 					"type" : "string",
 					"constraints" : {
 						"maxLength": 40
 						},
 					"rdfType" : "http://lod.duo.nl/cdm/def/plaatsnaam-v02"
-				},	
+				},
 				{
 					"name" : "gem",
 					"title" : "Gemeente",
-					"description" : "zie GWB",
+					"description" : "De aanduiding van het registratief gebied.",
 					"required": "true",
 					"type" : "string",
 					"format" : "uri",
@@ -445,18 +480,18 @@
 				{
 					"name" : "gem_nm",
 					"title" : "gemeentenaam",
-					"description" : "zie GWB",
+					"description" : "De officiële door de gemeente vastgestelde naam van de gemeente",
 					"required": "true",
 					"type" : "string",
 					"constraints" : {
 						"maxLength": 40
 						},
 					"rdfType" : "http://lod.duo.nl/cdm/def/gemeentenaam"
-				},	
+				},
 				{
 					"name" : "prov",
 					"title" : "provincienaam",
-					"description" : "zie GWB",
+					"description" : "Deel van een staat met eigen bestuur ",
 					"type" : "string",
 					"constraints" : {
 						"maxLength": 40
@@ -466,7 +501,7 @@
 				{
 					"name" : "nodaal",
 					"title" : "naam nodaal gebied",
-					"description" : "zie GWB",
+					"description" : "Gebied afgebakend voor de planning van spreidingspatronen van scholen voor voortgezet onderwijs.",
 					"type" : "string",
 					"constraints" : {
 						"maxLength": 40
@@ -476,7 +511,7 @@
 				{
 					"name" : "rpa",
 					"title" : "naam RPA gebied",
-					"description" : "zie GWB",
+					"description" : "Gebied afgebakend door de Regionale Platforms Arbeidsmarkt voor informatie over de arbeidsmarkt",
 					"type" : "string",
 					"constraints" : {
 						"maxLength": 40
@@ -486,7 +521,7 @@
 				{
 					"name" : "wgr",
 					"title" : "naam WGR gebied",
-					"description" : "zie GWB",
+					"description" : "Cluster van gemeenten per samenwerkingsgebied volgens de Wet gemeenschappelijke regelingen.",
 					"type" : "string",
 					"constraints" : {
 						"maxLength": 40
@@ -496,7 +531,7 @@
 				{
 					"name" : "corop",
 					"title" : "naam Corop gebied",
-					"description" : "zie GWB",
+					"description" : "Een COROP-gebied is een regionaal gebied binnen Nederland en is een samenvoeging van gemeenten.",
 					"type" : "string",
 					"constraints" : {
 						"maxLength": 40
@@ -506,7 +541,7 @@
 				{
 					"name" : "ondwg",
 					"title" : "naam onderwijsgebied",
-					"description" : "zie GWB",
+					"description" : "Onderwijsgebieden zijn samenvoegingen van nodale gebieden op grond van regionale herkomst en bestemming van leerlingen bij het voortgezet onderwijs.",
 					"type" : "string",
 					"constraints" : {
 						"maxLength": 40
@@ -516,7 +551,7 @@
 				{
 					"name" : "rmc",
 					"title" : "naam RMC gebied",
-					"description" : "zie GWB",
+					"description" : "Nederland heeft 39 RMC-regio's (Regionaal Meld- en Coördinatiepunt). Elke RMC-regio heeft één contactgemeente die de melding en registratie van voortijdig schoolverlaters coördineert.",
 					"type" : "string",
 					"constraints" : {
 						"maxLength": 40
@@ -531,21 +566,15 @@
 		"name" : "rio_adressen_actueel",
 		"title": "RIO adressen actueel",
 		"description" : "Directe link voor RIO adressen naar het generiek publicatieplatform [Linked Data Theater](http:\/\/lod.duo.nl\/rio).",
-        	"format": "HTML", 
 		"path": "http://lod.duo.nl/rio/query/adressen", 
-		"issued" : "2018-05-29T12:00:00.001",
 		"modified" : "2018-05-29T12:00:00.001",
-		"status": "experiment"
 	},
 	{
 		"name" : "rio_adressen_per_plaats",
 		"title": "RIO adressen per plaats",
 		"description" : "Voorbeeld adressen bij een plaatsnaam (ptt-stijl). Standaard gevisualiseerd met html. Is eventueel ook als csv te ontsluiten met de uri-toevoeging format=csv.  Geldt niet voor json-formaat (known error).",
-        	"format": "HTML", 
 		"path": "http://lod.duo.nl/rio/api/v0/selectie/adressen?plaats=RUTTEN", 
-		"issued" : "2018-05-29T12:00:00.001",
 		"modified" : "2018-05-29T12:00:00.001",
-		"status": "experiment"
 	}
     ]
 }
