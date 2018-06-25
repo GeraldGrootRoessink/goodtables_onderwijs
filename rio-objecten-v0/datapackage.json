@@ -158,8 +158,7 @@
 					"description" : "Het geheel aan cijfers en tekens waarmee wordt aangeduid hoe een persoon via telefonie kan worden bereikt\nDe eerste regex valideert vaste nationale nummers, de tweede valideert mobiele nationale nummers, de derde valideert alle internationale nummers",
 					"type" : "string",
 					"constraints" : {
-						"maxLength": 22,
-						"pattern": "^(((0)[1-9]{2}[0-9][-]?[1-9][0-9]{5})|((\\+31|0|0031)[1-9][0-9][-]?[1-9][0-9]{6}))|((06)[-]?[1-9]{1}[0-9]{7})|(((\\+31|0|0031)6){1}[-]?[1-9]{1}[0-9]{7})|\\+(1\\d{4,14}|2[078]\\d{3,13}|3[0-469]\\d{3,13}|4[013-9]\\d{3,13}|5[1-8]\\d{3,13}|6[0-6]\\d{3,13}|7\\d{4,14}|8[1-469]\\d{3,13}|9[0-58]\\d{3,13}|[2-9]\\d{4,14})$"
+						"maxLength": 22
 					},
 					"rdfType" : "http://lod.duo.nl/cdm/def/telefoonnummer-v02"
 				},
@@ -215,7 +214,7 @@
 					"rdfType" : "http://lod.duo.nl/cdm/def/ErkendeInstelling"
 				},
 				{
-					"name" : "oi_nm",
+					"name" : "owis_nm",
 					"title" : "Instellingsnaam",
 					"description" : "De aanduiding in het maatschappelijk verkeer.\nVerkorte versie van de officiële naam.",
 					"required": "true",
