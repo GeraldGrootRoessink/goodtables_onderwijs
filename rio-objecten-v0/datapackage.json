@@ -302,7 +302,6 @@
 					"title" : "kvk-nummer",
 					"description" : "De locatie op het World Wide Web waar documenten en andere objecten kunnen worden gevonden",
 					"type" : "string",
-					"format" : "uri",
 					"constraints" : {
 						"minLength": 0,
 						"maxLength": 320
