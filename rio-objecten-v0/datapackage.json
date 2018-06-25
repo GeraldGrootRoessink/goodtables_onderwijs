@@ -113,8 +113,7 @@
 					"type" : "string",
 					"constraints" : {
 						"maxLength": 10,
-						"minLength": 1,
-						"pattern": "^(\\d{9})?$"
+						"minLength": 1
 						},
 					"rdfType" : "http://lod.duo.nl/cdm/def/rSIN"
 				},	        
