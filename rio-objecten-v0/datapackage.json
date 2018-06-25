@@ -168,7 +168,7 @@
 					"name" : "long",
 					"title" : "Longitude",
 					"description" : "Is de lengtegraad, deze vormt samen met de breedtegraad een geografische positieaanduiding in bolcoördinaten.",
-					"type" : "numeric",
+					"type" : "number",
 						"rdfType" : "http://lod.duo.nl/cdm/def/longitude"
 				},
 				{
@@ -176,7 +176,7 @@
 					"title" : "Latitude",
 					"description" : "Is de breedtegraad, deze vormt samen met de lengtegraad een geografische positieaanduiding in bolcoördinaten.",
 					"required": "true",
-					"type" : "numeric",
+					"type" : "number",
 					"rdfType" : "http://lod.duo.nl/cdm/def/latitude"
 				}  				
         
@@ -357,15 +357,15 @@
 					"name" : "long",
 					"title" : "Longitude",
 					"description" : "Is de lengtegraad, deze vormt samen met de breedtegraad een geografische positieaanduiding in bolcoördinaten.",
-					"type" : "numeric",
-						"rdfType" : "http://lod.duo.nl/cdm/def/longitude"
+					"type" : "number",
+					"rdfType" : "http://lod.duo.nl/cdm/def/longitude"
 				},
 				{
 					"name" : "lat",
 					"title" : "Latitude",
 					"description" : "Is de breedtegraad, deze vormt samen met de lengtegraad een geografische positieaanduiding in bolcoördinaten.",
 					"required": "true",
-					"type" : "numeric",
+					"type" : "number",
 					"rdfType" : "http://lod.duo.nl/cdm/def/latitude"
 				}		        
 			],
