@@ -189,21 +189,21 @@
 		"title": "Bevoegd Gezagen actueel",
 		"description" : "Directe link voor bevoegd gezagen naar het generiek publicatieplatform [Linked Data Theater](http:\/\/lod.duo.nl\/rio).",
 		"path": "http://lod.duo.nl/rio/query/bevoegdgezagen", 
-		"modified" : "2018-05-29T12:00:00.001",
+		"modified" : "2018-05-29T12:00:00.001"
 	},
 	{
 		"name" : "bevoegdgezagen_per_wet",
 		"title": "bevoegdgezagen per wet",
 		"description" : "bevoegd gezagen bij een bepaalde wet. Zie [waardenlijst](https:\/\/lod.duo.nl\/cdm\/def\/Wet-v02.2). Is eventueel ook als csv te ontsluiten met de uri-toevoeging .csv",
 		"path": "http://lod.duo.nl/rio/api/v0/selectie/bevoegdgezagen?wet=WEB", 
-		"modified" : "2018-05-29T12:00:00.001",
+		"modified" : "2018-06-26T12:00:00.001"
 	},			
 	{
 		"name" : "instellingen_momentopname",
 		"title": "instellingen momentopname",
 		"description" : "Periodiek in CKAN geladen instellingen.",
 		"path": "http://lod.duo.nl/rio/api/v0/distributie/instellingen.csv", 
-		"modified" : "2018-05-29T12:00:00.001",
+		"modified" : "2018-06-26T12:00:00.001",
 		"schema" : {
 			"fields" : [
 				{
@@ -377,21 +377,21 @@
 		"title": "Instellingen actueel",
 		"description" : "Directe link voor instellingen naar het generiek publicatieplatform [Linked Data Theater](http:\/\/lod.duo.nl\/rio).",
 		"path": "http://lod.duo.nl/rio/query/instellingen", 
-		"modified" : "2018-05-29T12:00:00.001",
+		"modified" : "2018-06-26T12:00:00.001"
 	},
 	{
 		"name" : "instellingen_per_wet",
 		"title": "instellingen per wet",
 		"description" : "Voorbeeld onderwijsinstellingen bij een bepaalde wet. Zie [waardenlijst](https:\/\/lod.duo.nl\/cdm\/def\/Wet-v02.2). Is eventueel ook als csv te ontsluiten met de uri-toevoeging .csv",
 		"path": "http://lod.duo.nl/rio/api/v0/selectie/instellingen?wet=WEB", 
-		"modified" : "2018-05-29T12:00:00.001",
+		"modified" : "2018-06-26T12:00:00.001"
 	},			
 	{
 		"name" : "rio_adressen_momentopname",
 		"title": "RIO adressen momentopname",
 		"description" : "Periodiek in CKAN geladen RIO-adressen.",
 		"path": "http://lod.duo.nl/rio/api/v0/distributie/adressen.csv", 
-		"modified" : "2018-05-29T12:00:00.001",
+		"modified" : "2018-06-26T12:00:00.001",
 		"schema" : {
 			"fields" : [
 				{
@@ -567,14 +567,14 @@
 		"title": "RIO adressen actueel",
 		"description" : "Directe link voor RIO adressen naar het generiek publicatieplatform [Linked Data Theater](http:\/\/lod.duo.nl\/rio).",
 		"path": "http://lod.duo.nl/rio/query/adressen", 
-		"modified" : "2018-05-29T12:00:00.001",
+		"modified" : "2018-06-26T12:00:00.001"
 	},
 	{
 		"name" : "rio_adressen_per_plaats",
 		"title": "RIO adressen per plaats",
 		"description" : "Voorbeeld adressen bij een plaatsnaam (ptt-stijl). Standaard gevisualiseerd met html. Is eventueel ook als csv te ontsluiten met de uri-toevoeging format=csv.  Geldt niet voor json-formaat (known error).",
 		"path": "http://lod.duo.nl/rio/api/v0/selectie/adressen?plaats=RUTTEN", 
-		"modified" : "2018-05-29T12:00:00.001",
+		"modified" : "2018-06-26T12:00:00.001"
 	}
     ]
 }
