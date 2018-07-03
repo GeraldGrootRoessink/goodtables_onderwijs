@@ -165,7 +165,7 @@
 					"constraints" : {
 						"minLength": 1,
 						"maxLength": 70,
-						"pattern": "^[a-zA-Z0-9_-\\s]*$"
+						"pattern": "^[a-zA-Z0-9_- ]*$"
 					},
 					"rdfType" : "http://lod.duo.nl/agtb/def/denominatieIP-v01"
 				},
