@@ -190,48 +190,6 @@
 						"maxLength": 320
 					},
 					"rdfType" : "http://lod.duo.nl/cdm/def/uRL"
-				},
-				{
-					"name" : "STRAATNAAM CORRESPONDENTIEADRES",
-					"title" : "straatnaam correspondentieadres",
-					"description" : "De straatnaam zoals die officieel is vastgesteld door de gemeente",
-					"type" : "string",
-					"constraints" : {
-						"minLength": 1,
-						"maxLength": 80
-					},
-					"rdfType" : "http://lod.duo.nl/cdm/def/straatnaam-v02"
-				},
-				{
-					"name" : "HUISNUMMER-TOEVOEGING CORRESPONDENTIEADRES",
-					"title" : "huisnummer-toevoeging correspondentieadres",
-					"description" : "Dit is een samentrekking van 1 of meerdere huisnummers en eventuele toevoegingen.",
-					"type" : "string",
-					"constraints" : {
-						"maxLength": 15
-					},
-					"rdfType" : "http://lod.duo.nl/agtb/def/huisnummerEnToevoeging-v01"
-				},
-				{
-					"name" : "POSTCODE CORRESPONDENTIEADRES",
-					"title" : "postcode correspondentieadres",
-					"description" : "De door de Post NL vastgestelde code behorend bij de straatnaam en het huisnummer dan wel de door Post NL vastgestelde code behorende bij een bepaalde combinatie van een naam openbare ruimte en een huisnummer.\nBij publicatie tonen als NNNN AA (met een spatie tussen de 4 cijfers en 2 letters)",
-					"type" : "string",
-					"constraints" : {
-						"maxLength": 7,
-						"pattern": "^([1-9]{1}[0-9]{3}\\s[A-Z]{2})$"
-					},
-					"rdfType" : "http://lod.duo.nl/cdm/def/postcode-v02"
-				},
-				{
-					"name" : "PLAATSNAAM CORRESPONDENTIEADRES",
-					"title" : "plaatsnaam correspondentieadres",
-					"description" : "De ingekorte schrijfwijze van een woonplaatsnaam\nAfkorting volgens NEN 5825",
-					"type" : "string",
-					"constraints" : {
-						"maxLength": 24
-					},
-					"rdfType" : "http://lod.duo.nl/cdm/def/plaatsnaamPO-v01"
 				}
 			]
 		}
