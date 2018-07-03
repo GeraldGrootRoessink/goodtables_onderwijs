@@ -42,7 +42,7 @@
 		"title" : "Adresgegevens van hoofdvestingen in het basisonderwijs",
 		"description" : "In dit bestand staan de adresgegevens van de hoofdvestigingen van alle scholen in het basisonderwijs. \nDe gegevens bestaan uit vestigingsadres, correspondentieadres, bijhorend schoolbestuur, denominatie en regionale gebiedsindelingen (nodaal, RPA, WGR, COROP, onderwijsgebied, RMC regio).",
 		"profile" : "tabular-data-resource",
-		"path" : "data/01.-hoofdvestigingen-basisonderwijs",
+		"path" : "data/01.hoofdvestigingen-basisonderwijs",
 		"issued" : "2018-07-03T15:34:52.965",
 		"modified" : "2018-07-03T15:34:52.965",
 		"schema" : {
