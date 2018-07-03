@@ -118,7 +118,7 @@
 					"description" : "De door de Post NL vastgestelde code behorend bij de straatnaam en het huisnummer dan wel de door Post NL vastgestelde code behorende bij een bepaalde combinatie van een naam openbare ruimte en een huisnummer.\nBij publicatie tonen als NNNN AA (met een spatie tussen de 4 cijfers en 2 letters)",
 					"type" : "string",
 					"constraints" : {
-						"maxLength": 6,
+						"maxLength": 7,
 						"pattern": "^([1-9]{1}[0-9]{3}\\s[A-Z]{2})$"
 					},
 					"rdfType" : "http://lod.duo.nl/cdm/def/postcode-v02"
