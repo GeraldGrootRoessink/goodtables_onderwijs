@@ -119,7 +119,7 @@
 					"type" : "string",
 					"constraints" : {
 						"maxLength": 6,
-						"pattern": "^([1-9]{1}[0-9]{3}[A-Z]{2})$"
+						"pattern": "^([1-9]{1}[0-9]{3}\s[A-Z]{2})$"
 					},
 					"rdfType" : "http://lod.duo.nl/cdm/def/postcode-v02"
 				},
@@ -165,7 +165,7 @@
 					"constraints" : {
 						"minLength": 1,
 						"maxLength": 70,
-						"pattern": "^[A-Z0-9_]*$"
+						"pattern": "^[a-zA-Z0-9_]*$"
 					},
 					"rdfType" : "http://lod.duo.nl/agtb/def/denominatieIP-v01"
 				},
