@@ -1,0 +1,53 @@
+{
+	"name" : "01-hoofdvestigingen-basisonderwijs-v01",
+    "title" : "Adressen van instellingen in het primair onderwijs",
+    "notes" : "Hieronder staan adressenbestanden van scholen, besturen en samenwerkingsverbanden in het primair onderwijs. De adresgegevens komen direct uit BRIN (Basisregister Instellingen) en worden door scholen zelf opgegeven. De kwaliteit en actualiteit van de adresgegevens is daarom afhankelijk van wat aan DUO opgegeven wordt.",
+	"version" : "0.1.0",
+	"keywords" : [
+        "Onderwijs",
+        "Adressen",
+        "BRIN",
+        "PO",
+        "Hoofdvestigingen"
+		],
+	"contributors" : [
+	{
+		"title" : "Dienst Uitvoering Onderwijs",
+		"role" : "publisher",
+		"organization" : "DUO"
+	}
+	],
+	"publisher_name" : "Dienst Uitvoering Onderwijs",
+	"frequency" : "Maandelijks",
+	"language" : "nl",
+	"spatial_uri" : "http://standaarden.overheid.nl/owms/terms/Nederland",
+	"theme" : "http://standaarden.overheid.nl/owms/terms/Onderwijs_(thema)",
+	"conforms_to" : "DCAT-AP1.1",
+	"temporal_start" : "2016-10-01",
+	"temporal_end" : "2017-09-31",
+	"resources" : [
+	{
+		"name" : "01-hoofdvestigingen-basisonderwijs",
+		"title" : "Adresgegevens van hoofdvestingen in het basisonderwijs",
+		"description" : "In dit bestand staan de adresgegevens van de hoofdvestigingen van alle scholen in het basisonderwijs. \nDe gegevens bestaan uit vestigingsadres, correspondentieadres, bijhorend schoolbestuur, denominatie en regionale gebiedsindelingen (nodaal, RPA, WGR, COROP, onderwijsgebied, RMC regio).",
+		"path" : "data/01.-hoofdvestigingen-basisonderwijs.csv",
+		"profile" : "tabular-data-resource",
+		"issued" : "2018-07-04T11:01:52.684",
+		"modified" : "2018-07-04T11:01:52.684",
+		"schema" : {
+			"fields" : [
+				{
+					"name" : "PROVINCIE",
+					"title" : "provincie",
+					"description" : "Deel van een staat met eigen bestuur",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 16
+					},
+					"rdfType" : "http://lod.duo.nl/cdm/def/provincienaam-v01"
+				}
+			]
+		}
+	}
+    ]
+}
