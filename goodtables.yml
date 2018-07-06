@@ -14,7 +14,7 @@
 
 # validate datapackages that reference csv files
 #
- datapackages:
+datapackages:
  - owis_bo/datapackage.json
  - adressen/datapackage.json
 # - test/datapackage.json
