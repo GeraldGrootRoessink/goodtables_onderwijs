@@ -5,7 +5,7 @@
 # files: '*.csv'
 
 settings:
-  row_limit: 5000
+  row_limit: 10000
 
 # validate a mixture of csv files optionally with a tableschema
 #
