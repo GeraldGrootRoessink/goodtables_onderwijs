@@ -45,7 +45,18 @@
 						"maxLength": 16
 					},
 					"rdfType" : "http://lod.duo.nl/cdm/def/provincienaam-v01"
+				},
+								{
+					"name" : "POST CODE",
+					"title" : "postvode",
+					"description" : "blablan",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 6
+					},
+					"rdfType" : "http://lod.duo.nl/cdm/def/postcode"
 				}
+			]
 			]
 		}
 	}
