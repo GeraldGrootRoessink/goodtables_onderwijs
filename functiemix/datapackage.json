@@ -1,7 +1,8 @@
 {
-     "name" : "functiemix-v01",
-    "title": "functiemix-v01 JSON-Schema",
-	"version" : "1.8.1",
+    "name" : "functiemix-v01",
+    "title" : "Functiemix",
+    "description" : "Dit document beschrijft de functiemixbestanden die als API-bestand (Application Programming Interface) via de website van DUO wordt aangeboden. \nDe functiemixbestanden bestaan uit vier deelbestanden: een instellingenbestand, een bestuursbestand, een bestand met gemiddelden en een bestand met maatwerkafspraken. \nDe bestanden worden één keer per jaar geactualiseerd op basis van de door scholen bij DUO aangeleverde personeelsgegevens. \nVanwege her- en naleveringen kunnen gegevens van voorgaande jaren wijzigen.\n\nPeriode \nDe gegevens hebben ieder jaar betrekking op de peilmaand oktober. De bestanden betreffen gegevens vanaf oktober 2006. \nOok door organisatorische veranderingen (fusies, splitsingen, oprichtingen en opheffingen) kunnen gegevens van voorgaande jaren veranderen. \nVanwege de volgtijdelijke vergelijkbaarheid is de organisatorische indeling in de functiemixbestanden zo veel mogelijk constant gehouden.\n",
+	"version" : "1.8.2",
 	"licenses" : [{
 			"name" : "CC-BY-4.0",
 			"path" : "https://creativecommons.org/licenses/by/4.0/",
@@ -13,46 +14,36 @@
 			"url" : "https://creativecommons.org/licenses/by/4.0/",
 			"title" : "Creative Commons Attribution 4.0"
 	},
-	"sources": [
-  		{
-		"title": "VERPLICHTE TITEL, MAAR KOMT NIET IN CKAN",
-    	"name": "Dienst Uitvoering Onderwijs",
-  		"email": "gegevensmagazijn@duo.nl"
-		}
-	],
 	"keywords" : [
         "loonschaal",
         "formatie",
         "onderwijzend personeel"
 		],
-	"contributors": [
+	"contributors" : [
 	{
-		"title": "Dienst Uitvoering Onderwijs",
-		"path": "http://standaarden.overheid.nl/owms/terms/Dienst_Uitvoering_Onderwijs",
-		"role": "publisher",
-		"organization": "DUO"
+		"title" : "Dienst Uitvoering Onderwijs",
+		"path" : "http://standaarden.overheid.nl/owms/terms/Dienst_Uitvoering_Onderwijs",
+		"role" : "publisher",
+		"organization" : "DUO"
 	}
 	],
-	"publisher_name" : "DUO",
+	"publisher_name" : "Dienst Uitvoering Onderwijs",
 	"publisher_uri" : "http://standaarden.overheid.nl/owms/terms/Dienst_Uitvoering_Onderwijs",
-	"frequency" : "jaarlijks",
+	"frequency" : "Jaarlijks",
 	"language" : "nl",
-	"issued" : "2018-06-15T12:38:30.954",
-	"modified" : "2018-06-15T12:38:30.954",
-	"spatial_uri": "http://standaarden.overheid.nl/owms/terms/Nederland",
-	"theme": "http://standaarden.overheid.nl/owms/terms/Voortgezet_onderwijs_(thema)",
-	"conforms_to": "DCAT-AP1.1",
-	"temporal_start": "2016-10-1",
-	"temporal_end": "2017-09-31",	
+	"spatial_uri" : "http://standaarden.overheid.nl/owms/terms/Nederland",
+	"theme" : "http://standaarden.overheid.nl/owms/terms/Onderwijs_(thema)",
+	"conforms_to" : "DCAT-AP1.1",
 	"resources" : [
 	{
 		"name" : "functiemix-besturen",
-		"title" : "functiemix-besturen",
+		"title" : "Functiemix besturen",
+		"description" : "Dit besturenbestand is uniek per ONDERWIJSSECTOR, JAAR en BEVOEGD_GEZAGNUMMER.  Een bevoegd gezag (cq. bestuur) kan namelijk uit één of meerdere brins bestaan, waaraan een unieke onderwijssector (BO, S(B)O, VO en MBO) is verbonden.  Met andere woorden een schoolbestuur kan in meerdere (sub)sectoren onderwijs verzorgen. In principe is dit besturenbestand redundant aan het instellingenbestand (d.w.z. het besturenbestand zou uit het instellingenbestand kunnen worden berekend).",
 		"path" : "data/FunctiemixBesturen.csv",
 		"profile" : "tabular-data-resource",
-		"issued" : "2018-06-15T12:38:30.970",
-		"modified" : "2018-06-15T12:38:30.970",
-		"status": "beschikbaar",
+		"issued" : "2018-07-20T10:58:45.360",
+		"modified" : "2018-07-20T10:58:45.360",
+		"status": "Concept",
 		"schema" : {
 			"fields" : [
 				{
@@ -67,6 +58,9 @@
 					"title" : "jaar",
 					"description" : "De functie-/salarismix betreft de maand oktober in een kalenderjaar.",
 					"type" : "integer",
+					"constraints" : {
+						"pattern": "^([0-9]{4})$"
+					},
 					"rdfType" : "http://lod.duo.nl/agtb/def/functiemixjaar-v01"
 				},
 				{
@@ -75,6 +69,7 @@
 					"description" : "Het nummer van het bevoegde gezag van de instelling afkomstig uit de Basisregistratie Instellingen",
 					"type" : "string",
 					"constraints" : {
+						"maxLength": 3000,
 						"pattern": "^\\d{5}$"
 					},
 					"rdfType" : "http://lod.duo.nl/cdm/def/bevoegdGezagnummer"
@@ -84,6 +79,10 @@
 					"title" : "bevoegd_gezagnaam",
 					"description" : "De naam van het schoolbestuur",
 					"type" : "string",
+					"constraints" : {
+						"minLength": 1,
+						"maxLength": 80
+					},
 					"rdfType" : "http://lod.duo.nl/agtb/def/bevoegdGezagnaam-v01"
 				},
 				{
@@ -107,7 +106,7 @@
 				{
 					"name" : "AANTAL_LEERLINGEN",
 					"title" : "aantal_leerlingen",
-					"description" : "Is het aantal leerlingen",
+					"description" : "Is het aantal leerlingen in een categorie",
 					"type" : "integer",
 					"rdfType" : "http://lod.duo.nl/agtb/def/aantalLeerlingen-v01"
 				},
@@ -403,12 +402,13 @@
 	},
 	{
 		"name" : "functiemix-gemiddelden",
-		"title" : "functiemix-gemiddelden",
+		"title" : "Functiemix gemiddelden",
+		"description" : "Dit bestand met gemiddelden is uniek per ONDERWIJSSECTOR, JAAR, SCHOOLTYPE, RPA_GEBIEDCODE, CATEGORIE_SCHOOLOMVANG en CATEGORIE_BESTUUROMVANG (bij SCHOOLTYPE, RPA_GEBIEDCODE, CATEGORIE_SCHOOLOMVANG en CATEGORIE_BESTUUROMVANG zijn totalen toegevoegd).  Het bestand is bedoeld om de gegevens per instelling en bestuur te kunnen spiegelen aan verschillende aggregaten. Opnieuw geldt dat het bestand met gemiddelden in principe uit het instellingen-/besturenbestand zou kunnen worden berekend met uitzondering van de streefpercentages. Op sectorniveau geldt een andere berekeningswijze dan op instellings-/bestuurniveau.",
 		"path" : "data/FunctiemixGemiddelden.csv",
 		"profile" : "tabular-data-resource",
-		"issued" : "2018-06-15T12:38:31.079",
-		"modified" : "2018-06-15T12:38:31.079",
-		"status": "beschikbaar",
+		"issued" : "2018-07-20T10:58:45.798",
+		"modified" : "2018-07-20T10:58:45.798",
+		"status": "Concept",
 		"schema" : {
 			"fields" : [
 				{
@@ -423,6 +423,9 @@
 					"title" : "jaar",
 					"description" : "De functie-/salarismix betreft de maand oktober in een kalenderjaar.",
 					"type" : "integer",
+					"constraints" : {
+						"pattern": "^([0-9]{4})$"
+					},
 					"rdfType" : "http://lod.duo.nl/agtb/def/functiemixjaar-v01"
 				},
 				{
@@ -467,7 +470,7 @@
 				{
 					"name" : "AANTAL_LEERLINGEN",
 					"title" : "aantal_leerlingen",
-					"description" : "Is het aantal leerlingen",
+					"description" : "Is het aantal leerlingen in een categorie",
 					"type" : "integer",
 					"rdfType" : "http://lod.duo.nl/agtb/def/aantalLeerlingen-v01"
 				},
@@ -651,12 +654,13 @@
 	},
 	{
 		"name" : "functiemix-instellingen",
-		"title" : "functiemix-instellingen",
+		"title" : "Functiemix instellingen",
+		"description" : "Het instellingenbestand is uniek per JAAR en BRIN_NUMMER.  Van belang is dat het bevoegd gezag (cq. het schoolbestuur) uit één of meerdere instellingen (cq. brins) kan bestaan.  Een instelling (cq. brin) kan een zogenaamd ‘bovenschools brin’ betreffen (d.w.z. een brin waar geen les wordt gegeven, maar dat direct onder het bevoegd gezag valt).  Overigens kan een instelling (cq. brin) op haar beurt uit één of meerdere vestigingen bestaan. Echter, de personeelsgegevens worden door DUO niet op vestigingsniveau verzameld.",
 		"path" : "data/FunctiemixInstellingen.csv",
 		"profile" : "tabular-data-resource",
-		"issued" : "2018-06-15T12:38:31.142",
-		"modified" : "2018-06-15T12:38:31.142",
-		"status": "beschikbaar",
+		"issued" : "2018-07-20T10:58:45.876",
+		"modified" : "2018-07-20T10:58:45.876",
+		"status": "Concept",
 		"schema" : {
 			"fields" : [
 				{
@@ -671,6 +675,9 @@
 					"title" : "jaar",
 					"description" : "De functie-/salarismix betreft de maand oktober in een kalenderjaar.",
 					"type" : "integer",
+					"constraints" : {
+						"pattern": "^([0-9]{4})$"
+					},
 					"rdfType" : "http://lod.duo.nl/agtb/def/functiemixjaar-v01"
 				},
 				{
@@ -748,7 +755,7 @@
 					"title" : "schoolsoort",
 					"description" : "Is de soort school in het middelbaar beroepsonderwijs.",
 					"type" : "string",
-					"rdfType" : "http://lod.duo.nl/agtb/def/schoolsoort-v01"
+					"rdfType" : "http://lod.duo.nl/agtb/def/schoolsoortMBO-v01"
 				},
 				{
 					"name" : "VERTICALE_SCHOLENGEMEENSCHAP",
@@ -763,6 +770,7 @@
 					"description" : "Het nummer van het bevoegde gezag van de instelling afkomstig uit de Basisregistratie Instellingen",
 					"type" : "string",
 					"constraints" : {
+						"maxLength": 3000,
 						"pattern": "^\\d{5}$"
 					},
 					"rdfType" : "http://lod.duo.nl/cdm/def/bevoegdGezagnummer"
@@ -772,6 +780,10 @@
 					"title" : "bevoegd_gezagnaam",
 					"description" : "De naam van het schoolbestuur",
 					"type" : "string",
+					"constraints" : {
+						"minLength": 1,
+						"maxLength": 80
+					},
 					"rdfType" : "http://lod.duo.nl/agtb/def/bevoegdGezagnaam-v01"
 				},
 				{
@@ -795,7 +807,7 @@
 				{
 					"name" : "AANTAL_LEERLINGEN",
 					"title" : "aantal_leerlingen",
-					"description" : "Is het aantal leerlingen",
+					"description" : "Is het aantal leerlingen in een categorie",
 					"type" : "integer",
 					"rdfType" : "http://lod.duo.nl/agtb/def/aantalLeerlingen-v01"
 				},
@@ -1091,12 +1103,13 @@
 	},
 	{
 		"name" : "functiemix-maatwerkafspraken",
-		"title" : "functiemix-maatwerkafspraken",
+		"title" : "Functiemix maatwerkafspraken",
+		"description" : "Dit bestand met maatwerkafspraken is uniek per JAAR en BRIN_NUMMER.  Op instellingsniveau kunnen tussen schoolleiding en PMR/GMR/OR/vakbonden afwijkende afspraken over de te behalen functie-/salarismixresultaten zijn gemaakt.",
 		"path" : "data/FunctiemixMaatwerkafspraken.csv",
 		"profile" : "tabular-data-resource",
-		"issued" : "2018-06-15T12:38:31.251",
-		"modified" : "2018-06-15T12:38:31.267",
-		"status": "beschikbaar",
+		"issued" : "2018-07-20T10:58:45.985",
+		"modified" : "2018-07-20T10:58:45.985",
+		"status": "Concept",
 		"schema" : {
 			"fields" : [
 				{
@@ -1111,6 +1124,9 @@
 					"title" : "jaar",
 					"description" : "De functie-/salarismix betreft de maand oktober in een kalenderjaar.",
 					"type" : "integer",
+					"constraints" : {
+						"pattern": "^([0-9]{4})$"
+					},
 					"rdfType" : "http://lod.duo.nl/agtb/def/functiemixjaar-v01"
 				},
 				{
@@ -1190,6 +1206,9 @@
 					"title" : "toelichting_maatwerkafspraak",
 					"description" : "Op instellingsniveau kunnen tussen schoolleiding en PMR/GMR/OR/vakbonden afwijkende afspraken over de te behalen functie-/salarismixresultaten zijn gemaakt. In dit veld wordt optioneel toelichting gegeven.",
 					"type" : "string",
+					"constraints" : {
+						"maxLength": 3000
+					},
 					"rdfType" : "http://lod.duo.nl/agtb/def/maatwerkafspraakToelichting-v01"
 				}
 			]
