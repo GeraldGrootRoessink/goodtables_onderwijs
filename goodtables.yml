@@ -18,9 +18,7 @@ settings:
 # validate datapackages that reference csv files
 #
 datapackages:
- - owis_bo/datapackage.json
- - adressen/datapackage.json
 # - test/datapackage.json
-# - functiemix/datapackage.json
+ - functiemix/datapackage.json
 # - rio-objecten-v0/datapackage.json
 
