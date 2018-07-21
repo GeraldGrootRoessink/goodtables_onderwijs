@@ -18,7 +18,7 @@ settings:
 # validate datapackages that reference csv files
 #
 datapackages:
-# - test/datapackage.json
- - functiemix/datapackage.json
+ - test/datapackage.json
+# - functiemix/datapackage.json
 # - rio-objecten-v0/datapackage.json
 
