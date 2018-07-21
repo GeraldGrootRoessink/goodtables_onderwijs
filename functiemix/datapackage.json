@@ -2,7 +2,7 @@
     "name" : "functiemix-v01",
     "title" : "Functiemix",
     "description" : "Dit document beschrijft de functiemixbestanden die als API-bestand (Application Programming Interface) via de website van DUO wordt aangeboden. \nDe functiemixbestanden bestaan uit vier deelbestanden: een instellingenbestand, een bestuursbestand, een bestand met gemiddelden en een bestand met maatwerkafspraken. \nDe bestanden worden één keer per jaar geactualiseerd op basis van de door scholen bij DUO aangeleverde personeelsgegevens. \nVanwege her- en naleveringen kunnen gegevens van voorgaande jaren wijzigen.\n\nPeriode \nDe gegevens hebben ieder jaar betrekking op de peilmaand oktober. De bestanden betreffen gegevens vanaf oktober 2006. \nOok door organisatorische veranderingen (fusies, splitsingen, oprichtingen en opheffingen) kunnen gegevens van voorgaande jaren veranderen. \nVanwege de volgtijdelijke vergelijkbaarheid is de organisatorische indeling in de functiemixbestanden zo veel mogelijk constant gehouden.\n",
-	"version" : "1.8.2",
+	"version" : "1.8.3",
 	"licenses" : [{
 			"name" : "CC-BY-4.0",
 			"path" : "https://creativecommons.org/licenses/by/4.0/",
