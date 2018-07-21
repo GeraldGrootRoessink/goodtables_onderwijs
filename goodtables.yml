@@ -4,8 +4,8 @@
 #
 # files: '*.csv'
 
-settings:
-  row_limit: 1000
+#settings:
+#  row_limit: 1000
 
 # validate a mixture of csv files optionally with a tableschema
 #
