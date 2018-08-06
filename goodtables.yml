@@ -19,6 +19,6 @@
 #
 datapackages:
 # - test/datapackage.json
- - functiemix/datapackage.json
-# - rio-objecten-v0/datapackage.json
+# - functiemix/datapackage.json
+ - rio-objecten-v0/datapackage.json
 
