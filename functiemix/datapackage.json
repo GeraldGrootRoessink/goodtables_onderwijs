@@ -58,9 +58,6 @@
 					"title" : "jaar",
 					"description" : "De functie-/salarismix betreft de maand oktober in een kalenderjaar.",
 					"type" : "integer",
-					"constraints" : {
-						"pattern": "^([0-9]{4})$"
-					},
 					"rdfType" : "http://lod.duo.nl/agtb/def/functiemixjaar-v01"
 				},
 				{
@@ -423,9 +420,6 @@
 					"title" : "jaar",
 					"description" : "De functie-/salarismix betreft de maand oktober in een kalenderjaar.",
 					"type" : "integer",
-					"constraints" : {
-						"pattern": "^([0-9]{4})$"
-					},
 					"rdfType" : "http://lod.duo.nl/agtb/def/functiemixjaar-v01"
 				},
 				{
@@ -675,9 +669,6 @@
 					"title" : "jaar",
 					"description" : "De functie-/salarismix betreft de maand oktober in een kalenderjaar.",
 					"type" : "integer",
-					"constraints" : {
-						"pattern": "^([0-9]{4})$"
-					},
 					"rdfType" : "http://lod.duo.nl/agtb/def/functiemixjaar-v01"
 				},
 				{
@@ -1124,9 +1115,6 @@
 					"title" : "jaar",
 					"description" : "De functie-/salarismix betreft de maand oktober in een kalenderjaar.",
 					"type" : "integer",
-					"constraints" : {
-						"pattern": "^([0-9]{4})$"
-					},
 					"rdfType" : "http://lod.duo.nl/agtb/def/functiemixjaar-v01"
 				},
 				{
