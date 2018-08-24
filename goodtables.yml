@@ -4,8 +4,8 @@
 #
 # files: '*.csv'
 
-#settings:
-#  row_limit: 1000
+settings:
+  row_limit: 10000
 
 # validate a mixture of csv files optionally with a tableschema
 #
@@ -18,7 +18,13 @@
 # validate datapackages that reference csv files
 #
 datapackages:
- - test/datapackage.json
+# - test/datapackage.json
 # - functiemix/datapackage.json
 # - rio-objecten-v0/datapackage.json
-
+ - besturenbo/datapackage.json
+# - besturenso/datapackage.json
+# - besturenvo/datapackage.json
+# - vestigingenbo/datapackage.json
+# - vestigingenso/datapackage.json
+# - vestigingenvo/datapackage.json
+   

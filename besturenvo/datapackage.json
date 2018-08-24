@@ -1,0 +1,252 @@
+{
+	"name" : "03-bevoegde-gezagen-vo-v01",
+    "title" : "Adressen van bevoegde gezagen in het VO",
+    "description" : "De adresgegevens van de bevoegde gezagen (schoolbesturen) in het voortgezet onderwijs. \nDe gegevens bestaan uit vestigingsadres, correspondentieadres, denominatie en administratiekantoornummer.",
+	"version" : "0.1.0",
+	"licenses" : [{
+			"name" : "CC-BY-4.0",
+			"path" : "https://creativecommons.org/licenses/by/4.0/",
+			"title" : "Creative Commons Attribution 4.0"
+		}
+	],
+	"license" : {
+			"type" : "CC-BY-4.0",
+			"url" : "https://creativecommons.org/licenses/by/4.0/",
+			"title" : "Creative Commons Attribution 4.0"
+	},
+	"keywords" : [
+        "Adressen",
+        "BRIN",
+        "Bevoegd gezagen",
+        "Onderwijs",
+        "VO"
+		],
+	"contributors" : [
+	{
+		"title" : "Dienst Uitvoering Onderwijs",
+		"path" : "http://standaarden.overheid.nl/owms/terms/Dienst_Uitvoering_Onderwijs",
+		"role" : "publisher",
+		"organization" : "DUO"
+	}
+	],
+	"publisher_name" : "Dienst Uitvoering Onderwijs",
+	"publisher_uri" : "http://standaarden.overheid.nl/owms/terms/Dienst_Uitvoering_Onderwijs",
+	"frequency" : "Maandelijks",
+	"language" : "nl",
+	"spatial_uri" : "http://standaarden.overheid.nl/owms/terms/Nederland",
+	"theme" : "http://standaarden.overheid.nl/owms/terms/Onderwijs_(thema)",
+	"conforms_to" : "DCAT-AP1.1",
+	"resources" : [
+	{
+		"name" : "besturenvo",
+		"title" : "Adressen van bevoegde gezagen in het VO",
+		"description" : "De adresgegevens van de bevoegde gezagen (schoolbesturen) in het voortgezet onderwijs.\nDe gegevens bestaan uit vestigingsadres, correspondentieadres, denominatie en administratiekantoornummer.",
+		"path" : "data/besturenvo.csv",
+		"profile" : "tabular-data-resource",
+		"issued" : "2018-08-07T09:20:17.261",
+		"modified" : "2018-08-07T09:20:17.261",
+		"status": "Definitief",
+		"schema" : {
+			"fields" : [
+				{
+					"name" : "BEVOEGD GEZAG NUMMER",
+					"title" : "bevoegd gezag nummer",
+					"description" : "Het nummer van het bevoegde gezag van de instelling afkomstig uit de Basisregistratie Instellingen",
+					"type" : "string",
+					"constraints" : {
+						"required": true,
+						"maxLength": 3000,
+						"pattern": "^\\d{5}$"
+					},
+					"rdfType" : "http://lod.duo.nl/cdm/def/bevoegdGezagnummer"
+				},
+				{
+					"name" : "BEVOEGD GEZAG NAAM",
+					"title" : "bevoegd gezag naam",
+					"description" : "De naam van het schoolbestuur",
+					"type" : "string",
+					"constraints" : {
+						"required": true,
+						"minLength": 1,
+						"maxLength": 80
+					},
+					"rdfType" : "http://lod.duo.nl/agtb/def/bevoegdGezagnaam-v01"
+				},
+				{
+					"name" : "STRAATNAAM",
+					"title" : "straatnaam",
+					"description" : "De straatnaam zoals die officieel is vastgesteld door de gemeente",
+					"type" : "string",
+					"constraints" : {
+						"required": true,
+						"minLength": 1,
+						"maxLength": 80
+					},
+					"rdfType" : "http://lod.duo.nl/cdm/def/straatnaam-v02"
+				},
+				{
+					"name" : "HUISNUMMER-TOEVOEGING",
+					"title" : "huisnummer-toevoeging",
+					"description" : "Dit is een samentrekking van 1 of meerdere huisnummers en eventuele toevoegingen.",
+					"type" : "string",
+					"constraints" : {
+						"required": true,
+						"maxLength": 15
+					},
+					"rdfType" : "http://lod.duo.nl/agtb/def/huisnummerEnToevoeging-v01"
+				},
+				{
+					"name" : "POSTCODE",
+					"title" : "postcode",
+					"description" : "De door de Post NL vastgestelde code behorend bij de straatnaam en het huisnummer dan wel de door Post NL vastgestelde code behorende bij een bepaalde combinatie van een naam openbare ruimte en een huisnummer.\nBij publicatie tonen als NNNN AA (met een spatie tussen de 4 cijfers en 2 letters)",
+					"type" : "string",
+					"constraints" : {
+						"required": true,
+						"maxLength": 6,
+						"pattern": "^([1-9]{1}[0-9]{3}[A-Z]{2})$"
+					},
+					"rdfType" : "http://lod.duo.nl/cdm/def/postcode-v02"
+				},
+				{
+					"name" : "PLAATSNAAM",
+					"title" : "plaatsnaam",
+					"description" : "De naam van de plaats\nSchrijfwijze: in hoofdletters",
+					"type" : "string",
+					"constraints" : {
+						"required": true,
+						"minLength": 1,
+						"maxLength": 40
+					},
+					"rdfType" : "http://lod.duo.nl/cdm/def/plaatsnaam-v02"
+				},
+				{
+					"name" : "GEMEENTENUMMER",
+					"title" : "gemeentenummer",
+					"description" : "De numerieke aanduiding van de gemeente",
+					"type" : "string",
+					"constraints" : {
+						"required": true,
+						"minLength": 4,
+						"maxLength": 4,
+						"pattern": "^\\d{4}$"
+					},
+					"rdfType" : "http://lod.duo.nl/cdm/def/gemeentecode"
+				},
+				{
+					"name" : "GEMEENTENAAM",
+					"title" : "gemeentenaam",
+					"description" : "De officiële door de gemeente vastgestelde naam van de gemeente",
+					"type" : "string",
+					"constraints" : {
+						"required": true,
+						"minLength": 1,
+						"maxLength": 40
+					},
+					"rdfType" : "http://lod.duo.nl/cdm/def/gemeentenaam"
+				},
+				{
+					"name" : "DENOMINATIE",
+					"title" : "denominatie",
+					"description" : "De levensbeschouwing of godsdienst die een school uitdraagt.",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 30
+					},
+					"rdfType" : "http://lod.duo.nl/agtb/def/denominatieIP-v01"
+				},
+				{
+					"name" : "TELEFOONNUMMER",
+					"title" : "telefoonnummer",
+					"description" : "Het geheel aan cijfers en tekens waarmee wordt aangeduid hoe een persoon via telefonie kan worden bereikt\nDe eerste regex valideert vaste nationale nummers, de tweede valideert mobiele nationale nummers, de derde valideert alle internationale nummers",
+					"type" : "string",
+					"constraints" : {
+						"maxLength": 22,
+						"pattern": "^((085)[-]?[0-9]{7})|((088)[-]?[0-9]{7})|(((0)[1-9]{2}[0-9][-]?[1-9][0-9]{5})|((\\+31|0|0031)[1-9][0-9][-]?[1-9][0-9]{6}))|((06)[-]?[1-9]{1}[0-9]{7})|(((\\+31|0|0031)6){1}[-]?[1-9]{1}[0-9]{7})|\\+(1\\d{4,14}|2[078]\\d{3,13}|3[0-469]\\d{3,13}|4[013-9]\\d{3,13}|5[1-8]\\d{3,13}|6[0-6]\\d{3,13}|7\\d{4,14}|8[1-469]\\d{3,13}|9[0-58]\\d{3,13}|[2-9]\\d{4,14})$"
+					},
+					"rdfType" : "http://lod.duo.nl/cdm/def/telefoonnummer-v02"
+				},
+				{
+					"name" : "INTERNETADRES",
+					"title" : "internetadres",
+					"description" : "De locatie op het World Wide Web waar documenten en andere objecten kunnen worden gevonden",
+					"type" : "string",
+					"constraints" : {
+						"minLength": 0,
+						"maxLength": 320
+					},
+					"rdfType" : "http://lod.duo.nl/cdm/def/uRL"
+				},
+				{
+					"name" : "STRAATNAAM CORRESPONDENTIEADRES",
+					"title" : "straatnaam correspondentieadres",
+					"description" : "De straatnaam zoals die officieel is vastgesteld door de gemeente",
+					"type" : "string",
+					"constraints" : {
+						"required": true,
+						"minLength": 1,
+						"maxLength": 80
+					},
+					"rdfType" : "http://lod.duo.nl/cdm/def/straatnaam-v02"
+				},
+				{
+					"name" : "HUISNUMMER-TOEVOEGING CORRESPONDENTIEADRES",
+					"title" : "huisnummer-toevoeging correspondentieadres",
+					"description" : "Dit is een samentrekking van 1 of meerdere huisnummers en eventuele toevoegingen.",
+					"type" : "string",
+					"constraints" : {
+						"required": true,
+						"maxLength": 15
+					},
+					"rdfType" : "http://lod.duo.nl/agtb/def/huisnummerEnToevoeging-v01"
+				},
+				{
+					"name" : "POSTCODE CORRESPONDENTIEADRES",
+					"title" : "postcode correspondentieadres",
+					"description" : "De door de Post NL vastgestelde code behorend bij de straatnaam en het huisnummer dan wel de door Post NL vastgestelde code behorende bij een bepaalde combinatie van een naam openbare ruimte en een huisnummer.\nBij publicatie tonen als NNNN AA (met een spatie tussen de 4 cijfers en 2 letters)",
+					"type" : "string",
+					"constraints" : {
+						"required": true,
+						"maxLength": 6,
+						"pattern": "^([1-9]{1}[0-9]{3}[A-Z]{2})$"
+					},
+					"rdfType" : "http://lod.duo.nl/cdm/def/postcode-v02"
+				},
+				{
+					"name" : "PLAATSNAAM CORRESPONDENTIEADRES",
+					"title" : "plaatsnaam correspondentieadres",
+					"description" : "De ingekorte schrijfwijze van een woonplaatsnaam\nAfkorting volgens NEN 5825",
+					"type" : "string",
+					"constraints" : {
+						"required": true,
+						"maxLength": 24
+					},
+					"rdfType" : "http://lod.duo.nl/cdm/def/plaatsnaamPO-v01"
+				},
+				{
+					"name" : "ADMINISTRATIEKANTOORNUMMER",
+					"title" : "administratiekantoornummer",
+					"description" : "Het administratienummer is het identificerende nummer waarmee iemand in de administratie van de instelling bekend is",
+					"type" : "string",
+					"constraints" : {
+						"minLength": 1,
+						"maxLength": 12
+					},
+					"rdfType" : "http://lod.duo.nl/cdm/def/administratienummer"
+				},
+				{
+					"name" : "KVK-NUMMER",
+					"title" : "kvk-nummer",
+					"description" : "Een uniek nummer voor een inschrijving van een onderneming of maatschappelijke activiteit bij de Kamer van Koophandel",
+					"type" : "string",
+					"constraints" : {
+						"minLength": 8,
+						"maxLength": 8,
+						"pattern": "^(\\d{8})?$"
+					},
+					"rdfType" : "http://lod.duo.nl/cdm/def/kvK-nummer"
+				}
+			]
+		}
+	}
+    ]
+}
