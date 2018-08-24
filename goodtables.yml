@@ -22,9 +22,9 @@ datapackages:
 # - functiemix/datapackage.json
 # - rio-objecten-v0/datapackage.json
  - besturenbo/datapackage.json
-# - besturenso/datapackage.json
-# - besturenvo/datapackage.json
-# - vestigingenbo/datapackage.json
-# - vestigingenso/datapackage.json
-# - vestigingenvo/datapackage.json
+ - besturenso/datapackage.json
+ - besturenvo/datapackage.json
+ - vestigingenbo/datapackage.json
+ - vestigingenso/datapackage.json
+ - vestigingenvo/datapackage.json
    
