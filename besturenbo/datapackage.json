@@ -243,7 +243,7 @@
 					"rdfType" : "http://lod.duo.nl/cdm/def/administratienummer"
 				}
 			],
-			"missingValues": [""],
+			"missingValues": [""]
 		}
 	}
     ]
